@@ -866,13 +866,13 @@ textarea {
   transition: 0.3s all;
 }
 
-.prateleira .product-image {
+/* .prateleira .product-image {
   display: block;
   margin-bottom: 10px;
   position: relative;
-}
+} */
 
-.prateleira .product-image:after {
+/* .prateleira .product-image:after {
   background-color: #fff;
   content: "Veja +";
   font: 40 12px/14px "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -890,14 +890,14 @@ textarea {
   opacity: 0;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
-}
+} */
 
-.prateleira .box-item:hover .product-image:after {
+/* .prateleira .box-item:hover .product-image:after {
   visibility: visible;
   opacity: 1;
-}
+} */
 
-.prateleira .product-image img {
+/* .prateleira .product-image img {
   display: block;
   max-width: 100%;
   height: auto ! important;
@@ -905,7 +905,7 @@ textarea {
   margin: 0 auto;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
-}
+} */
 
 .prateleira .box-item:hover img {
   opacity: .5;
@@ -1091,24 +1091,24 @@ textarea {
 /** ************************************************************************************ **/
 /** *********** PRODUTO VIEW **/
 /** ************************************************************************************ **/
-.product-image .apresentacao {
+/* .product-image .apresentacao {
   position: relative;
-}
+} */
 
-.product-details .product-image {
+/* .product-details .product-image {
   min-height: 360px;
   position: relative;
-}
+} */
 
-.product-image .apresentacao {
+/* .product-image .apresentacao {
   display: block;
-}
+} */
 
-.product-image .zoomPad {
+/* .product-image .zoomPad {
   position: relative;
-}
+} */
 
-.product-image .zoomWindow {
+/* .product-image .zoomWindow {
   overflow: hidden;
   left: 0 ! important;
   border: 1px solid transparent;
@@ -1116,35 +1116,34 @@ textarea {
   height: 100%;
   background-color: #FFF;
   z-index: 3;
-}
+} */
 
-.product-image .zoomWrapperImage img {
+/* .product-image .zoomWrapperImage img {
   max-width: none !important;
-}
+} */
 
-.product-image .zoomWrapperTitle {
+/* .product-image .zoomWrapperTitle {
   display: none ! important;
 }
 
 .product-image .apresentacao .thumbs {
   z-index: 9999;
-}
+} */
 
-.product-image .apresentacao .thumbs li {
+/* .product-image .apresentacao .thumbs li {
   display: inline-block;
   vertical-align: top;
   margin: 0 8px;
-}
+} */
 
-.product-image .apresentacao .thumbs a {
+/* .product-image .apresentacao .thumbs a {
   display: block;
-}
+} */
 
-.product-image .apresentacao .thumbs a:hover {
+/* .product-image .apresentacao .thumbs a:hover {
   opacity: .8;
-}
+} */
 
-.product-info {}
 
 .product-details .product-name {
   margin-bottom: 25px;

@@ -5,6 +5,12 @@
   background-position: center;
 }
 
+.flexRowContent--product-main{
+  display: flex;
+  flex-direction: column;
+}
+
+
 .flexRowContent--fundo-pdp {
   display: flex;
   flex-direction: column;
@@ -454,12 +460,6 @@
 }
 
 /* coluna direita pdp */
-.flexRow--product-main {
-  overflow: visible;
-  gap: 15px;
-  /* margin-left: 80px;
-  margin-right: 80px; */
-}
 
 
 
@@ -654,9 +654,9 @@
   border-top: 10px solid var(--pink);
 }
 
-.flexRowContent--product-main {
+/* .flexRowContent--product-main {
   gap: 20px;
-}
+} */
 
 .flexRow--reviews-and-ratings {
   border: 1px groove var(--magnolia);

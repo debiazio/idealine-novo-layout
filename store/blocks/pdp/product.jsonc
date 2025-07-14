@@ -2,21 +2,13 @@
   "store.product": {
     "children": [
       "flex-layout.row#script_rd",
-      "flex-layout.row#fundo-pdp"
 
-    ]
-  },
-  // linha que exibe o fundo da imagem
-  "flex-layout.row#fundo-pdp": {
-    "props": {
-      "blockClass": "fundo-pdp",
-      "fullWidth": true,
-      "preventVerticalStretch": true
-    },
-    "children": [
-      "flex-layout.row#product-breadcrumb",
       "responsive-layout.desktop#availability",
-      "responsive-layout.mobile#availability"
+      "responsive-layout.mobile#availability",
+      "flex-layout.row#titulo-top-sales",
+      "flex-layout.row#topsales",
+      "rich-text#certificacoes-titulo",
+      "flex-layout.row#certificacoes"
     ]
   },
   // linha que mostra o caminho até o conteúdo
@@ -60,16 +52,113 @@
           "subject": "isProductAvailable"
         }
       ],
-      "Then": "flex-layout.row#product-main",
+      "Then": "condition-layout.product#sweetpink",
       "Else": "flex-layout.row#product-availability"
+    }
+  },
+  "condition-layout.product#sweetpink": {
+    "props": {
+      "blockClass": "condicional-sweets",
+      "conditions": [
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2945"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2946"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2947"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2948"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2895"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2797"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2795"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2885"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2886"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2887"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2796"
+          }
+        }
+      ],
+      "matchType": "any",
+      "Then": "flex-layout.row#secao-background-product",
+      "Else": "flex-layout.row#product-main"
+    }
+  },
+  // LINHA SWEET PINK
+  "flex-layout.row#secao-background-product": {
+    "props": {
+      "blockClass": "conteiner-background-custom"
+    },
+    "children": [
+      "rich-text#eh-sweet"
+    ]
+  },
+  "rich-text#eh-sweet": {
+    "props": {
+      "text": "É fundo personalizavel"
     }
   },
   // linha do produto
   "flex-layout.row#product-main": {
     "props": {
       "blockClass": "product-main",
-      "fullWidth": true
+      "fullWidth": true,
+      "colSizing": "auto"
     },
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "flex-layout.row#colunas-product-main"
+    ]
+  },
+  "flex-layout.row#colunas-product-main":{
     "children": [
       "flex-layout.col#product-left-col",
       "flex-layout.col#product-right-col"
@@ -124,7 +213,7 @@
       "condition-layout.product#manual-30-42-60-75-vida",
       "condition-layout.product#manual-75-vida-VERTICAL",
       "product-specification-group#table",
-
+      "flex-layout.row#relatedProducts",
       "flex-layout.row#reviews-and-ratings"
     ],
     "props": {
@@ -314,32 +403,33 @@
   "flex-layout.col#product-left-col": {
     "children": [
       "stack-layout",
-      // "condition-layout.product#compre-junto-esmalteira",
-      // "condition-layout.product#visualizador3d-sweet-pink",
-      // "condition-layout.product#visualizador3d-sweet-black",
-      // "condition-layout.product#branco-perola",
-      // "condition-layout.product#rosa",
-      // "condition-layout.product#rosa-gold",
-      // "condition-layout.product#rosa-gold-padrao2",
-      // "condition-layout.product#rose-gold-laBelle-8l",
-      // "condition-layout.product#rose-gold-labelle-8l-padrao2",
-      // "condition-layout.product#rose-gold-idealclave-8l",
-      // "condition-layout.product#rose-gold-idealclave-8l-padrao2",
-      // "condition-layout.product#perola-idealclave-8l",
-      // "condition-layout.product#perola-idealclave-8l-padrao2",
-      // "condition-layout.product#perola-8l-labelle",
-      // "condition-layout.product#perola-8l-labelle-padrao2",
-      // "condition-layout.product#rosa-idealclave-8l",
-      // "condition-layout.product#rosa-idealclave-8l-padrao2",
-      // "condition-layout.product#rosa-laBelle-8l",
-      // "condition-layout.product#rosa-laBelle-8l-padrao2",
-      // "flex-layout.row#description",
+      "condition-layout.product#compre-junto-esmalteira",
+      "condition-layout.product#visualizador3d-sweet-pink",
+      "condition-layout.product#visualizador3d-sweet-black",
+      "condition-layout.product#branco-perola",
+      "condition-layout.product#rosa",
+      "condition-layout.product#rosa-gold",
+      "condition-layout.product#rosa-gold-padrao2",
+      "condition-layout.product#rose-gold-laBelle-8l",
+      "condition-layout.product#rose-gold-labelle-8l-padrao2",
+      "condition-layout.product#rose-gold-idealclave-8l",
+      "condition-layout.product#rose-gold-idealclave-8l-padrao2",
+      "condition-layout.product#perola-idealclave-8l",
+      "condition-layout.product#perola-idealclave-8l-padrao2",
+      "condition-layout.product#perola-8l-labelle",
+      "condition-layout.product#perola-8l-labelle-padrao2",
+      "condition-layout.product#rosa-idealclave-8l",
+      "condition-layout.product#rosa-idealclave-8l-padrao2",
+      "condition-layout.product#rosa-laBelle-8l",
+      "condition-layout.product#rosa-laBelle-8l-padrao2",
+      "flex-layout.row#description",
       "condition-layout.product#manual-21l-vida",
       "condition-layout.product#manual-12l-21l-opta",
       "condition-layout.product#manual-30-42-60-75-vida",
-      "condition-layout.product#manual-75-vida-VERTICAL"
-      // "product-specification-group#table"
-      // "flex-layout.row#reviews-and-ratings"
+      "condition-layout.product#manual-75-vida-VERTICAL",
+      "product-specification-group#table",
+      "flex-layout.row#reviews-and-ratings",
+      "flex-layout.row#relatedProducts"
     ],
     "props": {
       "width": "60%"
@@ -1488,7 +1578,8 @@
       "product-quantity",
       "product-assembly-options",
       "availability-subscriber", // avise-me disponibilidade
-      "flex-layout.row#botoes-comprar-bucarcep"
+      "flex-layout.row#botoes-comprar-bucarcep",
+      "flex-layout.row#vantagens-pgto-a-vista"
     ]
   },
   "flex-layout.row#product-name": {

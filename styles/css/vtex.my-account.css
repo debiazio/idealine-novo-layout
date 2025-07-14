@@ -1,9 +1,5 @@
 /* idealine paleta */
 
-.link-0-x-childrenContainer--link-baixar-manuais button{
-  border: none;
-}
-
 :root {
   --rosa-da-rosa: #fc51a7;
   --rosa-pink-escuro: #e90b91;
@@ -20,7 +16,9 @@
 }
 
 
-
+.link-0-x-childrenContainer--link-baixar-manuais button{
+  border: none;
+}
 .instagram-embed{
   display: flex;
   flex-direction: row;
