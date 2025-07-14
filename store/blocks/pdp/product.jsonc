@@ -132,13 +132,14 @@
       "Else": "flex-layout.row#product-main"
     }
   },
-  // LINHA SWEET PINK
+  // LINHA fundo DINAMICO
   "flex-layout.row#secao-background-product": {
     "props": {
       "blockClass": "conteiner-background-custom"
     },
     "children": [
-      "rich-text#eh-sweet"
+      "rich-text#eh-sweet",
+      "appalterafundo"
     ]
   },
   "rich-text#eh-sweet": {
