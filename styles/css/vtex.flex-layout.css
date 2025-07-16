@@ -1,14 +1,22 @@
-.flexRow--fundo-pdp {
-  background-image: url('assets/nova-pdp/sweet-pink-5litros-fundo-pdp.webp');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+/* NOVO LAYOUT  */
+.flexRowContent--conteiner-background-custom .flexRow--breadcrumb{
+  padding: 0;
+  color: #fff;
 }
+
+.flexRowContent--conteiner-background-custom{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* NOVO LAYOUT  */
 
 .flexRowContent--product-main{
   display: flex;
   flex-direction: column;
 }
+
 
 
 .flexRowContent--fundo-pdp {

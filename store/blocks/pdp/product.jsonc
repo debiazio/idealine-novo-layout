@@ -2,7 +2,6 @@
   "store.product": {
     "children": [
       "flex-layout.row#script_rd",
-
       "responsive-layout.desktop#availability",
       "responsive-layout.mobile#availability",
       "flex-layout.row#titulo-top-sales",
@@ -14,7 +13,9 @@
   // linha que mostra o caminho até o conteúdo
   "flex-layout.row#product-breadcrumb": {
     "props": {
-      "blockClass": "breadcrumb"
+      "blockClass": "breadcrumb",
+      "fullWidth": true,
+      "colSizing": "auto"
     },
     "children": [
       "breadcrumb"
@@ -52,13 +53,13 @@
           "subject": "isProductAvailable"
         }
       ],
-      "Then": "condition-layout.product#sweetpink",
+      "Then": "condition-layout.product#fundo-dinamico",
       "Else": "flex-layout.row#product-availability"
     }
   },
-  "condition-layout.product#sweetpink": {
+  "condition-layout.product#fundo-dinamico": {
     "props": {
-      "blockClass": "condicional-sweets",
+      "blockClass": "condicional-fundo-dinamico",
       "conditions": [
         {
           "subject": "productId",
@@ -135,31 +136,104 @@
   // LINHA fundo DINAMICO
   "flex-layout.row#secao-background-product": {
     "props": {
-      "blockClass": "conteiner-background-custom"
-    },
-    "children": [
-      "rich-text#eh-sweet",
-      "appalterafundo"
-    ]
-  },
-  "rich-text#eh-sweet": {
-    "props": {
-      "text": "É fundo personalizavel"
-    }
-  },
-  // linha do produto
-  "flex-layout.row#product-main": {
-    "props": {
-      "blockClass": "product-main",
+      "blockClass": "conteiner-background-custom",
       "fullWidth": true,
       "colSizing": "auto"
     },
     "children": [
-      "flex-layout.row#product-breadcrumb",
-      "flex-layout.row#colunas-product-main"
+      "flex-layout.row#product-breadcrumb-dinamic",
+      "appalterafundo",
+      "flex-layout.row#linha-produto-fundo-dinamico"
     ]
   },
-  "flex-layout.row#colunas-product-main":{
+  "flex-layout.row#product-breadcrumb-dinamic": {
+    "props": {
+      "blockClass": "breadcrumb-dinamic",
+      "fullWidth": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "breadcrumb#fundo-dinamic"
+    ]
+  },
+  "breadcrumb#fundo-dinamic":{
+    "props": {
+      "blockClass": "breadcrumb-dinamic-child"
+    }
+  },
+  "flex-layout.row#linha-produto-fundo-dinamico": {
+    "props": {
+      "blockClass": "linha-produto-fundo-dinamico",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#coluna-esquerda-fundo-dinamico",
+      "flex-layout.col#coluna-direita-fundo-dinamico"
+    ]
+  },
+  //COLUNA ESQUERDA - FUNDO DINAMICO
+  "flex-layout.col#coluna-esquerda-fundo-dinamico": {
+    "props": {
+      "blockClass": "coluna-imagens-fundo-dinamico",
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#imagens-dinamic"
+    ]
+  },
+  "flex-layout.row#imagens-dinamic": {
+    "children": [
+      "stack-layout#dinamic-background"
+    ]
+  },
+  "stack-layout#dinamic-background": {
+    "props": {
+      "blockClass": "dinamic-stack-layout"
+    },
+    "children": [
+      "flex-layout.row#dinamic-background"
+    ]
+  },
+  "flex-layout.row#dinamic-background": {
+    "children": [
+      "product-images#2"
+    ]
+  },
+  "product-images#2": {
+    "props": {
+      "aspectRatio": {
+        "desktop": "auto",
+        "phone": "auto"
+      },
+      "width": "500px",
+      "maxheight": "600px",
+      "contentType": "all",
+      "displayMode": "carousel",
+      "zoomMode": "in-place-click",
+      "displayThumbnailsArrows": true,
+      "hiddenImages": "thumbcor",
+      "blockClass": "product-image-dinamic",
+      "showNavigationArrows": false
+    }
+  },
+  //COLUNA DIREITA - FUNDO DINAMICO
+  "flex-layout.col#coluna-direita-fundo-dinamico": {
+    "props": {
+      "fullWidth": true,
+      "colSizing": "auto"
+    },
+    "children": []
+  },
+  // linha do produto
+  "flex-layout.row#product-main": {
+    "props": {
+      "blockClass": "product-main"
+    },
+    "children": [
+      "flex-layout.row#product-breadcrumb"
+    ]
+  },
+  "flex-layout.row#colunas-product-main": {
     "children": [
       "flex-layout.col#product-left-col",
       "flex-layout.col#product-right-col"

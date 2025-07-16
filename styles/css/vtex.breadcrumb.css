@@ -1,3 +1,26 @@
+/* NOVO LAYOUT */
+.container--breadcrumb-dinamic-child{
+  padding: 0;
+}
+
+.link--breadcrumb-dinamic-child,
+.term--breadcrumb-dinamic-child{
+  font-size: 12px;
+  color: #fff;
+}
+
+.link--breadcrumb-dinamic-child:hover,
+.arrow--breadcrumb-dinamic-child:last-child .link--breadcrumb-dinamic-child,
+.term--breadcrumb-dinamic-child{
+    color:#fff;
+}
+
+.arrow--breadcrumb-dinamic-child::before{
+  color:#fff;
+}
+
+/* NOVO LAYOUT */
+
 
 .link,
 .term{
