@@ -4,7 +4,7 @@
       "flex-layout.row#script_rd",
       "responsive-layout.desktop#availability",
       "responsive-layout.mobile#availability",
-      "flex-layout.row#titulo-top-sales",
+      "flex-layout.row#reviews-and-ratings",
       "flex-layout.row#topsales",
       "rich-text#certificacoes-titulo",
       "flex-layout.row#certificacoes"
@@ -156,7 +156,7 @@
       "breadcrumb#fundo-dinamic"
     ]
   },
-  "breadcrumb#fundo-dinamic":{
+  "breadcrumb#fundo-dinamic": {
     "props": {
       "blockClass": "breadcrumb-dinamic-child"
     }
@@ -213,17 +213,81 @@
       "displayThumbnailsArrows": true,
       "hiddenImages": "thumbcor",
       "blockClass": "product-image-dinamic",
-      "showNavigationArrows": false
+      "showNavigationArrows": false,
+      "showPaginationDots": false
     }
   },
   //COLUNA DIREITA - FUNDO DINAMICO
   "flex-layout.col#coluna-direita-fundo-dinamico": {
     "props": {
+      "blockClass": "coluna-lado-direito",
       "fullWidth": true,
       "colSizing": "auto"
     },
-    "children": []
+    "children": [
+      "flex-layout.row#quadro-coluna-direita"
+    ]
   },
+  // QUADRO BRANCO COLUNA DA DIREITA
+  "flex-layout.row#quadro-coluna-direita": {
+    "props": {
+      "blockClass": "quadro-lado-direito",
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#linhasuperior-fundo-din",
+      "flex-layout.row#product-name-fundo-dinamico", // nome
+      "flex-layout.row#list-price-savings",
+      "product-list-price",
+
+      "flex-layout.row#selling-price",
+      "product-installments"
+    ]
+  },
+
+
+  // LINHA SUPERIOR FUNDO DINAMICO
+  "flex-layout.row#linhasuperior-fundo-din": {
+    "props": {
+      "blockClass": "linha-superior-fundo-din",
+      "colSizing": "auto"
+    },
+    "children": [
+      "product-rating-summary", // avaliações
+      "rich-text#temp-pag-din"
+      // "share#pag-din"
+    ]
+  },
+  // NOME DO PRODUTO DINAMICO
+  "flex-layout.row#product-name-fundo-dinamico": {
+    "props": {
+      "blockClass": "product-name-fundo-dinamico",
+      "colSizing": "auto"
+    },
+    "children": [
+      "vtex.store-components:product-name#teste"
+    ]
+  },
+  "vtex.store-components:product-name#teste": {
+    "props": {
+      "showProductReference": true,
+      "showSku": true
+    }
+  },
+  "rich-text#temp-pag-din": {
+    "props": {
+      "text": "Compartilhar"
+    }
+  },
+  // "share#pag-din": {
+  //   "props": {
+  //     "social": {
+  //       "Facebook": true,
+  //       "WhatsApp": true,
+  //       "Twitter": true
+  //     }
+  //     }
+  // },
   // linha do produto
   "flex-layout.row#product-main": {
     "props": {

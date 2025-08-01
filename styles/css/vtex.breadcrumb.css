@@ -5,7 +5,7 @@
 
 .link--breadcrumb-dinamic-child,
 .term--breadcrumb-dinamic-child{
-  font-size: 12px;
+  font-size: 8px;
   color: #fff;
 }
 
@@ -24,8 +24,8 @@
 
 .link,
 .term{
-    font-size:1.2rem;
-    color:#7B7979;
+    font-size:12px;
+    color:white;
     padding:0;
     line-height:1;
 }
@@ -35,20 +35,20 @@
 .arrow::before{
     content:"/";
     font-size:13px;
-    color:#7B7979;
+    color:white;
     padding-right:5px;
     line-height:1;
 }
 .link:hover,
 .arrow:last-child .link,
 .term{
-    color:#FC87FC;
+    color:white;
 }
 .container{
     padding:10px 0;
     display:flex;
     align-items:center;
-    padding: 20px 0 20px 0;
+    padding: 20px 0 20px 50px;
     flex-wrap: wrap;
 }
 .caretIcon{

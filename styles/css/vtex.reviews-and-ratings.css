@@ -4,9 +4,9 @@
   padding-right: .5rem; */
 }
 
-.inlineContainer {
+.inlineContainer{
+  text-align: left;
   margin-left: 0rem;
-  text-align: center;
 }
 
 .star--filled {
@@ -18,8 +18,12 @@
 }
 
 .summaryButtonContainer :global(.vtex-button) {
-  margin: 10px;
-  padding: 5px;
+  margin: 0;
+  padding: 0;
+  margin-top: -50px;
+  color: transparent;
+  background: transparent;
+  border: transparent;
 }
 
 .summaryButtonContainer :global(.vtex-button__label) {
@@ -28,5 +32,5 @@
 
 
 .summaryContainer{
-  text-align: center;
+  text-align: left;
 }

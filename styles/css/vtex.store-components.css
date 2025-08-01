@@ -1,4 +1,18 @@
+.carouselGaleryThumbs{
+  width: auto!important;
+    margin-left: 50px;
+}
 
+.productImageTag {
+  max-height: unset !important;
+  border-radius: 15px;
+  margin-bottom: 80px;
+  margin-left: 1px;
+}
+
+.thumbImg {
+  border-radius: 12px;
+}
 
 .productImagesGallerySlide--product-image-dinamic:first-child {
   visibility: hidden;
