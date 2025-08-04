@@ -1,11 +1,32 @@
+.sellingPrice--prod-din-preco-vista-riscado {
+  text-decoration: line-through;
+  color: #696969;
+}
+
+.currencyContainer--prod-din-preco-vista-riscado {
+  font-size: 27px;
+}
+
+.spotPriceSavings--prod-din-preco-vista {
+  font-size: 39px;
+  color: #696969;
+  font-weight: 900;
+}
+
+.installments--prod-din-preco-parcelado {
+  font-size: 23px;
+  color: #FEBBCE!important;
+  font-weight: 800;
+}
+
 .listPrice {
-  color: #727273;
+  color: #696969;
   margin-bottom: .25rem;
   font-size: 1rem;
 }
 
 .sellingPrice {
-  color: #3f3f40;
+  color: #696969;
   font-size: 1.25rem;
 }
 
@@ -14,7 +35,7 @@
 }
 
 .installments {
-  color: #727273;
+  color: #696969;
   margin-bottom: 1rem;
 }
 

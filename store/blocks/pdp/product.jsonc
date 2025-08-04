@@ -175,7 +175,8 @@
   "flex-layout.col#coluna-esquerda-fundo-dinamico": {
     "props": {
       "blockClass": "coluna-imagens-fundo-dinamico",
-      "colSizing": "auto"
+      "colSizing": "auto",
+      "width": "60%"
     },
     "children": [
       "flex-layout.row#imagens-dinamic"
@@ -222,7 +223,8 @@
     "props": {
       "blockClass": "coluna-lado-direito",
       "fullWidth": true,
-      "colSizing": "auto"
+      "colSizing": "auto",
+      "width": "40% "
     },
     "children": [
       "flex-layout.row#quadro-coluna-direita"
@@ -237,11 +239,9 @@
     "children": [
       "flex-layout.row#linhasuperior-fundo-din",
       "flex-layout.row#product-name-fundo-dinamico", // nome
-      "flex-layout.row#list-price-savings",
-      "product-list-price",
+      "flex-layout.row#product-din-precos",
+      "sku-selector#prod-din"
 
-      "flex-layout.row#selling-price",
-      "product-installments"
     ]
   },
 
@@ -257,6 +257,11 @@
       "rich-text#temp-pag-din"
       // "share#pag-din"
     ]
+  },
+  "rich-text#temp-pag-din": {
+    "props": {
+      "text": "Compartilhar"
+    }
   },
   // NOME DO PRODUTO DINAMICO
   "flex-layout.row#product-name-fundo-dinamico": {
@@ -274,11 +279,74 @@
       "showSku": true
     }
   },
-  "rich-text#temp-pag-din": {
+  //LINHA DOS PRECOS
+"flex-layout.row#product-din-precos":{
+  "props": {
+    "blockClass": "linha-precos-prod-din",
+    "fullWidth": true,
+    "preventHorizontalStretch": true
+  },
+  "children": [
+    "product-list-price",
+    "product-selling-price#prod-din", //preço sem desconto a vista
+    "flex-layout.row#sufixo-prod-din",
+    "rich-text#ou",
+    "product-installments#prod-din" //parcelas
+
+  ]
+},
+// PRECO A VISTA - RISCADO
+"product-selling-price#prod-din": {
+  "props": {
+    "blockClass": "prod-din-preco-vista-riscado",
+    "message":
+      "{sellingPriceValue}"
+  }
+},
+"flex-layout.row#sufixo-prod-din":{
+  "props": {
+    "blockClass": "sufixo-prod-din",
+    "preventHorizontalStretch": true,
+    "fullWidth": true
+  },
+  "children": [
+    "product-spot-price-savings#prod-din", //preco a vista com desconto
+    "rich-text#a-vista"
+  ]
+},
+// PRECO A VISTA - COM DESCONTO
+"product-spot-price-savings#prod-din":{
+  "props": {
+    "blockClass": "prod-din-preco-vista",
+    "message":"{newSpotPriceValue}"
+  }
+},
+"rich-text#ou":{
+  "props": {
+    "text": "ou",
+    "blockClass": "texto-ou"
+  }
+},
+"rich-text#a-vista":{
+  "props": {
+    "text": " À VISTA",
+    "blockClass": "texto-a-vista"
+  }
+},
+// PARCELAS
+  "product-installments#prod-din": {
     "props": {
-      "text": "Compartilhar"
+      "blockClass": "prod-din-preco-parcelado",
+      "message": "Até {installmentsNumber}x de {installmentValue} sem juros no cartão"
     }
   },
+  // VOLTAGE SELECTION
+  "sku-selector#prod-din":{
+    "props": {
+      "blockClass": "prod-din-sku-selector"
+    }
+  },
+
   // "share#pag-din": {
   //   "props": {
   //     "social": {

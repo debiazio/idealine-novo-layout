@@ -1,6 +1,65 @@
-.carouselGaleryThumbs{
-  width: auto!important;
-    margin-left: 50px;
+.skuSelectorInternalBox--prod-din-sku-selector {
+  border-radius: 50%;
+}
+
+.skuSelectorInternalBox--prod-din-sku-selector{
+  border: 3px solid #696969;
+}
+
+.skuSelectorItem--prod-din-sku-selector--110v::after {
+  content: " 110v ";
+}
+
+.skuSelectorItem--prod-din-sku-selector--220v::after {
+  content: " 220v ";
+}
+
+
+.skuSelectorItemTextValue--prod-din-sku-selector {
+  margin: 0;
+  padding: 0;
+  color: transparent;
+  user-select: none;
+}
+
+.skuSelectorContainer--prod-din-sku-selector .skuSelectorName {
+  display: block;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.skuSelectorContainer--prod-din-sku-selector .skuSelectorName::after {
+  content: ":";
+}
+
+.frameAround--prod-din-sku-selector {
+  display: none;
+}
+
+.productReference {
+  font-size: 15px;
+  font-weight: 200;
+}
+
+
+.productReference::before {
+  content: "CÓDIGO DO PRODUTO ";
+}
+
+.productBrand {
+  display: flex;
+  flex-direction: column;
+}
+
+.skuSelectorItem--prod-din-sku-selector--selected .skuSelectorInternalBox--prod-din-sku-selector {
+  background-color: #e80e7b;
+  min-height: 40px;
+  min-width: 40px;
+}
+
+.carouselGaleryThumbs {
+  width: auto !important;
+  margin-left: 50px;
 }
 
 .productImageTag {
@@ -156,10 +215,10 @@
   margin-bottom: 20px;
 }
 
-.skuSelectorContainer {
+/* .skuSelectorContainer {
   margin: 1rem 0;
   display: flex;
-}
+} */
 
 
 /* icone de favoritos */
@@ -315,31 +374,31 @@
 
 
 /* voltagem pdp */
-.skuSelectorName {
+/* .skuSelectorName {
   display: none;
-}
+} */
 
-.skuSelectorItem {
+/* .skuSelectorItem {
   height: 60px;
-}
+} */
 
 /* botoes seletoes de sku */
-.skuSelectorInternalBox {
+/* .skuSelectorInternalBox {
   background-color: transparent;
   border-bottom: 8px solid black;
   border-radius: 0;
   border-top: none;
   border-left: none;
   border-right: none;
-}
+} */
 
-.skuSelectorItem--selected {
+/* .skuSelectorItem--selected {
   background-color: #EDE7EB;
-}
+} */
 
-.frameAround {
+/* .frameAround {
   display: none;
-}
+} */
 
 /* descriçao conteiner */
 :global(.vtex-store-components-3-x-productDescriptionTitle) {

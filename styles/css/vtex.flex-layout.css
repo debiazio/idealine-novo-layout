@@ -1,3 +1,8 @@
+.flexRowContent--linha-precos-prod-din{
+  display: flex;
+  flex-direction: column;
+}
+
 /* NOVO LAYOUT  */
 .flexRowContent--conteiner-background-custom .flexRow--breadcrumb {
   padding: 0;

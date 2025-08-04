@@ -1,3 +1,30 @@
+.container--texto-ou{
+  font-size: 23px;
+  color: #FEBBCE;
+  font-weight: 800;
+}
+
+.paragraph--texto-ou{
+  margin: 0;
+  padding: 0;
+}
+
+.paragraph--texto-a-vista{
+  font-size: 27px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  color: #696969;
+  font-style: normal;
+}
+
+.container--texto-a-vista{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
 .container--titulo-template {
   display: flex;
   flex-direction: row;
