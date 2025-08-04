@@ -1,17 +1,24 @@
 .skuSelectorInternalBox--prod-din-sku-selector {
   border-radius: 50%;
-}
-
-.skuSelectorInternalBox--prod-din-sku-selector{
+  min-width: 20px;
+  max-height: 20px;
   border: 3px solid #696969;
 }
 
 .skuSelectorItem--prod-din-sku-selector--110v::after {
   content: " 110v ";
+  font-size: 25px;
+  margin-left: 10px;
+  font-weight: 500;
+  color: #696969;
 }
 
 .skuSelectorItem--prod-din-sku-selector--220v::after {
   content: " 220v ";
+  font-size: 25px;
+  margin-left: 10px;
+  font-weight: 500;
+  color: #696969;
 }
 
 
@@ -20,6 +27,7 @@
   padding: 0;
   color: transparent;
   user-select: none;
+  position: absolute;
 }
 
 .skuSelectorContainer--prod-din-sku-selector .skuSelectorName {
@@ -52,9 +60,10 @@
 }
 
 .skuSelectorItem--prod-din-sku-selector--selected .skuSelectorInternalBox--prod-din-sku-selector {
-  background-color: #e80e7b;
-  min-height: 40px;
-  min-width: 40px;
+  background-color: #FEBBCE;
+  min-height: 20px;
+  min-width: 20px;
+  margin-bottom: 2px;
 }
 
 .carouselGaleryThumbs {

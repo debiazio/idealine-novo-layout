@@ -1,3 +1,7 @@
+.flexRow--linha-precos-prod-din{
+  margin: 25px 0;
+}
+
 .flexRowContent--linha-precos-prod-din{
   display: flex;
   flex-direction: column;

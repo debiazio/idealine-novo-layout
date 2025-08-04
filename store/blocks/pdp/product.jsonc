@@ -240,12 +240,11 @@
       "flex-layout.row#linhasuperior-fundo-din",
       "flex-layout.row#product-name-fundo-dinamico", // nome
       "flex-layout.row#product-din-precos",
-      "sku-selector#prod-din"
-
+      "sku-selector#prod-din",
+      "rich-text#cores-product-din",
+      "flex-layout.row#product-din-selector-produtos"
     ]
   },
-
-
   // LINHA SUPERIOR FUNDO DINAMICO
   "flex-layout.row#linhasuperior-fundo-din": {
     "props": {
@@ -280,60 +279,58 @@
     }
   },
   //LINHA DOS PRECOS
-"flex-layout.row#product-din-precos":{
-  "props": {
-    "blockClass": "linha-precos-prod-din",
-    "fullWidth": true,
-    "preventHorizontalStretch": true
+  "flex-layout.row#product-din-precos": {
+    "props": {
+      "blockClass": "linha-precos-prod-din",
+      "fullWidth": true,
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "product-list-price",
+      "product-selling-price#prod-din", //preço sem desconto a vista
+      "flex-layout.row#sufixo-prod-din",
+      "rich-text#ou",
+      "product-installments#prod-din" //parcelas
+    ]
   },
-  "children": [
-    "product-list-price",
-    "product-selling-price#prod-din", //preço sem desconto a vista
-    "flex-layout.row#sufixo-prod-din",
-    "rich-text#ou",
-    "product-installments#prod-din" //parcelas
-
-  ]
-},
-// PRECO A VISTA - RISCADO
-"product-selling-price#prod-din": {
-  "props": {
-    "blockClass": "prod-din-preco-vista-riscado",
-    "message":
-      "{sellingPriceValue}"
-  }
-},
-"flex-layout.row#sufixo-prod-din":{
-  "props": {
-    "blockClass": "sufixo-prod-din",
-    "preventHorizontalStretch": true,
-    "fullWidth": true
+  // PRECO A VISTA - RISCADO
+  "product-selling-price#prod-din": {
+    "props": {
+      "blockClass": "prod-din-preco-vista-riscado",
+      "message": "{sellingPriceValue}"
+    }
   },
-  "children": [
-    "product-spot-price-savings#prod-din", //preco a vista com desconto
-    "rich-text#a-vista"
-  ]
-},
-// PRECO A VISTA - COM DESCONTO
-"product-spot-price-savings#prod-din":{
-  "props": {
-    "blockClass": "prod-din-preco-vista",
-    "message":"{newSpotPriceValue}"
-  }
-},
-"rich-text#ou":{
-  "props": {
-    "text": "ou",
-    "blockClass": "texto-ou"
-  }
-},
-"rich-text#a-vista":{
-  "props": {
-    "text": " À VISTA",
-    "blockClass": "texto-a-vista"
-  }
-},
-// PARCELAS
+  "flex-layout.row#sufixo-prod-din": {
+    "props": {
+      "blockClass": "sufixo-prod-din",
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "product-spot-price-savings#prod-din", //preco a vista com desconto
+      "rich-text#a-vista"
+    ]
+  },
+  // PRECO A VISTA - COM DESCONTO
+  "product-spot-price-savings#prod-din": {
+    "props": {
+      "blockClass": "prod-din-preco-vista",
+      "message": "{newSpotPriceValue}"
+    }
+  },
+  "rich-text#ou": {
+    "props": {
+      "text": "ou",
+      "blockClass": "texto-ou"
+    }
+  },
+  "rich-text#a-vista": {
+    "props": {
+      "text": " À VISTA",
+      "blockClass": "texto-a-vista"
+    }
+  },
+  // PARCELAS
   "product-installments#prod-din": {
     "props": {
       "blockClass": "prod-din-preco-parcelado",
@@ -341,12 +338,83 @@
     }
   },
   // VOLTAGE SELECTION
-  "sku-selector#prod-din":{
+  "sku-selector#prod-din": {
     "props": {
       "blockClass": "prod-din-sku-selector"
     }
   },
-
+  // TITULO SELETOR DE CORES
+  "rich-text#cores-product-din":{
+    "props": {
+      "text": "Cores:",
+      "blockClass": "titulo-cores"
+    }
+  },
+  // SELETOR DE PRODUTOS PDP
+  "flex-layout.row#product-din-selector-produtos": {
+    "props": {
+      "blockClass": "product-selecor-prod-din",
+      "fullWidth": true,
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "link.product#bellinha-rosa",
+      "link.product#bellinha-rose-gold",
+      "link.product#bellinha-perola",
+      "link.product#bellinha-sweet-pink",
+      "link.product#bellinha-sweet-black"
+    ]
+  },
+  "link.product#bellinha-rosa": {
+    "props": {
+      "blockClass": [
+        "label-botao",
+        "link-bell-rosa"
+      ],
+      "href": "/autoclave-idealclave-bellinha-5-litros-com-tecnologia-dvm-rosa-pronta-entrega/p",
+      "label": "r"
+    }
+  },
+  "link.product#bellinha-rose-gold": {
+    "props": {
+      "blockClass": [
+        "label-botao",
+        "link-bell-rose-gold"
+      ],
+      "href": "/autoclave-idealclave-bellinha-5-litros-com-tecnologia-dvm-rose-gold-pronta-entrega/p",
+      "label": "g"
+    }
+  },
+  "link.product#bellinha-perola": {
+    "props": {
+      "blockClass": [
+        "label-botao",
+        "link-bell-perola"
+      ],
+      "href": "/autoclave-idealclave-bellinha-5-litros-com-tecnologia-dvm-perola-pronta-entrega/p",
+      "label": "p"
+    }
+  },
+  "link.product#bellinha-sweet-pink": {
+    "props": {
+      "blockClass": [
+        "label-botao",
+        "link-sweet-pink"
+      ],
+      "href": "/autoclave-bellinha-5l-sweet-pink/p",
+      "label": "s"
+    }
+  },
+  "link.product#bellinha-sweet-black": {
+    "props": {
+      "blockClass": [
+        "label-botao",
+        "link-sweet-black"
+      ],
+      "href": "/autoclave-bellinha-5l-sweet-black/p",
+      "label": "b"
+    }
+  },
   // "share#pag-din": {
   //   "props": {
   //     "social": {
