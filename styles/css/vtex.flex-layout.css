@@ -1,8 +1,8 @@
-.flexRow--linha-precos-prod-din{
+.flexRow--linha-precos-prod-din {
   margin: 25px 0;
 }
 
-.flexRowContent--linha-precos-prod-din{
+.flexRowContent--linha-precos-prod-din {
   display: flex;
   flex-direction: column;
 }
@@ -899,10 +899,7 @@
   text-align: center;
 }
 
-.flexRow--favoritos-mobile {
-  padding: 20px;
-  display: flex;
-}
+
 
 .flexColChild--coluna-certificado {
   width: 100px;
@@ -1038,7 +1035,7 @@
 
   .flexRowContent--product-name {
     padding: 0 20px 0 20px;
-    text-align: center;
+    text-align: left;
     margin: 0;
   }
 
@@ -1075,9 +1072,9 @@
     flex-wrap: nowrap;
   }
 
-  .flexRow--breadcrumb {
+  /* .flexRow--breadcrumb {
     display: none;
-  }
+  } */
 
   .flexRow--certificados {
     margin-bottom: 30px;
@@ -1481,9 +1478,11 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .flexRowContent--favoritos-mobile {
-    z-index: 2;
+  .flexRow--favoritos-mobile {
+    padding: 0;
+    display: flex;
   }
+
 
 
   .flexRowContent--footer-merchant-desktop-linhas {

@@ -4,7 +4,7 @@
   padding-right: .5rem; */
 }
 
-.inlineContainer{
+.inlineContainer {
   text-align: left;
   margin-left: 0rem;
 }
@@ -31,6 +31,15 @@
 }
 
 
-.summaryContainer{
+.summaryContainer {
   text-align: left;
+}
+
+@media screen and (max-width: 1024px) {
+.summaryContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px 20px;
+  align-items: center;
+}
 }

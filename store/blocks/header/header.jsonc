@@ -108,7 +108,7 @@
       "title": "Favoritos"
     },
     "children": [
-      "image#heart-icon"
+      // "image#heart-icon"
     ]
   },
   "image#heart-icon": {

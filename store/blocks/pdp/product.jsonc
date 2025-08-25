@@ -344,7 +344,7 @@
     }
   },
   // TITULO SELETOR DE CORES
-  "rich-text#cores-product-din":{
+  "rich-text#cores-product-din": {
     "props": {
       "text": "Cores:",
       "blockClass": "titulo-cores"
@@ -451,14 +451,16 @@
   // coluna da esquerda MOBILE
   "flex-layout.col#mobile-product-left-col": {
     "children": [
+      "flex-layout.row#breadcrumb-mobile",
       "flex-layout.row#product-name",
+      "product-rating-summary", // avaliações
       "flex-layout.row#add-to-list-btn",
-      "stack-layout",
+      "flex-layout.row#imagens-produto-mobile",
+      // "stack-layout",
       // "condition-layout.product#compre-junto-esmalteira-mobile",
       // "condition-layout.product#compre-junto-incubadora-mobile",
       "condition-layout.product#visualizador3d-sweet-pink", //vr
       "condition-layout.product#visualizador3d-sweet-black",
-      "product-rating-summary", // avaliações
       "flex-layout.row#list-price-savings", // preco sem desconto, riscado
       "flex-layout.row#selling-price", // preco a vista
       "flex-layout.row#linha-parcelas",
@@ -495,114 +497,34 @@
       "width": "60%"
     }
   },
-  // // CONDICIONAL PARA APARECER ESMALTEIRA
-  // "condition-layout.product#compre-junto-esmalteira-mobile": {
-  //   "props": {
-  //     "blockClass": "condicional-compre-junto-incubadora",
-  //     "conditions": [
-  //       {
-  //         "subject": "productId",
-  //         "arguments": {
-  //           "id": "2795"
-  //         }
-  //       },
-  //       {
-  //         "subject": "productId",
-  //         "arguments": {
-  //           "id": "2797"
-  //         }
-  //       },
-  //       {
-  //         "subject": "productId",
-  //         "arguments": {
-  //           "id": "2886"
-  //         }
-  //       },
-  //       {
-  //         "subject": "productId",
-  //         "arguments": {
-  //           "id": "2902"
-  //         }
-  //       },
-  //       {
-  //         "subject": "productId",
-  //         "arguments": {
-  //           "id": "2798"
-  //         }
-  //       },
-  //       {
-  //         "subject": "productId",
-  //         "arguments": {
-  //           "id": "2796"
-  //         }
-  //       },
-  //       {
-  //         "subject": "productId",
-  //         "arguments": {
-  //           "id": "2885"
-  //         }
-  //       },
-  //       {
-  //         "subject": "productId",
-  //         "arguments": {
-  //           "id": "2887"
-  //         }
-  //       },
-  //       {
-  //         "subject": "productId",
-  //         "arguments": {
-  //           "id": "2895"
-  //         }
-  //       },
-  //       {
-  //         "subject": "productId",
-  //         "arguments": {
-  //           "id": "2903"
-  //         }
-  //       },
-  //       {
-  //         "subject": "productId",
-  //         "arguments": {
-  //           "id": "2905"
-  //         }
-  //       },
-  //       {
-  //         "subject": "productId",
-  //         "arguments": {
-  //           "id": "2898"
-  //         }
-  //       },
-  //       {
-  //         "subject": "productId",
-  //         "arguments": {
-  //           "id": "2894"
-  //         }
-  //       },
-  //       {
-  //         "subject": "productId",
-  //         "arguments": {
-  //           "id": "2893"
-  //         }
-  //       },
-  //       {
-  //         "subject": "productId",
-  //         "arguments": {
-  //           "id": "2897"
-  //         }
-  //       }
-  //     ],
-  //     "matchType": "any",
-  //     "Then": "flex-layout.row#compre-junto-esmalteira-mobile"
-  //   }
-  // },
-  "flex-layout.row#compre-junto-esmalteira-mobile": {
+  "flex-layout.row#breadcrumb-mobile": {
     "props": {
-      "blockClass": "content-compre-junto-incubadora"
+      "blockClass": "mobile-breadcrumb"
     },
     "children": [
-      "flex-layout.row#linha-dia-consumidor-esmalteira-mobile"
+      "breadcrumb"
     ]
   },
+  // LINHA IMAGENS MOBILE
+  "flex-layout.row#imagens-produto-mobile":{
+    "children": [
+      "product-images#mobile"
+    ]
+  },
+  "product-images#mobile":{
+    "props":{
+      "displayMode":"carousel",
+      "showNavigationArrows": true,
+      "displayThumbnailsArrows": false,
+      "showPaginationDots": false,
+      "thumbnailVisibility": "visible",
+      "thumbnailsOrientation": "horizontal",
+      "blockClass": "imagesMobile"
+    }
+  },
+
+
+
   "flex-layout.row#linha-dia-consumidor-esmalteira-mobile": {
     "props": {
       "blockClass": "linha-dia-consumidor-incubadora",
@@ -1831,7 +1753,10 @@
       "displayMode": "carousel",
       "zoomMode": "in-place-click",
       "displayThumbnailsArrows": true,
-      "hiddenImages": "thumbcor"
+      "hiddenImages": "thumbcor",
+      "showNavigationArrows": true,
+      "thumbnailVisibility": "visible",
+      "showPaginationDots": false
     }
   },
   // coluna da direita

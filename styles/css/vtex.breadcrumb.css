@@ -56,11 +56,24 @@
 }
 
 
-/* vtex-breadcrumb-1-x-container */
 
-/* @media screen and (max-width: 1024px) {
-  .container{
-    display: none;
-    color: black;
+@media screen and (max-width: 1024px) {
+  .homeLink,
+  .arrow,
+  .arrow--1::before,
+  .arrow--2::before,
+  .link--1,
+  .link--2,
+  .termArrow,
+  .term    {
+    color: #BFB8B8
   }
-} */
+
+  .term {
+    font-weight: 900;
+  }
+
+  .container{
+    padding: 20px 0 20px 20px;
+  }
+}
