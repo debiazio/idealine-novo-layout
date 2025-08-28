@@ -946,6 +946,22 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .flexRowContent--product-selecor-prod-din{
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px ;
+  }
+
+  .flexRow--linha-precos-prod-din {
+    margin: 0 20px;
+  }
+
+  .flexRowContent--sufixo-prod-din {
+    display: flex;
+    flex-direction: row;
+  }
+
+
 
   .flexColChild--coluna-banner-duvidas,
   .flexColChild--coluna-banner-assist {

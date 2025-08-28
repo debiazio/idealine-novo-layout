@@ -433,12 +433,6 @@
       "flex-layout.row#product-breadcrumb"
     ]
   },
-  "flex-layout.row#colunas-product-main": {
-    "children": [
-      "flex-layout.col#product-left-col",
-      "flex-layout.col#product-right-col"
-    ]
-  },
   // linha do produto
   "flex-layout.row#mobile-product-main": {
     "props": {
@@ -456,6 +450,10 @@
       "product-rating-summary", // avaliações
       "flex-layout.row#add-to-list-btn",
       "flex-layout.row#imagens-produto-mobile",
+      "flex-layout.row#product-din-precos",
+            "sku-selector#prod-din",
+      "rich-text#cores-product-din",
+      "flex-layout.row#product-din-selector-produtos",
       // "stack-layout",
       // "condition-layout.product#compre-junto-esmalteira-mobile",
       // "condition-layout.product#compre-junto-incubadora-mobile",
@@ -506,14 +504,14 @@
     ]
   },
   // LINHA IMAGENS MOBILE
-  "flex-layout.row#imagens-produto-mobile":{
+  "flex-layout.row#imagens-produto-mobile": {
     "children": [
       "product-images#mobile"
     ]
   },
-  "product-images#mobile":{
-    "props":{
-      "displayMode":"carousel",
+  "product-images#mobile": {
+    "props": {
+      "displayMode": "carousel",
       "showNavigationArrows": true,
       "displayThumbnailsArrows": false,
       "showPaginationDots": false,
@@ -521,20 +519,6 @@
       "thumbnailsOrientation": "horizontal",
       "blockClass": "imagesMobile"
     }
-  },
-
-
-
-  "flex-layout.row#linha-dia-consumidor-esmalteira-mobile": {
-    "props": {
-      "blockClass": "linha-dia-consumidor-incubadora",
-      "preventHorizontalStretch": true,
-      "fullWidth": true
-    },
-    "children": [
-      "image#dia-do-consumidor-esmalteira-mobile"
-      // "modal-trigger#dia-consumidor-esmalteira-mobile"
-    ]
   },
   "image#dia-do-consumidor-esmalteira-mobile": {
     "props": {
@@ -551,15 +535,6 @@
   //     "modal-layout#dia-consumidor-esmalteira-mobile"
   //   ]
   // },
-  "modal-layout#dia-consumidor-esmalteira-mobile": {
-    "props": {
-      "blockClass": "modal-banner-dia-consumidor-incubadora"
-    },
-    "children": [
-      "modal-header#close-dia-consumidor-esmalteira-mobile",
-      "image#dia-do-consumidor-esmalteira-mobile"
-    ]
-  },
   "modal-header#close-dia-consumidor-esmalteira-mobile": {
     "props": {
       "blockClass": "close-dia-consumidor",

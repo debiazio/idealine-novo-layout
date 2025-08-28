@@ -145,6 +145,11 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  .installments--prod-din-preco-parcelado {
+    font-size: 18px;
+    white-space: nowrap;
+  }
+
   .spotPriceSavings--summary {
     text-align: center;
   }
