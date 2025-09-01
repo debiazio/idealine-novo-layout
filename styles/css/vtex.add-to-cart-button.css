@@ -1,5 +1,8 @@
 /* vtex-add-to-cart-button-0-x-tooltipLabelText vtex-add-to-cart-button-0-x-tooltipLabelText--botao-comprar */
-
+.buttonText--botao-comprar{
+  font-weight: 900;
+  font-size: 20px;
+}
 
 .tooltipLabelText--botao-comprar{
   color: black;

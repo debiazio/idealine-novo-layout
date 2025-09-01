@@ -1,3 +1,7 @@
+.summaryTotalReviews{
+  display: none;
+}
+
 .container {
   max-width: 96rem;
   /* padding-left: .5rem;

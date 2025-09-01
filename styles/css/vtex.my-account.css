@@ -1,5 +1,7 @@
 /* idealine paleta */
 
+
+
 :root {
   --rosa-da-rosa: #fc51a7;
   --rosa-pink-escuro: #e90b91;
@@ -16,23 +18,24 @@
 }
 
 
-.link-0-x-childrenContainer--link-baixar-manuais button{
+.link-0-x-childrenContainer--link-baixar-manuais button {
   border: none;
 }
-.instagram-embed{
+
+.instagram-embed {
   display: flex;
   flex-direction: row;
 }
 
 :global(.vtex-store-components-3-x-container--texto-descricao) h1,
-:global(.vtex-store-components-3-x-container--texto-descricao) h2{
+:global(.vtex-store-components-3-x-container--texto-descricao) h2 {
   color: var(--pink);
 }
 
 :global(.vtex-textarea__label),
 :global(.vtex-input__label) {
   /* padding: 10px; */
-  padding-top: 20px;
+  padding-top: 0px;
   font-size: 1.1rem;
 }
 
@@ -99,18 +102,19 @@ input:-webkit-autofill {
   border: none;
   border-radius: 5px;
   transition: transform 0.5s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
   margin: 1px 1px 1px 1px;
   width: 100%;
 }
 
 :global(.vtex-flex-layout-0-x-flexColChild--botao-de-comprar) button {
-  background-color: var(--pink);
+  background-color: #FEBBCE;
   position: relative;
   overflow: hidden;
   border: none;
   transition: transform 0.5s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+
   /* width: 300px; */
 }
 
@@ -119,6 +123,7 @@ input:-webkit-autofill {
   transform: scale(1.02);
   transition: transform 0.5s ease, box-shadow 0.3s ease;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  background-color: #FEBBCE;
 }
 
 :global(.vtex-flex-layout-0-x-flexColChild--coluna-buscar-cep) button:hover {
@@ -129,16 +134,6 @@ input:-webkit-autofill {
 
 }
 
-:global(.vtex-flex-layout-0-x-flexColChild--botao-de-comprar) button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -50%;
-  width: 90%;
-  height: 100%;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
-  animation: shimmer 3s infinite;
-}
 
 
 @keyframes shimmer {
@@ -165,21 +160,11 @@ input:-webkit-autofill {
   background-color: var(--rosa-pink-escuro);
 }
 
-/*
-  :global(.vtex-menu-2-x-styledLinkContent){
-    color: #ede7eb;
-  } */
-
-
-/*
-  @media screen and (max-width: 1024px) {
-
-    } */
-
-
 :global(.vtex-numeric-stepper-container) {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  margin: 0;
+  padding: 35px 20px 10px;
 }
 
 
@@ -193,4 +178,3 @@ input:-webkit-autofill {
 .emailInputContainer--inputs-form-roleta input {
   color: #bcb2ba;
 }
-

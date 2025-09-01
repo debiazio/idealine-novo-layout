@@ -1,3 +1,8 @@
+.wrapper--texto-pos-pdp{
+  font-size: small;
+  color: #696969;
+}
+
 .container--texto-ou {
   font-size: 23px;
   color: #FEBBCE;
@@ -428,8 +433,10 @@
 /* botao cep */
 .paragraph--texto-botao-frete {
   color: var(--preto-raisin);
+  font-size: 20px;
+  font-weight: 900;
+  padding: 3px;
   margin: 0;
-  padding: 7px;
   align-items: center;
   text-align: center;
 }
@@ -762,16 +769,17 @@
 
 
 @media screen and (max-width: 1024px) {
-  .container--titulo-cores{
+  .container--titulo-cores {
     padding: 0 20px;
   }
-  
+
   .heading--titulo-instagram {
     font-size: 30px;
   }
 
   .paragraph--texto-botao-frete {
-    font-size: 14px;
+    font-size: 20px;
+    color: #696969;
   }
 
   .container--dia-consumidor-tag-falsa {

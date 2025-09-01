@@ -15,3 +15,11 @@
   border-radius: 0px 0px 30px 30px;
 }
 
+.trigger--trigger-disclosure{
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+

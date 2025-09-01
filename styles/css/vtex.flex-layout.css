@@ -1,3 +1,12 @@
+.flexCol--coluna-superior-direita-din {
+  display: flex;
+  flex-direction: row;
+}
+
+.flexRowContent--texto-pdp-container {
+  margin-top: 12px;
+}
+
 .flexRow--linha-precos-prod-din {
   margin: 25px 0;
 }
@@ -569,9 +578,10 @@
 }
 
 /* quantidade */
-.numeric-stepper-container {
+/* .numeric-stepper-container {
   background-color: #e80e7b;
 }
+  */
 
 .numeric-stepper__plus-button {
   background-color: transparent;
@@ -579,13 +589,23 @@
 }
 
 
-.quantitySelectorContainer {
-  background-color: #f21b63;
+
+.quantitySelectorContainer--seletor-quantidade {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
 }
 
+.quantitySelectorContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+/*
 .quantitySelectorStepper--seletor-quantidade {
   background-color: var(--violeta);
-}
+} */
 
 
 /* botao comprar */
@@ -946,10 +966,24 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .flexRowContent--product-selecor-prod-din{
+  .flexRow--linha-resultados-frete {
+  margin-left: unset;
+}
+
+  .flexCol--coluna-superior-direita-din {
     display: flex;
     flex-direction: row;
-    padding: 0 20px ;
+    justify-content: flex-end;
+  }
+
+  .flexColChild--coluna-superior-esquerda-din {
+    margin-top: -55px;
+  }
+
+  .flexRowContent--product-selecor-prod-din {
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px;
   }
 
   .flexRow--linha-precos-prod-din {
@@ -1494,6 +1528,12 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .flexRowContent--linha-botoes-comprar-buscarCep {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
   .flexRow--favoritos-mobile {
     padding: 0;
     display: flex;

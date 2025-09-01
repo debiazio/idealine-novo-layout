@@ -1,3 +1,7 @@
+.skuSelectorSubcontainer--voltagem {
+  margin: 0;
+}
+
 .skuSelectorInternalBox--prod-din-sku-selector {
   border-radius: 50%;
   min-width: 20px;
@@ -627,17 +631,29 @@
 }
 
 @media screen and (max-width: 1024px) {
-.skuSelectorSubcontainer{
-  margin: 0;
+.carouselContainer--imagesMobile{
+  padding: 0 20px;
 }
 
-.skuSelectorItem--prod-din-sku-selector--110v::after {
-  font-size: 20px;
-}
+  .productReference{
+    font-size: 8px;
+  }
 
-.skuSelectorItem--prod-din-sku-selector--220v::after {
-  font-size: 20px;
-}
+  .productNameContainer {
+    margin: 0 20px 20px 20px;
+  }
+
+  .skuSelectorSubcontainer {
+    margin: 0;
+  }
+
+  .skuSelectorItem--prod-din-sku-selector--110v::after {
+    font-size: 20px;
+  }
+
+  .skuSelectorItem--prod-din-sku-selector--220v::after {
+    font-size: 20px;
+  }
 
   .productImagesThumb--imagesMobile {
     width: 25%;
@@ -649,7 +665,7 @@
   }
 
   .productImagesGallerySwiperContainer {
-    margin: 20px;
+    margin: 20px 0;
     box-shadow: 6px 6px 17px 0 rgba(0, 0, 0, 0.25);
     border-radius: 10px;
   }
@@ -657,6 +673,12 @@
   .carouselGaleryThumbs--imagesMobile {
     display: contents;
   }
+
+  .skuSelectorOptionsList{
+    margin-left: 0;
+  }
+
+
 
   .productImageTag {
     max-height: unset !important;

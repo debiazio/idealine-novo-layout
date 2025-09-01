@@ -242,7 +242,10 @@
       "flex-layout.row#product-din-precos",
       "sku-selector#prod-din",
       "rich-text#cores-product-din",
-      "flex-layout.row#product-din-selector-produtos"
+      "flex-layout.row#product-din-selector-produtos",
+      "product-quantity",
+      "flex-layout.row#botoes-comprar-bucarcep",
+      "flex-layout.row#texto-pos-pdp"
     ]
   },
   // LINHA SUPERIOR FUNDO DINAMICO
@@ -252,16 +255,61 @@
       "colSizing": "auto"
     },
     "children": [
-      "product-rating-summary", // avaliações
-      "rich-text#temp-pag-din"
-      // "share#pag-din"
+      "flex-layout.col#coluna-superior-esquerda-din",
+      "flex-layout.col#coluna-superior-direita-din"
     ]
   },
-  "rich-text#temp-pag-din": {
+  "flex-layout.col#coluna-superior-esquerda-din": {
     "props": {
-      "text": "Compartilhar"
+      "blockClass": "coluna-superior-esquerda-din",
+      "colSizing": "auto"
+    },
+    "children": [
+      "product-rating-summary" // avaliações
+    ]
+  },
+  "flex-layout.col#coluna-superior-direita-din": {
+    "props": {
+      "blockClass": "coluna-superior-direita-din",
+      "colSizing": "auto"
+    },
+    "children": [
+      "overlay-trigger#share",
+      "flex-layout.row#add-to-list-btn"
+    ]
+  },
+  "overlay-trigger#share":{
+    "props": {
+      "blockClass": "share-button-trigger"
+    },
+    "children": [
+      "image#share",
+      "overlay-layout#share"
+    ]
+  },
+  "image#share":{
+    "props": {
+      "src": "assets/share-button.svg"
     }
   },
+  "overlay-layout#share":{
+    "props": {
+      "placement":"bottom",
+      "blockClass": "share-button-response"
+    },
+    "children":[
+      "share"
+    ]
+  },
+  "share":{
+    "props": {
+
+    }
+  },
+
+
+
+
   // NOME DO PRODUTO DINAMICO
   "flex-layout.row#product-name-fundo-dinamico": {
     "props": {
@@ -424,6 +472,21 @@
   //     }
   //     }
   // },
+  // TEXTO POS PDP
+  "flex-layout.row#texto-pos-pdp": {
+    "props": {
+      "blockClass": "texto-pdp-container"
+    },
+    "children": [
+      "rich-text#texto-pos-pdp"
+    ]
+  },
+  "rich-text#texto-pos-pdp": {
+    "props": {
+      "blockClass": "texto-pos-pdp",
+      "text": "Escolha sua forma de pagamento e aproveite ;)\nOfertas promocionais, cupons, brindes e descontos não são acumulativos e estão\nsujeitos à disponibilidade (verifique na finalização da compra)."
+    }
+  },
   // linha do produto
   "flex-layout.row#product-main": {
     "props": {
@@ -446,24 +509,26 @@
   "flex-layout.col#mobile-product-left-col": {
     "children": [
       "flex-layout.row#breadcrumb-mobile",
-      "flex-layout.row#product-name",
-      "product-rating-summary", // avaliações
-      "flex-layout.row#add-to-list-btn",
+      "flex-layout.row#product-name-fundo-dinamico",
+      "flex-layout.row#linhasuperior-fundo-din",
+      // "flex-layout.row#add-to-list-btn",
       "flex-layout.row#imagens-produto-mobile",
       "flex-layout.row#product-din-precos",
-            "sku-selector#prod-din",
+      "sku-selector#prod-din",
       "rich-text#cores-product-din",
       "flex-layout.row#product-din-selector-produtos",
+      "product-quantity",
+      "flex-layout.row#botoes-comprar-bucarcep",
       // "stack-layout",
       // "condition-layout.product#compre-junto-esmalteira-mobile",
       // "condition-layout.product#compre-junto-incubadora-mobile",
       "condition-layout.product#visualizador3d-sweet-pink", //vr
       "condition-layout.product#visualizador3d-sweet-black",
-      "flex-layout.row#list-price-savings", // preco sem desconto, riscado
-      "flex-layout.row#selling-price", // preco a vista
-      "flex-layout.row#linha-parcelas",
-      "sku-selector",
-      "flex-layout.row#mobile-quantidade-cep",
+      // "flex-layout.row#list-price-savings", // preco sem desconto, riscado -- apagar
+      // "flex-layout.row#selling-price", // preco a vista -- apagar
+      // "flex-layout.row#linha-parcelas", --apagar
+      // "sku-selector", -- apagar
+      // "flex-layout.row#mobile-quantidade-cep", -- apagar
       "flex-layout.row#vantagens-pgto-a-vista",
       "condition-layout.product#branco-perola",
       "condition-layout.product#rosa",
@@ -520,27 +585,7 @@
       "blockClass": "imagesMobile"
     }
   },
-  "image#dia-do-consumidor-esmalteira-mobile": {
-    "props": {
-      "blockClass": "imagem-dia-do-consumidor-incubadora",
-      "alt": "Dia do Consumidor",
-      "src": "assets/Banner MOBILE compre e ganhe.webp"
-    }
-  },
-  // "modal-trigger#dia-consumidor-esmalteira-mobile": {
-  //   "props": {
-  //     "trigger": "load"
-  //   },
-  //   "children": [
-  //     "modal-layout#dia-consumidor-esmalteira-mobile"
-  //   ]
-  // },
-  "modal-header#close-dia-consumidor-esmalteira-mobile": {
-    "props": {
-      "blockClass": "close-dia-consumidor",
-      "showCloseButton": true
-    }
-  },
+
   // LINHA DE PREÇO PARCELADO MOBILE
   "flex-layout.row#linha-parcelas": {
     "props": {
@@ -562,7 +607,6 @@
       "flex-layout.row#botoes-comprar-bucarcep"
     ]
   },
-  // linha favoritos mobile
   "flex-layout.row#add-to-list-btn": {
     "props": {
       "blockClass": "favoritos-mobile"
