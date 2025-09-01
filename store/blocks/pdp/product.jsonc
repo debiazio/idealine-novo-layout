@@ -511,7 +511,6 @@
       "flex-layout.row#breadcrumb-mobile",
       "flex-layout.row#product-name-fundo-dinamico",
       "flex-layout.row#linhasuperior-fundo-din",
-      // "flex-layout.row#add-to-list-btn",
       "flex-layout.row#imagens-produto-mobile",
       "flex-layout.row#product-din-precos",
       "sku-selector#prod-din",
@@ -519,9 +518,6 @@
       "flex-layout.row#product-din-selector-produtos",
       "product-quantity",
       "flex-layout.row#botoes-comprar-bucarcep",
-      // "stack-layout",
-      // "condition-layout.product#compre-junto-esmalteira-mobile",
-      // "condition-layout.product#compre-junto-incubadora-mobile",
       "condition-layout.product#visualizador3d-sweet-pink", //vr
       "condition-layout.product#visualizador3d-sweet-black",
       // "flex-layout.row#list-price-savings", // preco sem desconto, riscado -- apagar
