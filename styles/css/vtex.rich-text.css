@@ -467,6 +467,9 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  .paragraph--texto-pos-pdp{
+    margin: 0 20px;
+  }
 
   .container--titulo-menus-footer-mobile {
     font-weight: 800;

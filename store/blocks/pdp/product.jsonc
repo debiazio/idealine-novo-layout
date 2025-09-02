@@ -278,7 +278,7 @@
       "flex-layout.row#add-to-list-btn"
     ]
   },
-  "overlay-trigger#share":{
+  "overlay-trigger#share": {
     "props": {
       "blockClass": "share-button-trigger"
     },
@@ -287,29 +287,30 @@
       "overlay-layout#share"
     ]
   },
-  "image#share":{
+  "image#share": {
     "props": {
       "src": "assets/share-button.svg"
     }
   },
-  "overlay-layout#share":{
+  "overlay-layout#share": {
     "props": {
-      "placement":"bottom",
+      "placement": "bottom",
       "blockClass": "share-button-response"
     },
-    "children":[
+    "children": [
       "share"
     ]
   },
-  "share":{
+  "share": {
     "props": {
-
+      "social": {
+        "Facebook": true,
+        "WhatsApp": true,
+        "Twitter": true,
+        "Pinterest": false
+      }
     }
   },
-
-
-
-
   // NOME DO PRODUTO DINAMICO
   "flex-layout.row#product-name-fundo-dinamico": {
     "props": {
@@ -484,7 +485,7 @@
   "rich-text#texto-pos-pdp": {
     "props": {
       "blockClass": "texto-pos-pdp",
-      "text": "Escolha sua forma de pagamento e aproveite ;)\nOfertas promocionais, cupons, brindes e descontos não são acumulativos e estão\nsujeitos à disponibilidade (verifique na finalização da compra)."
+      "text": "Escolha sua forma de pagamento e aproveite ;)\nOfertas promocionais, cupons, brindes e descontos não são acumulativos e estão sujeitos à disponibilidade (verifique na finalização da compra)."
     }
   },
   // linha do produto
@@ -493,7 +494,9 @@
       "blockClass": "product-main"
     },
     "children": [
-      "flex-layout.row#product-breadcrumb"
+      "flex-layout.row#product-breadcrumb",
+      "flex-layout.col#product-left-col",
+      "flex-layout.col#product-right-col"
     ]
   },
   // linha do produto
@@ -518,6 +521,7 @@
       "flex-layout.row#product-din-selector-produtos",
       "product-quantity",
       "flex-layout.row#botoes-comprar-bucarcep",
+      "flex-layout.row#texto-pos-pdp",
       "condition-layout.product#visualizador3d-sweet-pink", //vr
       "condition-layout.product#visualizador3d-sweet-black",
       // "flex-layout.row#list-price-savings", // preco sem desconto, riscado -- apagar
@@ -581,7 +585,6 @@
       "blockClass": "imagesMobile"
     }
   },
-
   // LINHA DE PREÇO PARCELADO MOBILE
   "flex-layout.row#linha-parcelas": {
     "props": {

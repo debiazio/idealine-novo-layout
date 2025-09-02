@@ -164,7 +164,7 @@ input:-webkit-autofill {
   display: flex;
   flex-direction: row;
   margin: 0;
-  padding: 35px 20px 10px;
+  padding: 35px 20px 10px 0px;
 }
 
 
@@ -177,4 +177,11 @@ input:-webkit-autofill {
 
 .emailInputContainer--inputs-form-roleta input {
   color: #bcb2ba;
+}
+
+
+@media screen and (max-width: 1024px) {
+  :global(.vtex-numeric-stepper-container) {
+    padding: 35px 20px 10px;
+  }
 }

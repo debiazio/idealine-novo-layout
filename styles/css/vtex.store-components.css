@@ -631,9 +631,24 @@
 }
 
 @media screen and (max-width: 1024px) {
-.caretIcon--imagesMobile{
-  background-image: url(https://mfmgroup.vtexassets.com/assets/vtex.file-manager-graphql/images/b49c88ca-fd75-4c2b-a691-706c5110e298___7b8c8d216aae657ea7f6add97a058771.svg;)
-}
+  .caretIcon {
+    overflow: visible !important;
+    height: 10px;
+    width: 16px;
+    margin-right: 12px;
+  }
+
+  .caretIcon--imagesMobile {
+    overflow: visible;
+  }
+
+  .thumbImg {
+    border-radius: 5px;
+  }
+
+
+
+
 
   .carouselContainer--imagesMobile {
     padding: 0 20px;
@@ -659,13 +674,18 @@
     font-size: 20px;
   }
 
+
   .productImagesThumb--imagesMobile {
-    width: 25%;
+    width: 25% !important;
+    height: unset !important;
   }
 
   .figure--imagesMobile {
-    border: 1px solid rgba(0, 0, 0, 0.25);
+    border: none;
     margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+
   }
 
   .productImagesGallerySwiperContainer {
@@ -798,11 +818,10 @@
 
   .swiperCaretNext,
   .swiperCaret {
-    margin: 0;
-    padding: 10px;
+    padding: 2px 0px 8px 0px;
     border-radius: 50%;
     background: white;
-    box-shadow: grey 2px 2px 2px 2px;
+    box-shadow: #80808045 1px 1px 12px 2px;
   }
 
   .swiper-pagination {
