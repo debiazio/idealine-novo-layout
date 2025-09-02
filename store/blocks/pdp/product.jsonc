@@ -13,13 +13,18 @@
   // linha que mostra o caminho até o conteúdo
   "flex-layout.row#product-breadcrumb": {
     "props": {
-      "blockClass": "breadcrumb",
+      "blockClass": "prodcomum-breadcrumb",
       "fullWidth": true,
       "colSizing": "auto"
     },
     "children": [
-      "breadcrumb"
+      "breadcrumb#produto-comum"
     ]
+  },
+  "breadcrumb#produto-comum":{
+    "props": {
+      "blockClass": "breadcrumb-child"
+    }
   },
   // LAYOUT DESKTOP
   "responsive-layout.desktop#availability": {
@@ -169,6 +174,7 @@
     "children": [
       "flex-layout.col#coluna-esquerda-fundo-dinamico",
       "flex-layout.col#coluna-direita-fundo-dinamico"
+
     ]
   },
   //COLUNA ESQUERDA - FUNDO DINAMICO
@@ -488,7 +494,7 @@
       "text": "Escolha sua forma de pagamento e aproveite ;)\nOfertas promocionais, cupons, brindes e descontos não são acumulativos e estão sujeitos à disponibilidade (verifique na finalização da compra)."
     }
   },
-  // linha do produto
+  // linha do produto comum desktop
   "flex-layout.row#product-main": {
     "props": {
       "blockClass": "product-main"
@@ -557,7 +563,8 @@
       "flex-layout.row#reviews-and-ratings"
     ],
     "props": {
-      "width": "60%"
+      "width": "60%",
+      "blockClass": "prod-comum-col-esquerda"
     }
   },
   "flex-layout.row#breadcrumb-mobile": {

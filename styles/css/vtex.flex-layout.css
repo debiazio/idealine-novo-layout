@@ -32,7 +32,7 @@
 
 .flexRowContent--product-main {
   display: flex;
-  flex-direction: column;
+  flex-direction: rowqe;
 }
 
 
