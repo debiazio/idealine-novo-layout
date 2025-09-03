@@ -38,7 +38,7 @@
       "condition-layout.product#mobile-availability"
     ]
   },
-  // avalia se o produto tem estoque
+  // avalia se o produto tem estoque MOBILE
   "condition-layout.product#mobile-availability": {
     "props": {
       "conditions": [
@@ -46,8 +46,98 @@
           "subject": "isProductAvailable"
         }
       ],
-      "Then": "flex-layout.row#mobile-product-main",
+      // "Then": "flex-layout.row#mobile-product-main",
+      "Then": "condition-layout.product#mobile-fundo-dinamico",
       "Else": "flex-layout.row#product-availability"
+    }
+  },
+  "condition-layout.product#mobile-fundo-dinamico": {
+    "props": {
+      "blockClass": "condicional-fundo-dinamico",
+      "conditions": [
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2945"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2946"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2947"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2948"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2895"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2797"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2795"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2885"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2886"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2887"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2796"
+          }
+        },
+        // GLOWIN
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2954"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2955"
+          }
+        }
+      ],
+      "matchType": "any",
+      "Then": "flex-layout.row#mobile-dinamico-product-main",
+      "Else": "flex-layout.row#mobile-product-main"
     }
   },
   // avalia se o produto tem estoque desktop
@@ -90,6 +180,8 @@
     },
     "children": [
       "flex-layout.row#description",
+      "condition-layout.product#visualizador3d-sweet-pink", //vr
+      "condition-layout.product#visualizador3d-sweet-black",
       "product-specification-group#table",
       "flex-layout.row#reviews-and-ratings",
       "flex-layout.row#relatedProducts"
@@ -463,7 +555,8 @@
       "link.product#bellinha-perola",
       "link.product#bellinha-sweet-pink",
       "link.product#bellinha-sweet-black",
-      "link.product#bellinha-glowin"
+      "link.product#bellinha-glowin",
+      "appalterafundo"
     ]
   },
   "link.product#bellinha-rosa": {
@@ -478,9 +571,9 @@
       "image#rosa-miniatura"
     ]
   },
-  "image#rosa-miniatura":{
+  "image#rosa-miniatura": {
     "props": {
-            "blockClass": [
+      "blockClass": [
         "miniaturas",
         "rosa-miniatura"
       ],
@@ -499,9 +592,9 @@
       "image#rose-gold-miniatura"
     ]
   },
-  "image#rose-gold-miniatura":{
+  "image#rose-gold-miniatura": {
     "props": {
-            "blockClass": [
+      "blockClass": [
         "miniaturas",
         "rose-gold-miniatura"
       ],
@@ -520,9 +613,9 @@
       "image#perola-miniatura"
     ]
   },
-  "image#perola-miniatura":{
+  "image#perola-miniatura": {
     "props": {
-            "blockClass": [
+      "blockClass": [
         "miniaturas",
         "perola-miniatura"
       ],
@@ -564,7 +657,7 @@
   },
   "image#sweet-black-miniatura": {
     "props": {
-            "blockClass": [
+      "blockClass": [
         "miniaturas",
         "black-miniatura"
       ],
@@ -585,7 +678,7 @@
   },
   "image#glowin-miniatura": {
     "props": {
-            "blockClass": [
+      "blockClass": [
         "miniaturas",
         "glowin-miniatura"
       ],
@@ -624,6 +717,66 @@
       "flex-layout.col#product-right-col"
     ]
   },
+    // linha do produto
+  "flex-layout.row#mobile-dinamico-product-main": {
+    "props": {
+      "blockClass": "product-main"
+    },
+    "children": [
+      "flex-layout.col#mobile-product-coluna-prod-dinamico"
+    ]
+  },
+  // coluna da esquerda MOBILE
+  "flex-layout.col#mobile-product-coluna-prod-dinamico": {
+    "children": [
+      "flex-layout.row#breadcrumb-mobile",
+      "flex-layout.row#product-name-fundo-dinamico",
+      "flex-layout.row#linhasuperior-fundo-din",
+      "flex-layout.row#imagens-produto-mobile",
+      "flex-layout.row#product-din-precos",
+      "sku-selector#prod-din",
+      "rich-text#cores-product-din",
+      "flex-layout.row#product-din-selector-produtos",
+      "product-quantity",
+      "flex-layout.row#botoes-comprar-bucarcep",
+      "flex-layout.row#texto-pos-pdp",
+      // "flex-layout.row#list-price-savings", // preco sem desconto, riscado -- apagar
+      // "flex-layout.row#selling-price", // preco a vista -- apagar
+      // "flex-layout.row#linha-parcelas", --apagar
+      // "sku-selector", -- apagar
+      // "flex-layout.row#mobile-quantidade-cep", -- apagar
+      "flex-layout.row#vantagens-pgto-a-vista",
+      "condition-layout.product#branco-perola",
+      "condition-layout.product#rosa",
+      "condition-layout.product#rosa-padrao2",
+      "condition-layout.product#rosa-gold",
+      "condition-layout.product#rosa-gold-padrao2",
+      "condition-layout.product#rose-gold-laBelle-8l",
+      "condition-layout.product#rose-gold-labelle-8l-padrao2",
+      "condition-layout.product#rose-gold-idealclave-8l",
+      "condition-layout.product#rose-gold-idealclave-8l-padrao2",
+      "condition-layout.product#perola-idealclave-8l",
+      "condition-layout.product#perola-idealclave-8l-padrao2",
+      "condition-layout.product#perola-8l-labelle",
+      "condition-layout.product#perola-8l-labelle-padrao2",
+      "condition-layout.product#rosa-idealclave-8l",
+      "condition-layout.product#rosa-idealclave-8l-padrao2",
+      "condition-layout.product#rosa-laBelle-8l",
+      "condition-layout.product#rosa-laBelle-8l-padrao2",
+      // "flex-layout.row#description",
+      "condition-layout.product#manual-21l-vida",
+      "condition-layout.product#manual-12l-21l-opta",
+      "condition-layout.product#manual-30-42-60-75-vida",
+      "condition-layout.product#manual-75-vida-VERTICAL"
+      // "product-specification-group#table",
+      // "flex-layout.row#relatedProducts",
+      // "flex-layout.row#reviews-and-ratings"
+    ],
+    "props": {
+      "width": "60%",
+      "blockClass": "prod-comum-col-esquerda"
+    }
+  },
   // linha do produto
   "flex-layout.row#mobile-product-main": {
     "props": {
@@ -642,13 +795,9 @@
       "flex-layout.row#imagens-produto-mobile",
       "flex-layout.row#product-din-precos",
       "sku-selector#prod-din",
-      "rich-text#cores-product-din",
-      "flex-layout.row#product-din-selector-produtos",
       "product-quantity",
       "flex-layout.row#botoes-comprar-bucarcep",
       "flex-layout.row#texto-pos-pdp",
-      "condition-layout.product#visualizador3d-sweet-pink", //vr
-      "condition-layout.product#visualizador3d-sweet-black",
       // "flex-layout.row#list-price-savings", // preco sem desconto, riscado -- apagar
       // "flex-layout.row#selling-price", // preco a vista -- apagar
       // "flex-layout.row#linha-parcelas", --apagar

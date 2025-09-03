@@ -56,7 +56,7 @@
 }
 
 .productReference {
-  font-size: 15px;
+  font-size: 0.7rem;
   font-weight: 200;
 }
 
@@ -276,7 +276,7 @@
 .productNameContainer {
   color: #696969;
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 
 .image {
@@ -668,7 +668,7 @@
   }
 
   .productReference {
-    font-size: 8px;
+    font-size: 0.5rem;
   }
 
   .productNameContainer {
@@ -726,7 +726,7 @@
 
   .productNameContainer {
     color: #696969;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   .imageElement--imagem-categorias {
