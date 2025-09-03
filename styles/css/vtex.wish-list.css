@@ -3,6 +3,15 @@
     flex-direction: row-reverse;
 } */
 
+.wishlistIconContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.wishlistIconContainer--fav-dinamic-background{
+  display: flex;
+  justify-content: flex-start;
+}
 
 
 .wishlistIconContainer :global(.vtex-button) {
@@ -31,6 +40,7 @@
   width: 25px;
   height: 23px;
 }
+
 /* MOBILE */
 @media screen and (max-width: 1024px) {
 

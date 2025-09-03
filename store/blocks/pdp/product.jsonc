@@ -4,14 +4,14 @@
       "flex-layout.row#script_rd",
       "responsive-layout.desktop#availability",
       "responsive-layout.mobile#availability",
-      "flex-layout.row#reviews-and-ratings",
+      "condition-layout.product#elementos-sec-pdp-availability",
       "flex-layout.row#topsales",
       "rich-text#certificacoes-titulo",
       "flex-layout.row#certificacoes"
     ]
   },
   // linha que mostra o caminho até o conteúdo
-  "flex-layout.row#product-breadcrumb": {
+  "flex-layout.row#product-breadcrumb-comum": {
     "props": {
       "blockClass": "prodcomum-breadcrumb",
       "fullWidth": true,
@@ -21,7 +21,7 @@
       "breadcrumb#produto-comum"
     ]
   },
-  "breadcrumb#produto-comum":{
+  "breadcrumb#produto-comum": {
     "props": {
       "blockClass": "breadcrumb-child"
     }
@@ -61,6 +61,39 @@
       "Then": "condition-layout.product#fundo-dinamico",
       "Else": "flex-layout.row#product-availability"
     }
+  },
+  //avalia se o produto está disponível - itens secundários
+  "condition-layout.product#elementos-sec-pdp-availability": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "flex-layout.row#itens-secundarios",
+      "Else": "flex-layout.row#product-availability"
+    }
+  },
+  //linha abaixo das imagens
+  "flex-layout.row#itens-secundarios": {
+    "props": {
+      "blockClass": "linha2-secundaria"
+    },
+    "children": [
+      "flex-layout.col#coluna-esqueda-secundarios"
+    ]
+  },
+  // ITENS SECUNDÁRIOS COLUNA DA ESQUERDA
+  "flex-layout.col#coluna-esqueda-secundarios": {
+    "props": {
+      "blockClass": "coluna-esquerda-secundarios"
+    },
+    "children": [
+      "flex-layout.row#description",
+      "product-specification-group#table",
+      "flex-layout.row#reviews-and-ratings",
+      "flex-layout.row#relatedProducts"
+    ]
   },
   "condition-layout.product#fundo-dinamico": {
     "props": {
@@ -131,6 +164,19 @@
           "arguments": {
             "id": "2796"
           }
+        },
+        // GLOWIN
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2954"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2955"
+          }
         }
       ],
       "matchType": "any",
@@ -146,12 +192,12 @@
       "colSizing": "auto"
     },
     "children": [
-      "flex-layout.row#product-breadcrumb-dinamic",
+      "flex-layout.row#product-breadcrumb-comum-dinamic",
       "appalterafundo",
       "flex-layout.row#linha-produto-fundo-dinamico"
     ]
   },
-  "flex-layout.row#product-breadcrumb-dinamic": {
+  "flex-layout.row#product-breadcrumb-comum-dinamic": {
     "props": {
       "blockClass": "breadcrumb-dinamic",
       "fullWidth": true,
@@ -174,7 +220,6 @@
     "children": [
       "flex-layout.col#coluna-esquerda-fundo-dinamico",
       "flex-layout.col#coluna-direita-fundo-dinamico"
-
     ]
   },
   //COLUNA ESQUERDA - FUNDO DINAMICO
@@ -281,7 +326,7 @@
     },
     "children": [
       "overlay-trigger#share",
-      "flex-layout.row#add-to-list-btn"
+      "flex-layout.row#add-to-list-btn-din"
     ]
   },
   "overlay-trigger#share": {
@@ -417,7 +462,8 @@
       "link.product#bellinha-rose-gold",
       "link.product#bellinha-perola",
       "link.product#bellinha-sweet-pink",
-      "link.product#bellinha-sweet-black"
+      "link.product#bellinha-sweet-black",
+      "link.product#bellinha-glowin"
     ]
   },
   "link.product#bellinha-rosa": {
@@ -426,8 +472,19 @@
         "label-botao",
         "link-bell-rosa"
       ],
-      "href": "/autoclave-idealclave-bellinha-5-litros-com-tecnologia-dvm-rosa-pronta-entrega/p",
-      "label": "r"
+      "href": "/autoclave-idealclave-bellinha-com-tecnologia-dvm-rosa/p"
+    },
+    "children": [
+      "image#rosa-miniatura"
+    ]
+  },
+  "image#rosa-miniatura":{
+    "props": {
+            "blockClass": [
+        "miniaturas",
+        "rosa-miniatura"
+      ],
+      "src": "assets/rosa-miniatura.png"
     }
   },
   "link.product#bellinha-rose-gold": {
@@ -436,8 +493,19 @@
         "label-botao",
         "link-bell-rose-gold"
       ],
-      "href": "/autoclave-idealclave-bellinha-5-litros-com-tecnologia-dvm-rose-gold-pronta-entrega/p",
-      "label": "g"
+      "href": "/autoclave-idealclave-bellinha-com-tecnologia-dvm-rose-gold/p"
+    },
+    "children": [
+      "image#rose-gold-miniatura"
+    ]
+  },
+  "image#rose-gold-miniatura":{
+    "props": {
+            "blockClass": [
+        "miniaturas",
+        "rose-gold-miniatura"
+      ],
+      "src": "assets/rose-gold-miniatura.png"
     }
   },
   "link.product#bellinha-perola": {
@@ -446,8 +514,19 @@
         "label-botao",
         "link-bell-perola"
       ],
-      "href": "/autoclave-idealclave-bellinha-5-litros-com-tecnologia-dvm-perola-pronta-entrega/p",
-      "label": "p"
+      "href": "/autoclave-idealclave-bellinha-com-tecnologia-dvm-perola/p"
+    },
+    "children": [
+      "image#perola-miniatura"
+    ]
+  },
+  "image#perola-miniatura":{
+    "props": {
+            "blockClass": [
+        "miniaturas",
+        "perola-miniatura"
+      ],
+      "src": "assets/perola-miniatura.png"
     }
   },
   "link.product#bellinha-sweet-pink": {
@@ -456,8 +535,19 @@
         "label-botao",
         "link-sweet-pink"
       ],
-      "href": "/autoclave-bellinha-5l-sweet-pink/p",
-      "label": "s"
+      "href": "/autoclave-bellinha-5l-sweet-pink/p"
+    },
+    "children": [
+      "image#sweet-pink-miniatura"
+    ]
+  },
+  "image#sweet-pink-miniatura": {
+    "props": {
+      "blockClass": [
+        "miniaturas",
+        "pink-miniatura"
+      ],
+      "src": "assets/sweet-pink-miniatura.svg"
     }
   },
   "link.product#bellinha-sweet-black": {
@@ -466,19 +556,42 @@
         "label-botao",
         "link-sweet-black"
       ],
-      "href": "/autoclave-bellinha-5l-sweet-black/p",
-      "label": "b"
+      "href": "/autoclave-bellinha-5l-sweet-black/p"
+    },
+    "children": [
+      "image#sweet-black-miniatura"
+    ]
+  },
+  "image#sweet-black-miniatura": {
+    "props": {
+            "blockClass": [
+        "miniaturas",
+        "black-miniatura"
+      ],
+      "src": "assets/sweet-black-miniatura.svg"
     }
   },
-  // "share#pag-din": {
-  //   "props": {
-  //     "social": {
-  //       "Facebook": true,
-  //       "WhatsApp": true,
-  //       "Twitter": true
-  //     }
-  //     }
-  // },
+  "link.product#bellinha-glowin": {
+    "props": {
+      "blockClass": [
+        "label-botao",
+        "link-glowin"
+      ],
+      "href": "#"
+    },
+    "children": [
+      "image#glowin-miniatura"
+    ]
+  },
+  "image#glowin-miniatura": {
+    "props": {
+            "blockClass": [
+        "miniaturas",
+        "glowin-miniatura"
+      ],
+      "src": "assets/glowin-miniatura.svg"
+    }
+  },
   // TEXTO POS PDP
   "flex-layout.row#texto-pos-pdp": {
     "props": {
@@ -497,10 +610,16 @@
   // linha do produto comum desktop
   "flex-layout.row#product-main": {
     "props": {
-      "blockClass": "product-main"
+      "blockClass": "product-main",
+      "colSizing": "auto"
     },
     "children": [
-      "flex-layout.row#product-breadcrumb",
+      "flex-layout.row#product-breadcrumb-comum",
+      "flex-layout.row#colunas-produto-comum"
+    ]
+  },
+  "flex-layout.row#colunas-produto-comum": {
+    "children": [
       "flex-layout.col#product-left-col",
       "flex-layout.col#product-right-col"
     ]
@@ -553,14 +672,14 @@
       "condition-layout.product#rosa-idealclave-8l-padrao2",
       "condition-layout.product#rosa-laBelle-8l",
       "condition-layout.product#rosa-laBelle-8l-padrao2",
-      "flex-layout.row#description",
+      // "flex-layout.row#description",
       "condition-layout.product#manual-21l-vida",
       "condition-layout.product#manual-12l-21l-opta",
       "condition-layout.product#manual-30-42-60-75-vida",
-      "condition-layout.product#manual-75-vida-VERTICAL",
-      "product-specification-group#table",
-      "flex-layout.row#relatedProducts",
-      "flex-layout.row#reviews-and-ratings"
+      "condition-layout.product#manual-75-vida-VERTICAL"
+      // "product-specification-group#table",
+      // "flex-layout.row#relatedProducts",
+      // "flex-layout.row#reviews-and-ratings"
     ],
     "props": {
       "width": "60%",
@@ -613,6 +732,19 @@
       "flex-layout.row#botoes-comprar-bucarcep"
     ]
   },
+  "flex-layout.row#add-to-list-btn-din": {
+    "props": {
+      "blockClass": "linha-favoritos-dinamic-background"
+    },
+    "children": [
+      "add-to-list-btn"
+    ]
+  },
+  "add-to-list-btn": {
+    "props": {
+      "blockClass": "fav-dinamic-background"
+    }
+  },
   "flex-layout.row#add-to-list-btn": {
     "props": {
       "blockClass": "favoritos-mobile"
@@ -644,14 +776,14 @@
       "condition-layout.product#rosa-idealclave-8l-padrao2",
       "condition-layout.product#rosa-laBelle-8l",
       "condition-layout.product#rosa-laBelle-8l-padrao2",
-      "flex-layout.row#description",
+      // "flex-layout.row#description",
       "condition-layout.product#manual-21l-vida",
       "condition-layout.product#manual-12l-21l-opta",
       "condition-layout.product#manual-30-42-60-75-vida",
-      "condition-layout.product#manual-75-vida-VERTICAL",
-      "product-specification-group#table",
-      "flex-layout.row#reviews-and-ratings",
-      "flex-layout.row#relatedProducts"
+      "condition-layout.product#manual-75-vida-VERTICAL"
+      // "product-specification-group#table",
+      // "flex-layout.row#reviews-and-ratings",
+      // "flex-layout.row#relatedProducts"
     ],
     "props": {
       "width": "60%"
@@ -1793,7 +1925,7 @@
     },
     "children": [
       "flex-layout.row#product-name", // nome
-      "add-to-list-btn",
+      "flex-layout.row#add-to-list-btn",
       "product-rating-summary", // avaliações
       "flex-layout.row#list-price-savings", // preco sem desconto, riscado
       "flex-layout.row#selling-price", // preco a vista

@@ -32,7 +32,7 @@
 
 .flexRowContent--product-main {
   display: flex;
-  flex-direction: rowqe;
+  flex-direction: column;
 }
 
 
@@ -730,7 +730,7 @@
 /* texto vantagens pgto a vista  */
 .flexRow--pgto_a_vista {
   padding: 20px;
-  margin: 20px;
+  margin: 20px 0;
   border: 1px groove var(--magnolia);
   border: 10px solid var(--pink);
 }
@@ -964,6 +964,10 @@
   flex-direction: column;
   align-items: center;
 }
+
+  .flexRowContent--product-selecor-prod-din {
+    gap: 10px;
+  }
 
 @media screen and (max-width: 1024px) {
   .flexRow--linha-resultados-frete {

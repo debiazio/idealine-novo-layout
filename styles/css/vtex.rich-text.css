@@ -432,7 +432,7 @@
 
 /* botao cep */
 .paragraph--texto-botao-frete {
-  color: var(--preto-raisin);
+  color: #696969;
   font-size: 20px;
   font-weight: 900;
   padding: 3px;

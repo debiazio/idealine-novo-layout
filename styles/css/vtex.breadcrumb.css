@@ -3,6 +3,14 @@
   padding: 0;
 }
 
+.link--breadcrumb-child,
+.term--breadcrumb-child,
+.arrow--breadcrumb-child:last-child .link--breadcrumb-child,
+.link--breadcrumb-child:hover,
+.arrow--breadcrumb-child::before{
+  color: #696969!important;
+}
+
 .link--breadcrumb-dinamic-child,
 .term--breadcrumb-dinamic-child{
   font-size: 8px;
