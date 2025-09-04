@@ -1,7 +1,6 @@
 .summaryTotalReviews{
   display: none;
 }
-
 .container {
   max-width: 96rem;
   /* padding-left: .5rem;
@@ -37,6 +36,7 @@
 
 .summaryContainer {
   text-align: left;
+  font-size: small;
 }
 
 @media screen and (max-width: 1024px) {
@@ -45,5 +45,6 @@
   flex-direction: row-reverse;
   padding: 10px 20px;
   align-items: center;
+  font-size: small;
 }
 }
