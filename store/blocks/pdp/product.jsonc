@@ -55,72 +55,72 @@
     "props": {
       "blockClass": "condicional-fundo-dinamico",
       "conditions": [
-        {
-          "subject": "productId",
-          "arguments": {
-            "id": "2945"
-          }
-        },
-        {
-          "subject": "productId",
-          "arguments": {
-            "id": "2946"
-          }
-        },
-        {
-          "subject": "productId",
-          "arguments": {
-            "id": "2947"
-          }
-        },
-        {
-          "subject": "productId",
-          "arguments": {
-            "id": "2948"
-          }
-        },
-        {
-          "subject": "productId",
-          "arguments": {
-            "id": "2895"
-          }
-        },
-        {
-          "subject": "productId",
-          "arguments": {
-            "id": "2797"
-          }
-        },
-        {
-          "subject": "productId",
-          "arguments": {
-            "id": "2795"
-          }
-        },
-        {
-          "subject": "productId",
-          "arguments": {
-            "id": "2885"
-          }
-        },
-        {
-          "subject": "productId",
-          "arguments": {
-            "id": "2886"
-          }
-        },
-        {
-          "subject": "productId",
-          "arguments": {
-            "id": "2887"
-          }
-        },
-        {
-          "subject": "productId",
-          "arguments": {
-            "id": "2796"
-          }
-        },
+        // {
+        //   "subject": "productId",
+        //   "arguments": {
+        //     "id": "2945"
+        //   }
+        // },
+        // {
+        //   "subject": "productId",
+        //   "arguments": {
+        //     "id": "2946"
+        //   }
+        // },
+        // {
+        //   "subject": "productId",
+        //   "arguments": {
+        //     "id": "2947"
+        //   }
+        // },
+        // {
+        //   "subject": "productId",
+        //   "arguments": {
+        //     "id": "2948"
+        //   }
+        // },
+        // {
+        //   "subject": "productId",
+        //   "arguments": {
+        //     "id": "2895"
+        //   }
+        // },
+        // {
+        //   "subject": "productId",
+        //   "arguments": {
+        //     "id": "2797"
+        //   }
+        // },
+        // {
+        //   "subject": "productId",
+        //   "arguments": {
+        //     "id": "2795"
+        //   }
+        // },
+        // {
+        //   "subject": "productId",
+        //   "arguments": {
+        //     "id": "2885"
+        //   }
+        // },
+        // {
+        //   "subject": "productId",
+        //   "arguments": {
+        //     "id": "2886"
+        //   }
+        // },
+        // {
+        //   "subject": "productId",
+        //   "arguments": {
+        //     "id": "2887"
+        //   }
+        // },
+        // {
+        //   "subject": "productId",
+        //   "arguments": {
+        //     "id": "2796"
+        //   }
+        // },
         // GLOWIN
         {
           "subject": "productId",
@@ -132,6 +132,12 @@
           "subject": "productId",
           "arguments": {
             "id": "2955"
+          }
+        },
+                {
+          "subject": "productId",
+          "arguments": {
+            "id": "2960"
           }
         }
       ],
@@ -269,6 +275,12 @@
           "arguments": {
             "id": "2955"
           }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2960"
+          }
         }
       ],
       "matchType": "any",
@@ -319,7 +331,7 @@
     "props": {
       "blockClass": "coluna-imagens-fundo-dinamico",
       "colSizing": "auto",
-      "width": "60%"
+      "width": "50%"
     },
     "children": [
       "flex-layout.row#imagens-dinamic"
@@ -367,7 +379,7 @@
       "blockClass": "coluna-lado-direito",
       "fullWidth": true,
       "colSizing": "auto",
-      "width": "40% "
+      "width": "50% "
     },
     "children": [
       "flex-layout.row#quadro-coluna-direita"
@@ -479,9 +491,9 @@
     },
     "children": [
       "product-list-price",
-      "product-selling-price#prod-din", //preço sem desconto a vista
+      // "product-selling-price#prod-din", //preço sem desconto a vista
       "flex-layout.row#sufixo-prod-din",
-      "rich-text#ou",
+      // "rich-text#ou",
       "product-installments#prod-din" //parcelas
     ]
   },
@@ -499,7 +511,8 @@
       "fullWidth": true
     },
     "children": [
-      "product-spot-price-savings#prod-din", //preco a vista com desconto
+      "product-selling-price#prod-din",
+      // "product-spot-price-savings#prod-din", //preco a vista com desconto
       "rich-text#a-vista"
     ]
   },
@@ -526,7 +539,7 @@
   "product-installments#prod-din": {
     "props": {
       "blockClass": "prod-din-preco-parcelado",
-      "message": "Até {installmentsNumber}x de {installmentValue} sem juros no cartão"
+      "message": "ou até {installmentsNumber}x de {installmentValue} sem juros no cartão"
     }
   },
   // VOLTAGE SELECTION
