@@ -4004,9 +4004,9 @@ merge-stream@^2.0.0:
   version "0.2.1"
   resolved "http://mfmgroup.vtexassets.com/_v/public/typings/v1/mfmgroup.scriptrd@0.2.1/public/@types/mfmgroup.scriptrd#85b98796db7450dc673bb4e87dd7078be389420f"
 
-"mfmgroup.store-theme@https://dev0idealine0layout0lucas--mfmgroup.myvtex.com/_v/private/typings/linked/v1/mfmgroup.store-theme@1.0.100+build1756932840/public/@types/mfmgroup.store-theme":
+"mfmgroup.store-theme@https://dev0idealine0layout0lucas--mfmgroup.myvtex.com/_v/private/typings/linked/v1/mfmgroup.store-theme@1.0.100+build1756988644/public/@types/mfmgroup.store-theme":
   version "1.0.100"
-  resolved "https://dev0idealine0layout0lucas--mfmgroup.myvtex.com/_v/private/typings/linked/v1/mfmgroup.store-theme@1.0.100+build1756932840/public/@types/mfmgroup.store-theme#9b7110d29e4b487b1d3a27065d9caebc7a42ea98"
+  resolved "https://dev0idealine0layout0lucas--mfmgroup.myvtex.com/_v/private/typings/linked/v1/mfmgroup.store-theme@1.0.100+build1756988644/public/@types/mfmgroup.store-theme#4fa5d9a6cb154263cc36e9f182efa69832f86b43"
 
 "mfmgroup.visualizador-3d@http://mfmgroup.vtexassets.com/_v/public/typings/v1/mfmgroup.visualizador-3d@0.0.5/public/@types/mfmgroup.visualizador-3d":
   version "0.0.5"
