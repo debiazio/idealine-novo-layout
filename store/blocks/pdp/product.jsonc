@@ -297,7 +297,7 @@
     },
     "children": [
       "flex-layout.row#product-breadcrumb-comum-dinamic",
-      "appalterafundo",
+      // "appalterafundo",
       "flex-layout.row#linha-produto-fundo-dinamico"
     ]
   },
@@ -568,8 +568,8 @@
       "link.product#bellinha-perola",
       "link.product#bellinha-sweet-pink",
       "link.product#bellinha-sweet-black",
-      "link.product#bellinha-glowin",
-      "appalterafundo"
+      "link.product#bellinha-glowin"
+      // "appalterafundo"
     ]
   },
   "link.product#bellinha-rosa": {
