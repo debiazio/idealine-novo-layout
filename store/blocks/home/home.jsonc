@@ -24,6 +24,7 @@
       "flex-layout.row#blog-home"
     ]
   },
+  // TESTE
   "flex-layout.row#cookie-script": {
     "props": {
       "blockClass": "cookie-script"
