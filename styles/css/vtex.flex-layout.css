@@ -1,4 +1,13 @@
 
+.flexRow--cookie-script{
+  display: none;
+}
+
+.flexRowContent--shelf-mais-vendidos{
+  display: flex;
+  flex-direction: column;
+}
+
 .flexCol--coluna-superior-direita-din {
   display: flex;
   flex-direction: row;
