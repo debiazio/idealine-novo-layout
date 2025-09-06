@@ -72,6 +72,7 @@
     "mfmgroup.scriptrd": "0.x",
     "mfmgroup.visualizador-3d": "0.x",
     "mfmgroup.btdownload": "0.x",
+    "mfmgroup.alterafundo": "0.x",
     "vtex.overlay-layout": "0.x"
   },
   "peerDependencies": {
