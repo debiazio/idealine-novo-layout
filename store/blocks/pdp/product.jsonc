@@ -1595,21 +1595,21 @@
       "blockClass": "imagens-extras"
     },
     "children": [
-      "video#rosegold8l"
+      // "video#rosegold8l"
     ],
     "title": "Vídeo Rose Gold 8l"
   },
-  "video#rosegold8l": {
-    "props": {
-      "width": "100%",
-      "height": "600px",
-      "loop": true,
-      "autoPlay": true,
-      "src": "assets/IDEALCLAVE 8L_12.3538.mp4",
-      "muted": true
-    },
-    "title": "Vídeo Autoclave 8 litros Rose Gold LaBelle"
-  },
+  // "video#rosegold8l": {
+  //   "props": {
+  //     "width": "100%",
+  //     "height": "600px",
+  //     "loop": true,
+  //     "autoPlay": true,
+  //     "src": "assets/IDEALCLAVE 8L_12.3538.mp4",
+  //     "muted": true
+  //   },
+  //   "title": "Vídeo Autoclave 8 litros Rose Gold LaBelle"
+  // },
   // IDEALCLAVE rose gold 8 litros
   "condition-layout.product#rose-gold-idealclave-8l": {
     "props": {
@@ -1683,19 +1683,19 @@
       "blockClass": "imagens-extras"
     },
     "children": [
-      "video#rosegold8l-idealclave"
+      // "video#rosegold8l-idealclave"
     ]
   },
-  "video#rosegold8l-idealclave": {
-    "props": {
-      "width": "100%",
-      "height": "600px",
-      "loop": true,
-      "autoPlay": true,
-      "src": "assets/IDEALCLAVE 8L_12.2497.mp4",
-      "muted": true
-    }
-  },
+  // "video#rosegold8l-idealclave": {
+  //   "props": {
+  //     "width": "100%",
+  //     "height": "600px",
+  //     "loop": true,
+  //     "autoPlay": true,
+  //     "src": "assets/IDEALCLAVE 8L_12.2497.mp4",
+  //     "muted": true
+  //   }
+  // },
   // labelle 8 litros BRANCO PEROLA
   "condition-layout.product#perola-8l-labelle": {
     "props": {
@@ -1769,19 +1769,19 @@
       "blockClass": "imagens-extras"
     },
     "children": [
-      "video#brancoPerola8lLabelle"
+      // "video#brancoPerola8lLabelle"
     ]
   },
-  "video#brancoPerola8lLabelle": {
-    "props": {
-      "width": "100%",
-      "height": "600px",
-      "loop": true,
-      "autoPlay": true,
-      "src": "assets/IDEALCLAVE 8L_12.3537.mp4",
-      "muted": true
-    }
-  },
+  // "video#brancoPerola8lLabelle": {
+  //   "props": {
+  //     "width": "100%",
+  //     "height": "600px",
+  //     "loop": true,
+  //     "autoPlay": true,
+  //     "src": "assets/IDEALCLAVE 8L_12.3537.mp4",
+  //     "muted": true
+  //   }
+  // },
   // BRANCO PEROLA 8 LITROS IDEALCLAVE
   "condition-layout.product#perola-idealclave-8l": {
     "props": {
@@ -1856,19 +1856,19 @@
       "blockClass": "imagens-extras"
     },
     "children": [
-      "video#brancoPerola8l"
+      // "video#brancoPerola8l"
     ]
   },
-  "video#brancoPerola8l": {
-    "props": {
-      "width": "100%",
-      "height": "600px",
-      "loop": true,
-      "autoPlay": true,
-      "src": "assets/IDEALCLAVE 8L_12.2598.mp4",
-      "muted": true
-    }
-  },
+  // "video#brancoPerola8l": {
+  //   "props": {
+  //     "width": "100%",
+  //     "height": "600px",
+  //     "loop": true,
+  //     "autoPlay": true,
+  //     "src": "assets/IDEALCLAVE 8L_12.2598.mp4",
+  //     "muted": true
+  //   }
+  // },
   // CONDICIONAL ROSA IDEALCLAVE 8 LITROS ;
   "condition-layout.product#rosa-idealclave-8l": {
     "props": {
@@ -1940,19 +1940,19 @@
       "blockClass": "imagens-extras"
     },
     "children": [
-      "video#rosaIdealclave8l"
+      // "video#rosaIdealclave8l"
     ]
   },
-  "video#rosaIdealclave8l": {
-    "props": {
-      "width": "100%",
-      "height": "600px",
-      "loop": true,
-      "autoPlay": true,
-      "src": "assets/IDEALCLAVE 8L_12.2821.mp4",
-      "muted": true
-    }
-  },
+  // "video#rosaIdealclave8l": {
+  //   "props": {
+  //     "width": "100%",
+  //     "height": "600px",
+  //     "loop": true,
+  //     "autoPlay": true,
+  //     "src": "assets/IDEALCLAVE 8L_12.2821.mp4",
+  //     "muted": true
+  //   }
+  // },
   // CONDICIONAL 8 LITROS LABELLE ROSA
   "condition-layout.product#rosa-laBelle-8l": {
     "props": {
@@ -1995,19 +1995,19 @@
       "blockClass": "imagens-extras"
     },
     "children": [
-      "video#rosalaBelle8l"
+      // "video#rosalaBelle8l"
     ]
   },
-  "video#rosalaBelle8l": {
-    "props": {
-      "width": "100%",
-      "height": "600px",
-      "loop": true,
-      "autoPlay": true,
-      "src": "assets/IDEALCLAVE 8L_12.3536.mp4",
-      "muted": true
-    }
-  },
+  // "video#rosalaBelle8l": {
+  //   "props": {
+  //     "width": "100%",
+  //     "height": "600px",
+  //     "loop": true,
+  //     "autoPlay": true,
+  //     "src": "assets/IDEALCLAVE 8L_12.3536.mp4",
+  //     "muted": true
+  //   }
+  // },
   // labelle 8 litros rosa espec alternativa
   "condition-layout.product#rosa-laBelle-8l-padrao2": {
     "props": {
