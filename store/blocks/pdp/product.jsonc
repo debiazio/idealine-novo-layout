@@ -55,72 +55,72 @@
     "props": {
       "blockClass": "condicional-fundo-dinamico",
       "conditions": [
-        // {
-        //   "subject": "productId",
-        //   "arguments": {
-        //     "id": "2945"
-        //   }
-        // },
-        // {
-        //   "subject": "productId",
-        //   "arguments": {
-        //     "id": "2946"
-        //   }
-        // },
-        // {
-        //   "subject": "productId",
-        //   "arguments": {
-        //     "id": "2947"
-        //   }
-        // },
-        // {
-        //   "subject": "productId",
-        //   "arguments": {
-        //     "id": "2948"
-        //   }
-        // },
-        // {
-        //   "subject": "productId",
-        //   "arguments": {
-        //     "id": "2895"
-        //   }
-        // },
-        // {
-        //   "subject": "productId",
-        //   "arguments": {
-        //     "id": "2797"
-        //   }
-        // },
-        // {
-        //   "subject": "productId",
-        //   "arguments": {
-        //     "id": "2795"
-        //   }
-        // },
-        // {
-        //   "subject": "productId",
-        //   "arguments": {
-        //     "id": "2885"
-        //   }
-        // },
-        // {
-        //   "subject": "productId",
-        //   "arguments": {
-        //     "id": "2886"
-        //   }
-        // },
-        // {
-        //   "subject": "productId",
-        //   "arguments": {
-        //     "id": "2887"
-        //   }
-        // },
-        // {
-        //   "subject": "productId",
-        //   "arguments": {
-        //     "id": "2796"
-        //   }
-        // },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2945"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2946"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2947"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2948"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2895"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2797"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2795"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2885"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2886"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2887"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2796"
+          }
+        },
         // GLOWIN
         {
           "subject": "productId",
@@ -396,8 +396,8 @@
       "flex-layout.row#product-name-fundo-dinamico", // nome
       "flex-layout.row#product-din-precos",
       "sku-selector#prod-din",
-      "rich-text#cores-product-din",
-      "flex-layout.row#product-din-selector-produtos",
+      // "rich-text#cores-product-din",
+      // "flex-layout.row#product-din-selector-produtos",
       "product-quantity",
       "flex-layout.row#botoes-comprar-bucarcep",
       "flex-layout.row#texto-pos-pdp"
@@ -748,8 +748,8 @@
       "flex-layout.row#imagens-produto-mobile",
       "flex-layout.row#product-din-precos",
       "sku-selector#prod-din",
-      "rich-text#cores-product-din",
-      "flex-layout.row#product-din-selector-produtos",
+      // "rich-text#cores-product-din",
+      // "flex-layout.row#product-din-selector-produtos",
       "product-quantity",
       "flex-layout.row#botoes-comprar-bucarcep",
       "flex-layout.row#texto-pos-pdp",
