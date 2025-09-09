@@ -8,11 +8,7 @@
       "product-list-price"
     ]
   },
-  // "product-list-price": {
-  //   "props": {
-  //     "message": "teste"
-  //   }
-  // }
+
   "flex-layout.row#selling-price": {
     "props": {
       "blockClass": "selling-price",
@@ -26,7 +22,8 @@
 
   "product-installments": {
     "props": {
-      "message": "{installmentsNumber}x DE {installmentValue} SEM JUROS NO CARTÃO"
+      "message": "{installmentsNumber}x DE {installmentValue} COM JUROS NO CARTÃO",
+      "installmentsCriteria": "max-quantity"
     }
   }
 

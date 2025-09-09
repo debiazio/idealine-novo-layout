@@ -83,7 +83,7 @@
   },
   "rich-text#sub-deal3":{
     "props": {
-      "text": "Com a gente você pode parcelar em até 10x sem juros no cartão de crédito",
+      "text": "Com a gente você pode parcelar em até 10x no cartão de crédito",
       "blockClass": ["deals", "sub-mobile-deals"]
     }
   },

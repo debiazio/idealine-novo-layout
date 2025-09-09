@@ -550,7 +550,7 @@
 /* coluna direita pdp */
 .flexCol--coluna-direita {
   position: sticky;
-  height: 78.5%;
+  height: 70vh;
   top: 140px;
   padding: 20px;
 }

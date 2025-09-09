@@ -2,15 +2,14 @@
   "product-summary.shelf": {
     "children": [
       "stack-layout#prodsum",
-
-
       // "vtex.product-highlights@2.x:product-highlights#collection",
       "product-summary-name", //nome
       "flex-layout.col#productRating", //avaliações
       "product-summary-space",
       // "flex-layout.row#selling-price-savings", //economia
-      "flex-layout.row#linha-prateleira",
-      "product-spot-price-savings"
+      "condition-layout.product#preco-prateleira"
+      // "flex-layout.row#linha-prateleira",
+
       // "product-selling-price" //preço por
       //"flex-layout.row#sku-selector", //seletor de sku
       //"flex-layout.row#add-to-cart-summary" //linha botão comprar - removido a pedido da Renata 14/10/2024
@@ -48,7 +47,110 @@
   //     "Then": "rich-text#teste-flag"
   //   }
   // },
+  "condition-layout.product#preco-prateleira": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2968"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2965"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2956"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2961"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2963"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2958"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2967"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2966"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2969"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2957"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2964"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2953"
+          }
+        }
+      ],
+      "matchType": "any",
+      "Then": "flex-layout.row#linha-prateleira-invertida",
+      "Else": "flex-layout.row#linha-prateleira"
+    }
+  },
 
+  "flex-layout.row#linha-prateleira-invertida": {
+    "props": {
+      "blockClass": "linha-prateleira-duas-colunas"
+    },
+    "children": [
+      "flex-layout.col#coluna1-parcelamento-invertida",
+      "flex-layout.col#coluna2-parcelamento-invertida"
+    ]
+  },
+  "flex-layout.col#coluna1-parcelamento-invertida": {
+    "props": {
+      "blockClass": "coluna-parcelamento",
+      "width": "80%"
+    },
+    "children": [
+      "product-list-price#summary", //preco de: quanto custava
+      "product-selling-price", //preço por
+      "product-spot-price-savings",
+      "product-installments#summary-segunda-linha",
+      "product-installments#summary-invertida" // parcelamento
+    ]
+  },
   "flex-layout.row#linha-prateleira": {
     "props": {
       "blockClass": "linha-prateleira-duas-colunas"
@@ -67,7 +169,17 @@
       "product-installments#summary", // parcelamento
       "product-installments#summary-segunda-linha",
       "product-list-price#summary", //preco de: quanto custava
-      "product-selling-price" //preço por
+      "product-selling-price", //preço por
+      "product-spot-price-savings"
+    ]
+  },
+  "flex-layout.col#coluna2-parcelamento-invertida": {
+    "props": {
+      "blockClass": "coluna-parcelamento",
+      "width": "20%"
+    },
+    "children": [
+      "product-price-savings#summary-shelf"
     ]
   },
   "flex-layout.col#coluna2-parcelamento": {
@@ -190,16 +302,25 @@
   //     "product-price-savings#summary"
   //   ]
   // },
+  "product-installments#summary-invertida": {
+    "props": {
+      "blockClass": "summary",
+      "message": "{hasMoreThanOne, select, true { {installmentsNumber}x de {installmentValue} com juros no cartão} false { }}",
+      "installmentsCriteria": "max-quantity"
+    }
+  },
   "product-installments#summary": {
     "props": {
       "blockClass": "summary",
-      "message": "{hasMoreThanOne, select, true { {installmentsNumber}x de {installmentValue} sem juros no cartão} false { }}"
+      "message": "{hasMoreThanOne, select, true { {installmentsNumber}x de {installmentValue} com juros no cartão} false { }}",
+      "installmentsCriteria": "max-quantity"
     }
   },
   "product-installments#summary-segunda-linha": {
     "props": {
       "blockClass": "summary-segunda",
-      "message": "{hasMoreThanOne, select, true { ou } false { }}"
+      "message": "{hasMoreThanOne, select, true { ou } false { }}",
+      "installmentsCriteria": "max-quantity"
       // "message": "{hasMoreThanOne, select, true { no cartão ou {installmentsTotalValue}} false { }}"
     }
   },
