@@ -2124,7 +2124,7 @@
   "product-description": {
     "props": {
       "showTitle": true,
-      "collapseContent": true,
+      "collapseContent": false,
       "blockClass": "texto-descricao"
     }
   },
