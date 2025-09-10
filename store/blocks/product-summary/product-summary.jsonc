@@ -2,155 +2,13 @@
   "product-summary.shelf": {
     "children": [
       "stack-layout#prodsum",
-      // "vtex.product-highlights@2.x:product-highlights#collection",
       "product-summary-name", //nome
       "flex-layout.col#productRating", //avaliações
       "product-summary-space",
-      // "flex-layout.row#selling-price-savings", //economia
-      "condition-layout.product#preco-prateleira"
-      // "flex-layout.row#linha-prateleira",
-
-      // "product-selling-price" //preço por
-      //"flex-layout.row#sku-selector", //seletor de sku
-      //"flex-layout.row#add-to-cart-summary" //linha botão comprar - removido a pedido da Renata 14/10/2024
+      "flex-layout.row#linha-prateleira"
     ]
-  },
-  // "condition-layout.product#flag-promo-forced": {
-  //   "props": {
-  //     "conditions": [
-  //       {
-  //         "subject": "productId","arguments": { "id": "2899"}
-  //       },
-  //       {
-  //         "subject": "productId", "arguments": { "id": "2895"}
-  //       },
-  //       {
-  //         "subject": "productId", "arguments": { "id": "2897"}
-  //       },
-  //       {
-  //         "subject": "productId", "arguments": { "id": "2894"}
-  //       },
-  //       {
-  //         "subject": "productId", "arguments": { "id": "2898"}
-  //       },
-  //       {
-  //         "subject": "productId", "arguments": { "id": "2903"}
-  //       },
-  //       {
-  //         "subject": "productId", "arguments": { "id": "2905"}
-  //       },
-  //       {
-  //         "subject": "productId", "arguments": { "id": "2893"}
-  //       }
-  //     ],
-  //     "matchType": "any",
-  //     "Then": "rich-text#teste-flag"
-  //   }
-  // },
-  "condition-layout.product#preco-prateleira": {
-    "props": {
-      "conditions": [
-        {
-          "subject": "productId",
-          "arguments": {
-            "id": "2968"
-          }
-        },
-        {
-          "subject": "productId",
-          "arguments": {
-            "id": "2965"
-          }
-        },
-        {
-          "subject": "productId",
-          "arguments": {
-            "id": "2956"
-          }
-        },
-        {
-          "subject": "productId",
-          "arguments": {
-            "id": "2961"
-          }
-        },
-        {
-          "subject": "productId",
-          "arguments": {
-            "id": "2963"
-          }
-        },
-        {
-          "subject": "productId",
-          "arguments": {
-            "id": "2958"
-          }
-        },
-        {
-          "subject": "productId",
-          "arguments": {
-            "id": "2967"
-          }
-        },
-        {
-          "subject": "productId",
-          "arguments": {
-            "id": "2966"
-          }
-        },
-        {
-          "subject": "productId",
-          "arguments": {
-            "id": "2969"
-          }
-        },
-        {
-          "subject": "productId",
-          "arguments": {
-            "id": "2957"
-          }
-        },
-        {
-          "subject": "productId",
-          "arguments": {
-            "id": "2964"
-          }
-        },
-        {
-          "subject": "productId",
-          "arguments": {
-            "id": "2953"
-          }
-        }
-      ],
-      "matchType": "any",
-      "Then": "flex-layout.row#linha-prateleira-invertida",
-      "Else": "flex-layout.row#linha-prateleira"
-    }
   },
 
-  "flex-layout.row#linha-prateleira-invertida": {
-    "props": {
-      "blockClass": "linha-prateleira-duas-colunas"
-    },
-    "children": [
-      "flex-layout.col#coluna1-parcelamento-invertida",
-      "flex-layout.col#coluna2-parcelamento-invertida"
-    ]
-  },
-  "flex-layout.col#coluna1-parcelamento-invertida": {
-    "props": {
-      "blockClass": "coluna-parcelamento",
-      "width": "80%"
-    },
-    "children": [
-      "product-list-price#summary", //preco de: quanto custava
-      "product-selling-price", //preço por
-      "product-spot-price-savings",
-      "product-installments#summary-segunda-linha",
-      "product-installments#summary-invertida" // parcelamento
-    ]
-  },
   "flex-layout.row#linha-prateleira": {
     "props": {
       "blockClass": "linha-prateleira-duas-colunas"
@@ -171,15 +29,6 @@
       "product-list-price#summary", //preco de: quanto custava
       "product-selling-price", //preço por
       "product-spot-price-savings"
-    ]
-  },
-  "flex-layout.col#coluna2-parcelamento-invertida": {
-    "props": {
-      "blockClass": "coluna-parcelamento",
-      "width": "20%"
-    },
-    "children": [
-      "product-price-savings#summary-shelf"
     ]
   },
   "flex-layout.col#coluna2-parcelamento": {
@@ -213,9 +62,6 @@
       "add-to-list-btn", //fav button
       "product-summary-image#shelf",
       "flex-layout.row#sacola-icone"
-      // "condition-layout.product#flag-promo-forced"
-      // "vtex.product-highlights@2.x:product-highlights#collection"
-      // "product-price-savings#summary-shelf" //-20% off
     ]
   },
   "rich-text#teste-flag": {
@@ -239,15 +85,6 @@
       }
     }
   },
-  // "product-price-savings#summary-shelf": {
-  //   "props": {
-  //     "markers": [
-  //       "discount"
-  //     ],
-  //     "message": "-{savingsPercentage} OFF",
-  //     "blockClass": "desconto"
-  //   }
-  // },
   "vtex.product-highlights@2.x:product-highlights#collection": {
     "props": {
       "type": "promotion"
@@ -282,26 +119,7 @@
       // "message": "OU {newSpotPriceValue} À VISTA  NO BOLETO (3% DE DESCONTO)"
     }
   },
-  // "flex-layout.row#selling-price-savings": {
-  //   "props": {
-  //     "colGap": 2,
-  //     "preserveLayoutOnMobile": true,
-  //     "preventHorizontalStretch": true,
-  //     "marginBottom": 4
-  //   },
-  //   "children": [
-  //     "flex-layout.row#preco-avista-e-desconto"
-  //   ]
-  // },
-  // "flex-layout.row#preco-avista-e-desconto": {
-  //   "props": {
-  //     "blockClass": "linha-preco-a-vista-e-desconto"
-  //   },
-  //   "children": [
-  //     // "product-selling-price#summary",
-  //     "product-price-savings#summary"
-  //   ]
-  // },
+
   "product-installments#summary-invertida": {
     "props": {
       "blockClass": "summary",

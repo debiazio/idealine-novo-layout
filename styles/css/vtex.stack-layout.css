@@ -1,3 +1,8 @@
+.stackItem--fav-dinamic-background{
+  position: absolute;
+  margin: 10px
+}
+
 .stackItem--product {
   width: 100%;
   min-height: 257px

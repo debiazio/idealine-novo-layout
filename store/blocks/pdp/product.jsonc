@@ -921,8 +921,8 @@
     "children": [
       "stack-layout",
       "condition-layout.product#compre-junto-esmalteira",
-      "condition-layout.product#visualizador3d-sweet-pink",
-      "condition-layout.product#visualizador3d-sweet-black",
+      // "condition-layout.product#visualizador3d-sweet-pink",
+      // "condition-layout.product#visualizador3d-sweet-black",
       "condition-layout.product#branco-perola",
       "condition-layout.product#rosa",
       "condition-layout.product#rosa-gold",

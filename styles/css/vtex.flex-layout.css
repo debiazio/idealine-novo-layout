@@ -980,6 +980,11 @@
 }
 
 @media screen and (max-width: 1024px) {
+.flexCol--productRating{
+  display: flex;
+  align-items: center;
+}
+
   .flexRow--linha-resultados-frete {
     margin-left: unset;
   }
