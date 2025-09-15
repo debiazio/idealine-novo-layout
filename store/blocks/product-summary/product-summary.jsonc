@@ -4,8 +4,9 @@
       "stack-layout#prodsum",
       "product-summary-name", //nome
       "flex-layout.col#productRating", //avaliações
-      "product-summary-space",
+      // "product-summary-space",
       "flex-layout.row#linha-prateleira"
+
     ]
   },
 
@@ -24,8 +25,9 @@
       "width": "80%"
     },
     "children": [
-      "product-installments#summary", // parcelamento
-      "product-installments#summary-segunda-linha",
+      // "product-installments#summary", // parcelamento
+      // "product-installments#summary-segunda-linha",
+      "bundle",
       "product-list-price#summary", //preco de: quanto custava
       "product-selling-price", //preço por
       "product-spot-price-savings"
@@ -63,12 +65,6 @@
       "product-summary-image#shelf",
       "flex-layout.row#sacola-icone"
     ]
-  },
-  "rich-text#teste-flag": {
-    "props": {
-      "text": "Frete Zero",
-      "blockClass": "dia-consumidor-tag-falsa"
-    }
   },
   "product-summary-image#shelf": {
     "props": {
@@ -120,37 +116,20 @@
     }
   },
 
-  "product-installments#summary-invertida": {
-    "props": {
-      "blockClass": "summary",
-      "message": "{hasMoreThanOne, select, true { {installmentsNumber}x de {installmentValue} com juros no cartão} false { }}",
-      "installmentsCriteria": "max-quantity"
-    }
-  },
   "product-installments#summary": {
     "props": {
       "blockClass": "summary",
-      "message": "{hasMoreThanOne, select, true { {installmentsNumber}x de {installmentValue} com juros no cartão} false { }}",
-      "installmentsCriteria": "max-quantity"
-    }
+      "message": "{hasMoreThanOne, select, true { {installmentsNumber}x de {installmentValue} com juros no cartão {paymentSystemName}}  false { }}"
+  }
   },
   "product-installments#summary-segunda-linha": {
     "props": {
       "blockClass": "summary-segunda",
       "message": "{hasMoreThanOne, select, true { ou } false { }}",
       "installmentsCriteria": "max-quantity"
-      // "message": "{hasMoreThanOne, select, true { no cartão ou {installmentsTotalValue}} false { }}"
     }
   },
-  // //linha adicionada para teste - botao comprar
-  "flex-layout.row#add-to-cart-summary": {
-    "children": [
-      "add-to-cart-button" // botao de comprar add ao carrinho
-    ],
-    "props": {
-      "blockClass": "add-to-cart-summary"
-    }
-  },
+
   //linha adicionada para teste ICONE SACOLA - botao comprar
   "flex-layout.row#sacola-icone": {
     "props": {
@@ -190,7 +169,7 @@
       "stack-layout#prodsum",
       "product-summary-name", //nome
       "flex-layout.col#productRating", //avaliações
-      "product-summary-space",
+      // "product-summary-space",
       "flex-layout.row#linha-prateleira",
       "product-spot-price-savings"
     ]

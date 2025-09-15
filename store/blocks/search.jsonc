@@ -7,7 +7,7 @@
         "hideUnavailableItems": true,
         "maxItemsPerPage": 25,
         "skusFilter": "ALL_AVAILABLE",
-        "simulationBehavior": "default",
+        "simulationBehavior": "skip",
         "_unstableProductOriginVtex": true,
         "fullWidth": true
       }
@@ -22,7 +22,7 @@
         "hideUnavailableItems": true,
         "maxItemsPerPage": 25,
         "skusFilter": "ALL_AVAILABLE",
-        "simulationBehavior": "default",
+        "simulationBehavior": "skip",
         "_unstableProductOriginVtex": true,
         "fullWidth": true
       }
@@ -37,7 +37,7 @@
         "hideUnavailableItems": true,
         "maxItemsPerPage": 25,
         "skusFilter": "ALL_AVAILABLE",
-        "simulationBehavior": "default",
+        "simulationBehavior": "skip",
         "_unstableProductOriginVtex": true,
         "fullWidth": true
       }
@@ -52,7 +52,7 @@
         "hideUnavailableItems": true,
         "maxItemsPerPage": 25,
         "skusFilter": "ALL_AVAILABLE",
-        "simulationBehavior": "default",
+        "simulationBehavior": "skip",
         "_unstableProductOriginVtex": true,
         "fullWidth": true
       }
@@ -67,7 +67,7 @@
         "hideUnavailableItems": true,
         "maxItemsPerPage": 25,
         "skusFilter": "ALL_AVAILABLE",
-        "simulationBehavior": "default",
+        "simulationBehavior": "skip",
         "_unstableProductOriginVtex": true,
         "fullWidth": true
       }

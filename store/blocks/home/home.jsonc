@@ -253,6 +253,11 @@
       "maxItems": 20
     }
   },
+  "product-summary.shelf":{
+    "props": {
+      "priceBehavior":"default"
+    }
+  },
   "slider-layout#prateleira-mais-vendidos": {
     "props": {
       "itemsPerPage": {

@@ -1,6 +1,8 @@
 /* idealine paleta */
 
-
+.parcelas-custom{
+  color: #e90b91;
+}
 
 :root {
   --rosa-da-rosa: #fc51a7;
