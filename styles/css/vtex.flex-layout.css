@@ -1,9 +1,8 @@
-
-.flexRow--cookie-script{
+.flexRow--cookie-script {
   display: none;
 }
 
-.flexRowContent--shelf-mais-vendidos{
+.flexRowContent--shelf-mais-vendidos {
   display: flex;
   flex-direction: column;
 }
@@ -372,7 +371,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--pink);
+  background-color: #FEBBCE;
   backdrop-filter: blur(8px);
   text-align: center;
   height: 48px;
@@ -430,7 +429,7 @@
 
 /* rodapé */
 .flexRow--newsletter-row {
-  background: var(--pink);
+  background: #FCF5EF;
   padding: 43px 0 50px;
   padding: 50px;
   /* margin-top: 20PX; */
@@ -453,19 +452,20 @@
 }
 
 .flexRow--footer-merchant-desktop {
-  background-color: #E90B91;
+  background-color: #474747;
 }
 
-.flexRow--credits {
+/* .flexRow--credits {
   border-top: 4px solid var(--pink);
-}
+} */
 
 /* .flexRow--footer-2-desktop {
   padding: 32px 0 36px;
 } */
 
 .flexRow--footer-2-desktop {
-  background: #E90B91;
+  border-top: 14px solid #FEBBCE;
+  background: #474747;
   padding: 40px;
 }
 
@@ -980,10 +980,10 @@
 }
 
 @media screen and (max-width: 1024px) {
-.flexCol--productRating{
-  display: flex;
-  align-items: center;
-}
+  .flexCol--productRating {
+    display: flex;
+    align-items: center;
+  }
 
   .flexRow--linha-resultados-frete {
     margin-left: unset;
@@ -1549,9 +1549,9 @@
 }
 
 @media screen and (max-width: 1024px) {
-.flexRowContent--conteiner-360 :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
-  width: 80% !important;
-}
+  .flexRowContent--conteiner-360 :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 80% !important;
+  }
 
   .flexRow--pgto_a_vista {
     margin: 20px;

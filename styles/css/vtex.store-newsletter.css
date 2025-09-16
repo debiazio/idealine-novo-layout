@@ -14,7 +14,7 @@
 .emailInputContainer :global(.vtex-styleguide-9-x-input) {
   padding: 10px 15px 10px;
   background: transparent;
-  border: 1px solid #ffff;
+  border: 1px solid #696969;
   border-radius: 10px;
 }
 
@@ -25,7 +25,7 @@
 
 .nameInputContainer--newsletter-footer :global(.vtex-styleguide-9-x-input)::placeholder,
 .emailInputContainer--newsletter-footer :global(.vtex-styleguide-9-x-input)::placeholder {
-  color: white;
+  color: #696969;
   width: 100px;
 }
 
@@ -60,14 +60,14 @@
 .emailInputContainer,
 .phoneInputContainer {
   width: 446px;
-  color: white;
+  color: #696969;
   margin-bottom: 7px;
 }
 
 .nameInputContainer :global(.vtex-input__label),
 .emailInputContainer :global(.vtex-input__label),
 .phoneInputContainer :global(.vtex-input__label) {
-  color: lightgray;
+  color: #696969;
 }
 
 
@@ -116,19 +116,16 @@
 
 .formSubmitContainer--submit-button :global(.vtex-button) {
   border: none;
-  background-color: #e90b91;
+  background-color: #696969;
   color: white;
   font-size: 16px;
   cursor: pointer;
   border-radius: 8px;
-  box-shadow: 0 0 30px rgba(233, 11, 145, 0.8);
-  /* Luz simples por trás */
   transition: box-shadow 0.3s ease-in-out;
 }
 
 .formSubmitContainer--submit-button :global(.vtex-button):hover {
-  box-shadow: 0 0 40px rgba(233, 11, 145, 1);
-  /* Intensifica a luz no hover */
+  background-color: #696969;
 }
 
 
