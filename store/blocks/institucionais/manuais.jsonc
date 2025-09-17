@@ -534,7 +534,7 @@
     "props": {
       "blockClass": "manual-imagem",
       "title": "Idealclave Bellinha",
-      "src": "assets/idealclave-bellinha.webp",
+      "src": "assets/bellinha-5l-stembro.webp",
       "alt": "Idealclave Bellinha"
     }
   },
@@ -542,7 +542,7 @@
     "props": {
       "blockClass": "manual-imagem",
       "title": "Idealclave 8 litros",
-      "src": "assets/idealclave.webp",
+      "src": "assets/idealclave-labelle-setembro.webp",
       "alt": "Idealclave 8 litros"
     }
   },
@@ -623,7 +623,7 @@
       "title": "Link ler manuais",
       "label": "LER MANUAL",
       "target": "_blank",
-      "href": "https://stermax.com.br/images_idealine/manuais/Manual_ DIGITAL IDEALCLAVE_5L -SETEMBRO 25.pdf"
+      "href": "https://stermax.com.br/images_idealine/Manual_ DIGITAL IDEALCLAVE_5L - SETEMBRO 17-25.pdf"
     }
   },
   "link#ler-manual-idealclave": {
@@ -631,7 +631,7 @@
       "blockClass": "link-ler-manuais",
       "title": "Link ler manuais",
       "label": "LER MANUAL",
-      "href": "https://stermax.com.br/images_idealine/manuais/Manual_ DIGITAL IDEALCLAVE_8L - SETEMBRO 25.pdf"
+      "href": "https://stermax.com.br/images_idealine/manuais/Manual_ DIGITAL IDEALCLAVE_8L - SETEMBRO 17-25.pdf"
     }
   },
   // teste  2
