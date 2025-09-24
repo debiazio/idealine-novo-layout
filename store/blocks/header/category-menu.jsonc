@@ -251,10 +251,10 @@
         "text": "Beleza e Estética"
       },
       "blockClass": "menu-superior"
-    },
-    "blocks": [
-      "vtex.menu@2.x:submenu#categorias-beleza-estetica"
-    ]
+    }
+    // "blocks": [
+    //   "vtex.menu@2.x:submenu#categorias-beleza-estetica"
+    // ]
   },
   "vtex.menu@2.x:submenu#categorias-beleza-estetica": {
     "props": {
@@ -348,10 +348,10 @@
         "text": "Odontologia"
       },
       "blockClass": "menu-superior"
-    },
-    "blocks": [
-      "vtex.menu@2.x:submenu#categorias-odontologia"
-    ]
+    }
+    // "blocks": [
+    //   "vtex.menu@2.x:submenu#categorias-odontologia"
+    // ]
   },
   "vtex.menu@2.x:submenu#categorias-odontologia": {
     "props": {
@@ -397,10 +397,10 @@
         "text": "Linha Veterinária"
       },
       "blockClass": "menu-superior"
-    },
-    "blocks": [
-      "vtex.menu@2.x:submenu#categorias-veterinaria"
-    ]
+    }
+    // "blocks": [
+    //   "vtex.menu@2.x:submenu#categorias-veterinaria"
+    // ]
   },
   "vtex.menu@2.x:submenu#categorias-veterinaria": {
     "props": {
@@ -446,10 +446,11 @@
         "text": "Clínicas e Hospitais"
       },
       "blockClass": "menu-superior"
-    },
-    "blocks": [
-      "vtex.menu@2.x:submenu#categorias-clinicas-hospitais"
-    ]
+    }
+    // ,
+    // "blocks": [
+    //   "vtex.menu@2.x:submenu#categorias-clinicas-hospitais"
+    // ]
   },
   "vtex.menu@2.x:submenu#categorias-clinicas-hospitais": {
     "props": {
@@ -489,78 +490,74 @@
         "type": "internal",
         "href": "/idealovers-by--mad-u",
         "noFollow": false,
-        "tagTitle": "Idealovers by MAD.U",
         "text": "Idealovers by MAD.U"
       },
       "blockClass": "menu-superior"
-    },
-    "blocks": [
-      "vtex.menu@2.x:submenu#categorias-mobiliario-tecnico"
-    ]
-  },
-  "vtex.menu@2.x:submenu#categorias-mobiliario-tecnico": {
-    "props": {
-      "width": "auto"
-    },
-    "children": [
-      "vtex.menu@2.x:menu#categorias-mobiliario-tecnico"
-    ]
-  },
-  "vtex.menu@2.x:menu#categorias-mobiliario-tecnico": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#submenuMobiliarioTecnico-mob-madu-extra",
-      "menu-item#submenuMobiliarioTecnico-mob-madu-one",
-      "menu-item#submenuMobiliarioTecnico-acessorios"
-    ]
-  },
-  "menu-item#submenuMobiliarioTecnico-mob-madu-extra": {
-    "props": {
-      "id": "menu-item-submenuMobiliarioTecnico",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/idealovers-by--mad-u/mad-u-extra",
-        "noFollow": false,
-        "tagTitle": "Mad.u Extra",
-        "text": "MAD.U EXTRA"
-      },
-      "blockClass": "menu-dropdown"
     }
   },
-  "menu-item#submenuMobiliarioTecnico-mob-madu-one": {
-    "props": {
-      "id": "menu-item-submenuMobiliarioTecnico",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/idealovers-by--mad-u/mad-u-box",
-        "noFollow": false,
-        "tagTitle": "MAD.U BOX",
-        "text": "MAD.U BOX"
-      },
-      "blockClass": "menu-dropdown"
-    }
-  },
-  "menu-item#submenuMobiliarioTecnico-acessorios": {
-    "props": {
-      "id": "menu-item-submenuMobiliarioTecnico",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/idealovers-by--mad-u/acessorios",
-        "noFollow": false,
-        "tagTitle": "Acessórios",
-        "text": "Acessórios"
-      },
-      "blockClass": "menu-dropdown"
-    }
-  },
+  // "vtex.menu@2.x:submenu#categorias-mobiliario-tecnico": {
+  //   "props": {
+  //     "width": "auto"
+  //   },
+  //   "children": [
+  //     "vtex.menu@2.x:menu#categorias-mobiliario-tecnico"
+  //   ]
+  // },
+  // "vtex.menu@2.x:menu#categorias-mobiliario-tecnico": {
+  //   "props": {
+  //     "orientation": "vertical"
+  //   },
+  //   "children": [
+  //     "menu-item#submenuMobiliarioTecnico-mob-madu-extra",
+  //     "menu-item#submenuMobiliarioTecnico-mob-madu-one",
+  //     "menu-item#submenuMobiliarioTecnico-acessorios"
+  //   ]
+  // },
+  // "menu-item#submenuMobiliarioTecnico-mob-madu-extra": {
+  //   "props": {
+  //     "id": "menu-item-submenuMobiliarioTecnico",
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "/idealovers-by--mad-u/mad-u-extra",
+  //       "noFollow": false,
+  //       "tagTitle": "Mad.u Extra",
+  //       "text": "MAD.U EXTRA"
+  //     },
+  //     "blockClass": "menu-dropdown"
+  //   }
+  // },
+  // "menu-item#submenuMobiliarioTecnico-mob-madu-one": {
+  //   "props": {
+  //     "id": "menu-item-submenuMobiliarioTecnico",
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "/idealovers-by--mad-u/mad-u-box",
+  //       "noFollow": false,
+  //       "tagTitle": "MAD.U BOX",
+  //       "text": "MAD.U BOX"
+  //     },
+  //     "blockClass": "menu-dropdown"
+  //   }
+  // },
+  // "menu-item#submenuMobiliarioTecnico-acessorios": {
+  //   "props": {
+  //     "id": "menu-item-submenuMobiliarioTecnico",
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "/idealovers-by--mad-u/acessorios",
+  //       "noFollow": false,
+  //       "tagTitle": "Acessórios",
+  //       "text": "Acessórios"
+  //     },
+  //     "blockClass": "menu-dropdown"
+  //   }
+  // },
   "vtex.menu@2.x:menu#category-menu-mobile": {
     "props": {
       "orientation": "vertical",
@@ -651,10 +648,10 @@
         "text": "Beleza e Estética"
       },
       "blockClass": "menu-superior-mobile"
-    },
-    "blocks": [
-      "submenu.accordion#categorias-beleza-estetica"
-    ]
+    }
+    // "blocks": [
+    //   "submenu.accordion#categorias-beleza-estetica"
+    // ]
   },
   "submenu.accordion#categorias-beleza-estetica": {
     "props": {
@@ -691,10 +688,10 @@
         "text": "Odontologia"
       },
       "blockClass": "menu-superior-mobile"
-    },
-    "blocks": [
-      "submenu.accordion#categorias-odontologia"
-    ]
+    }
+    // "blocks": [
+    //   "submenu.accordion#categorias-odontologia"
+    // ]
   },
   "submenu.accordion#categorias-odontologia": {
     "props": {
@@ -728,10 +725,10 @@
         "text": "Linha Veterinária"
       },
       "blockClass": "menu-superior-mobile"
-    },
-    "blocks": [
-      "submenu.accordion#categorias-veterinaria"
-    ]
+    }
+    // "blocks": [
+    //   "submenu.accordion#categorias-veterinaria"
+    // ]
   },
   "submenu.accordion#categorias-veterinaria": {
     "props": {
@@ -810,10 +807,10 @@
         "text": "Idealovers by MAD.U"
       },
       "blockClass": "menu-superior-mobile"
-    },
-    "blocks": [
-      "submenu.accordion#categorias-mobiliario-tecnico"
-    ]
+    }
+    // "blocks": [
+    //   "submenu.accordion#categorias-mobiliario-tecnico"
+    // ]
   },
   "submenu.accordion#categorias-mobiliario-tecnico": {
     "props": {
@@ -831,9 +828,9 @@
   },
   "flex-layout.col#mobiliario-tecnico-mobile": {
     "children": [
-      "menu-item#submenuMobiliarioTecnico-mob-madu-extra",
-      "menu-item#submenuMobiliarioTecnico-mob-madu-one",
-      "menu-item#submenuMobiliarioTecnico-acessorios"
+      // "menu-item#submenuMobiliarioTecnico-mob-madu-extra",
+      // "menu-item#submenuMobiliarioTecnico-mob-madu-one",
+      // "menu-item#submenuMobiliarioTecnico-acessorios"
     ]
   }
 }

@@ -26,7 +26,10 @@
   "store.custom#manuais": {
     "path": "/ajuda/manuais-idealine"
   },
-  "store.custom#template-categoria":{
+  "store.custom#template-categoria": {
     "path": "/template"
+  },
+  "store.custom#template-categoria-2": {
+    "path": "/template-categoria-2"
   }
 }
