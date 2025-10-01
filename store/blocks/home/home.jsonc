@@ -827,7 +827,7 @@
   },
   "rich-text#shelf-title": {
     "props": {
-      "text": "## **AUTOCLAVES DE 5 E 8 LITROS**",
+      "text": "## **AUTOCLAVES DE 5 LITROS**",
       "blockClass": "shelfTitle"
     }
   },
