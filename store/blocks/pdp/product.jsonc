@@ -70,13 +70,13 @@
         {
           "subject": "productId",
           "arguments": {
-            "id": "2947"
+            "id": "2947" //sweet black
           }
         },
         {
           "subject": "productId",
           "arguments": {
-            "id": "2948"
+            "id": "2948" //sweet black
           }
         },
         {
@@ -121,23 +121,34 @@
             "id": "2796"
           }
         },
-        // GLOWIN
         {
           "subject": "productId",
           "arguments": {
-            "id": "2954"
+            "id": "2954" // GLOWIN
           }
         },
         {
           "subject": "productId",
           "arguments": {
-            "id": "2955"
+            "id": "2955" // GLOWIN
           }
         },
-                {
+        {
           "subject": "productId",
           "arguments": {
-            "id": "2960"
+            "id": "2960" // GLOWIN
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2962" //kit sweet black
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2951" //kit sweet pink
           }
         }
       ],
@@ -263,23 +274,34 @@
             "id": "2796"
           }
         },
-        // GLOWIN
         {
           "subject": "productId",
           "arguments": {
-            "id": "2954"
+            "id": "2954" // GLOWIN
           }
         },
         {
           "subject": "productId",
           "arguments": {
-            "id": "2955"
+            "id": "2955" // GLOWIN
           }
         },
         {
           "subject": "productId",
           "arguments": {
-            "id": "2960"
+            "id": "2960" // GLOWIN
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2962" //kit sweet black
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2951" //kit sweet pink
           }
         }
       ],
@@ -731,7 +753,7 @@
       "flex-layout.col#product-right-col"
     ]
   },
-    // linha do produto
+  // linha do produto
   "flex-layout.row#mobile-dinamico-product-main": {
     "props": {
       "blockClass": "product-main"

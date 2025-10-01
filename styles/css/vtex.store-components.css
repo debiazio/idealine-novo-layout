@@ -2,11 +2,11 @@
   max-width: 70%;
 } */
 
-.caretIcon--product-image-dinamic{
+.caretIcon--product-image-dinamic {
   display: block;
 }
 
-.skuSelectorOptionsList{
+.skuSelectorOptionsList {
   margin: 0;
 }
 
@@ -107,6 +107,11 @@
 
 .productImagesGallerySlide--product-image-dinamic:first-child {
   visibility: hidden;
+}
+
+.productImagesGallerySlide--product-image-dinamic {
+  margin-left: -2px;
+  margin-right: 3px;
 }
 
 
