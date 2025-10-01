@@ -655,7 +655,7 @@
 
 /* setas ocultas no desktop  */
 .caretIcon {
-  display: none;
+  display: block;
 }
 
 

@@ -37,4 +37,8 @@
 
 .flexRowContent--descricao{
   margin-bottom: 0;
+  line-height: 2;
+  padding: 20px;
 }
+
+
