@@ -68,17 +68,24 @@
   },
   "product-summary-image#shelf": {
     "props": {
+      "aspectRatio": "1:1",
+      "maxHeight": "auto",
       "blockclass": "imagens-shelf",
       "showBadge": false,
       "badgeText": "de desconto",
-      "width": {
-        "desktop": "280",
-        "mobile": "157"
-      },
-      "height": {
-        "desktop": "280",
-        "mobile": "157"
+      "hoverImage": {
+        "criteria": "label",
+        "label": "hover",
+        "labelMatchCriteria": "exact"
       }
+      // "width": {
+      //   "desktop": "280",
+      //   "mobile": "157"
+      // },
+      // "height": {
+      //   "desktop": "280",
+      //   "mobile": "157"
+      // }
     }
   },
   "vtex.product-highlights@2.x:product-highlights#collection": {
