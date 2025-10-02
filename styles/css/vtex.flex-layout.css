@@ -1,4 +1,8 @@
-.flexRowContent--template-copy-line{
+.flexRow--message-availability {
+  padding: 40px 0 0;
+}
+
+.flexRowContent--template-copy-line {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -557,7 +561,7 @@
 /* coluna direita pdp */
 .flexCol--coluna-direita {
   position: sticky;
-  height: 100vh;
+  /* height: 100vh; */
   top: 140px;
   padding: 20px;
 }
@@ -987,6 +991,17 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .flexRow--message-availability {
+    padding: 40px 20px 0;
+  }
+
+
+  .flexCol--info-availability {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+  }
+
   .flexCol--productRating {
     display: flex;
     align-items: center;

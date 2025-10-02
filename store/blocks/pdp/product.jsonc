@@ -29,13 +29,15 @@
   // LAYOUT DESKTOP
   "responsive-layout.desktop#availability": {
     "children": [
-      "condition-layout.product#availability"
+      "condition-layout.product#fundo-dinamico"
+      // "condition-layout.product#availability"
     ]
   },
   // LAYOUT MOBILE
   "responsive-layout.mobile#availability": {
     "children": [
-      "condition-layout.product#mobile-availability"
+      "condition-layout.product#mobile-fundo-dinamico"
+      // "condition-layout.product#mobile-availability"
     ]
   },
   // avalia se o produto tem estoque MOBILE
@@ -421,7 +423,8 @@
       "rich-text#cores-product-din",
       "flex-layout.row#product-din-selector-produtos",
       "product-quantity",
-      "flex-layout.row#botoes-comprar-bucarcep",
+      "condition-layout.product#disponivel-novo",
+
       "flex-layout.row#texto-pos-pdp"
     ]
   },
@@ -535,8 +538,19 @@
     "children": [
       "product-selling-price#prod-din",
       // "product-spot-price-savings#prod-din", //preco a vista com desconto
-      "rich-text#a-vista"
+      "condition-layout.product#disponivel-novo-texto-preco-a-vista"
+
     ]
+  },
+  "condition-layout.product#disponivel-novo-texto-preco-a-vista":{
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "rich-text#a-vista"
+    }
   },
   // PRECO A VISTA - COM DESCONTO
   "product-spot-price-savings#prod-din": {
@@ -774,7 +788,7 @@
       "rich-text#cores-product-din",
       "flex-layout.row#product-din-selector-produtos",
       "product-quantity",
-      "flex-layout.row#botoes-comprar-bucarcep",
+      "condition-layout.product#disponivel-novo",
       "flex-layout.row#texto-pos-pdp",
       // "flex-layout.row#list-price-savings", // preco sem desconto, riscado -- apagar
       // "flex-layout.row#selling-price", // preco a vista -- apagar
@@ -2508,6 +2522,20 @@
       "thumbnailImage": "thumbcor"
     }
   },
+  // CONDITIONAL NOVO DE DISPONIBILIDADE
+  "condition-layout.product#disponivel-novo":{
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "flex-layout.row#botoes-comprar-bucarcep",
+      "Else": "flex-layout.row#availability"
+    }
+},
+
+  //SELETOR DE QUANTIDADE
   "product-quantity": {
     "props": {
       "warningQuantityThreshold": 5,

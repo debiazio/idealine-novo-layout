@@ -100,10 +100,11 @@
 }
 
 .productImageTag {
-
+  max-height: unset!important;
   border-radius: 15px;
   margin-bottom: 80px;
   margin-left: 1px;
+  object-fit: none;
 }
 
 .thumbImg {
@@ -115,8 +116,7 @@
 }
 
 .productImagesGallerySlide--product-image-dinamic {
-  margin-left: -2px;
-  margin-right: 3px;
+  margin: 0
 }
 
 
