@@ -177,8 +177,8 @@
           "subject": "isProductAvailable"
         }
       ],
-      "Then": "flex-layout.row#itens-secundarios",
-      "Else": "flex-layout.row#product-availability"
+      "Then": "flex-layout.row#itens-secundarios"
+      // "Else": "flex-layout.row#product-availability"
     }
   },
   //linha abaixo das imagens
