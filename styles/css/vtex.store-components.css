@@ -524,7 +524,7 @@
 }
 
 .productImagesThumb {
-  width: 65px;
+  max-width: 65px!important;
 }
 
 /* cep botao de busca */
