@@ -73,6 +73,10 @@
       "blockclass": "imagens-shelf",
       "showBadge": false,
       "badgeText": "de desconto",
+      "mainImageLabel": {
+        "label": "principal",
+        "labelMatchCriteria": "exact"
+      },
       "hoverImage": {
         "criteria": "label",
         "label": "hover",
