@@ -130,7 +130,7 @@
   "product-installments#summary": {
     "props": {
       "blockClass": "summary",
-      "message": "{hasMoreThanOne, select, true { {installmentsNumber}x de {installmentValue} sem juros no cartão {paymentSystemName}}  false { }}"
+      "message": "{hasMoreThanOne, select, true { {installmentsNumber}x de {installmentValue} sem juros no cartão}  false { }}"
   }
   },
   "product-installments#summary-segunda-linha": {
