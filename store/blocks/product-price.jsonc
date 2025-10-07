@@ -22,7 +22,7 @@
 
   "product-installments": {
     "props": {
-      "message": "{installmentsNumber}x DE {installmentValue} COM JUROS NO CARTÃO",
+      "message": "{installmentsNumber}x DE {installmentValue} SEM JUROS NO CARTÃO",
       "installmentsCriteria": "max-quantity"
     }
   }

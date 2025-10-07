@@ -25,9 +25,9 @@
       "width": "80%"
     },
     "children": [
-      // "product-installments#summary", // parcelamento
-      // "product-installments#summary-segunda-linha",
-      "bundle",
+      "product-installments#summary", // parcelamento
+      "product-installments#summary-segunda-linha",
+      // "bundle",
       "product-list-price#summary", //preco de: quanto custava
       "product-selling-price", //preço por
       "product-spot-price-savings"
@@ -130,7 +130,7 @@
   "product-installments#summary": {
     "props": {
       "blockClass": "summary",
-      "message": "{hasMoreThanOne, select, true { {installmentsNumber}x de {installmentValue} com juros no cartão {paymentSystemName}}  false { }}"
+      "message": "{hasMoreThanOne, select, true { {installmentsNumber}x de {installmentValue} sem juros no cartão {paymentSystemName}}  false { }}"
   }
   },
   "product-installments#summary-segunda-linha": {
