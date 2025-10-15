@@ -4,7 +4,8 @@
       "flex-layout.col#deals1",
       "flex-layout.col#deals2",
       "flex-layout.col#deals3",
-      "flex-layout.col#deals4"
+      "flex-layout.col#deals4",
+      "flex-layout.col#deals5"
     ],
     "props": {
       "blockClass": ["deals", "mobile-deals"]
@@ -20,7 +21,7 @@
   },
   "image#deal1": {
     "props": {
-      "src": "assets/frete-icon-caminhao-preto.svg",
+      "src": "assets/home/icon-caminhao.webp",
       "maxHeight": "36px"
     }
   },
@@ -32,7 +33,7 @@
   },
   "rich-text#sub-deal1":{
     "props": {
-      "text": "Nós entregamos onde for melhor para você e o seu negócio!",
+      "text": "Nós entregamos onde for melhor para você e o seu negócio",
       "blockClass": ["deals", "sub-mobile-deals"]
     }
   },
@@ -46,7 +47,7 @@
   },
   "image#deal2": {
     "props": {
-      "src": "assets/icon-check-preto.svg",
+      "src": "assets/home/icon-garantia.webp",
       "maxHeight": "36px"
     }
   },
@@ -71,7 +72,7 @@
   },
   "image#deal3": {
     "props": {
-      "src": "assets/icon-cartao-credito-preto.svg",
+      "src": "assets/home/icon-cartao.webp",
       "maxHeight": "36px"
     }
   },
@@ -83,7 +84,7 @@
   },
   "rich-text#sub-deal3":{
     "props": {
-      "text": "Com a gente você pode parcelar em até 10x no cartão de crédito",
+      "text": "Com a gente você pode parcelar em ate 10x sem juros no cartão de crédito",
       "blockClass": ["deals", "sub-mobile-deals"]
     }
   },
@@ -96,7 +97,7 @@
   },
   "image#deal4": {
     "props": {
-      "src": "assets/icon-barcode-preto.svg",
+      "src": "assets/home/icon-boleto.webp",
       "maxHeight": "36px"
     }
   },
@@ -109,6 +110,31 @@
   "rich-text#sub-deal4":{
     "props": {
       "text": "Consulte as condições em Formas de Pagamento",
+      "blockClass":["deals", "sub-mobile-deals"]
+    }
+  },
+  "flex-layout.col#deals5": {
+    "children": [
+      "image#deal5",
+      "rich-text#deal5",
+      "rich-text#sub-deal5"
+    ]
+  },
+  "image#deal5": {
+    "props": {
+      "src": "assets/home/icon-site-seguro.webp",
+      "maxHeight": "36px"
+    }
+  },
+  "rich-text#deal5": {
+    "props": {
+      "text": "**SITE SEGURO**",
+      "blockClass": "deals"
+    }
+  },
+  "rich-text#sub-deal5":{
+    "props": {
+      "text": "Loja oficial da nossa empresa com proteção de dados e certificado de segurança",
       "blockClass":["deals", "sub-mobile-deals"]
     }
   }
