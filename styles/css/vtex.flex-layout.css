@@ -1,3 +1,17 @@
+.flexColChild--heart-icon {
+  display: flex;
+  height: 100%!important;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.flexRowContent--main-header {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1900px;
+}
+
 .flexRow--message-availability {
   padding: 40px 0 0;
 }
@@ -829,7 +843,7 @@
 .flexRowContent--header-mobile {
   display: flex;
   padding: 0;
-  background-color: var(--pink);
+  background-color: #fff;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -1641,6 +1655,10 @@
     flex-direction: column;
     width: fit-content;
     margin: 0;
+  }
+
+  .flexColChild--heart-icon{
+    margin-bottom: 0;
   }
 }
 

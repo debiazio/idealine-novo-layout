@@ -42,7 +42,7 @@
     "children": [
       "flex-layout.col#logo-desktop",
       "search-bar",
-      // "rich-text#label-login",
+      "flex-layout.col#spacer",
       "flex-layout.row#login",
       "flex-layout.col#heart-icon",
       "minicart.v2"
@@ -54,19 +54,18 @@
     },
     "children": ["logo#desktop"]
   },
-  // "flex-layout.col#spacer": {
-  //   "props": {
-  //     "blockClass": "spacer",
-  //     "width": "grow"
-  //   }
-  // },
+  "flex-layout.col#spacer": {
+    "props": {
+      "blockClass": "spacer"
+    }
+  },
   "search-bar": {
     "blocks": [
       "autocomplete-result-list.v2"
     ],
     "props": {
       "openAutocompleteOnFocus": true,
-      "placeholder": "Oi, o que procura hoje? ;)",
+      "placeholder": "O que você está procurando?",
       "blockClass": "search-bar"
     }
   },
@@ -93,7 +92,7 @@
     "props": {
       "blockClass": "label-login",
       "showIconProfile": true,
-      "iconLabel": "Oie!     Vem fazer seu login ;)",
+      "iconLabel": "Login",
       "emailAndPasswordTitle": "Entrar",
       "accessCodeTitle": "Coloque o e-mail cadastrado para receber o código de recuperação",
       "emailPlaceholder": "Insira seu e-mail",
@@ -105,16 +104,17 @@
   "flex-layout.col#heart-icon": {
     "props": {
       "blockClass": "heart-icon",
-      "title": "Favoritos"
+      "title": "Favoritos",
+      "preventVerticalStretch": true
     },
     "children": [
-      // "image#heart-icon"
+      "image#heart-icon"
     ]
   },
   "image#heart-icon": {
     "props": {
       "title": "Favoritos",
-
+      "src": "assets/header/favoritos.webp",
       "link": {
         "url": "account#/wishlist",
         "noFollow": false,
@@ -130,9 +130,9 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "assets/idealine-black-logo 1.webp",
+      "url": "assets/header/logo-idealine.webp",
       "width": "274",
-      "height": "115"
+      "height": "42"
     }
   },
 
@@ -167,7 +167,7 @@
     "children": [
       "drawer",
       "logo#mobile",
-
+       "flex-layout.col#heart-icon",
       // "flex-layout.col#spacer",
       "minicart.v2"
     ],
@@ -207,9 +207,8 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "assets/logo-branco.png",
-      "width": "180.41",
-      "height": "77.5",
+      "url": "assets/header/logo-idealine.webp",
+      "height": "22",
       "blockClass": "logo-mobile"
     }
   }

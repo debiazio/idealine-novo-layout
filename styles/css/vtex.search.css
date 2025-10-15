@@ -11,9 +11,10 @@
 
 }
 
-.biggy-autocomplete{
-  top:64px;
+.biggy-autocomplete-wrapper{
+  width: 39vw;
 }
+
 
 
 :global(.vtex-search-result-3-x-galleryLayoutSwitcher){
