@@ -10,7 +10,7 @@
 
 .wishlistIconContainer--fav-dinamic-background{
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end!important;
 }
 
 
@@ -50,6 +50,7 @@
     align-items: flex-end;
     padding: 0 20px;
   }
+
 
   .wishlistIconContainer--wishlist-shelf {
     position: absolute;

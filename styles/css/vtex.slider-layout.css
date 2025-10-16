@@ -1,3 +1,15 @@
+.sliderLayoutContainer--shelf{
+  margin-bottom: 60px;
+}
+
+.sliderTrack--shelf{
+  gap: 20px;
+}
+
+.sliderTrackContainer--shelf{
+  padding: 20px 0 68px 0;
+}
+
 .sliderLayoutContainer {
   justify-content: center;
 }
@@ -79,5 +91,10 @@
 @media screen and (max-width: 1024px) {
   .sliderTrackContainer--video-banner-slider {
     margin-bottom: -5px;
+  }
+
+  .sliderTrack--shelf{
+    gap: 10px;
+    margin-left: 4px
   }
 }

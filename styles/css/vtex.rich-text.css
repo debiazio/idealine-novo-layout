@@ -1,3 +1,15 @@
+.container--line {
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.4), transparent);
+}
+
+.headingLevel2--shelfTitle {
+  font-family: "montserrat-extrabold";
+  text-transform: capitalize;
+  font-size: 65px;
+  color: var(--fonte-cor-normal);
+}
+
 .container--sub-mobile-deals {
   height: 100px;
   max-width: 280px;
@@ -5,7 +17,7 @@
 
 .paragraph--sub-mobile-deals {
   font-family: "montserrat-regular";
-  color: var(--fonte-deals-normal);
+  color: var(--fonte-cor-normal);
   font-size: 16px;
   text-align: center;
 }
@@ -164,10 +176,8 @@
 }
 
 .container--shelfTitle {
-  color: black;
   justify-content: center;
   text-align: center;
-  padding: 40px;
 
 }
 
@@ -546,7 +556,7 @@
 }
 
 
-.wrapper--texto-sub-bellinha :global(.vtex-rich-text-0-x-heading-level-1),
+/* .wrapper--texto-sub-bellinha :global(.vtex-rich-text-0-x-heading-level-1),
 .wrapper--texto-titulo-bellinha :global(.vtex-rich-text-0-x-heading-level-1) {
   font-size: 15px;
   font-weight: 200;
@@ -555,7 +565,7 @@
 
 .wrapper--texto-sub-bellinha :global(.vtex-rich-text-0-x-heading-level-1) {
   font-family: Scrivano;
-}
+} */
 
 .container--texto-sub-bellinha {
   display: flex;

@@ -899,7 +899,7 @@
   }
 
   .imageElement--heart-icon {
-    width: 30px;
+    width: 30px!important;
   }
 
 }

@@ -28,12 +28,9 @@
 }
 
 .sellingPrice {
-  color: #696969;
-  font-size: 1.25rem;
-}
-
-.sellingPriceValue {
-  font-size: 1.2rem;
+  color: var(--fonte-cor-normal);
+  font-family: "inter-bold";
+  font-size: 25px;
 }
 
 .installments {
@@ -141,7 +138,10 @@
 }
 
 .installments--summary-segunda {
-  color: #A8A8A9;
+  color: var(--fonte-cor-normal);
+  font-family: "inter-regular";
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -221,8 +221,17 @@
     100% {
       box-shadow: 0 0 10px 2px rgba(139, 195, 74, 0.7);
     }
+
+
   }
 
+  .installments--summary-segunda {
+  font-size: 12px;
+}
+
+.sellingPrice {
+  font-size: 12px;
+}
 }
 
 .stretchChildrenWidth .savings--desconto {

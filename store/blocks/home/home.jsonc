@@ -102,13 +102,21 @@
       "colSizing": "auto"
     },
     "children": [
-      "rich-text#titulo-shelf-mais-vendidos",
-      "list-context.product-list#prateleira-mais-vendidos"
+      "rich-text#line",
+      "rich-text#titulo-prateleira-mais-vendidos",
+      "list-context.product-list#prateleira-mais-vendidos",
+      "rich-text#line"
     ]
   },
-  "rich-text#titulo-shelf-mais-vendidos": {
+  "rich-text#line":{
     "props": {
-      "text": "## **MAIS VENDIDOS**",
+      "text": "",
+      "blockClass": "line"
+    }
+},
+  "rich-text#titulo-prateleira-mais-vendidos": {
+    "props": {
+      "text": "## lançamentos",
       "blockClass": "shelfTitle"
     }
   },
@@ -136,9 +144,10 @@
         "tablet": 3,
         "phone": 2
       },
+
       "infinite": true,
       "blockClass": "shelf",
-      "showNavigationArrows": "always"
+      "showNavigationArrows": "never"
     }
   },
   //SECAO COMPRE POR CATEGORIA -MOBILE
@@ -733,7 +742,7 @@
       "infinite": true,
       "fullWidth": true,
       "blockClass": "shelf",
-      "showNavigationArrows": "desktopOnly"
+      "showNavigationArrows": "never"
     }
   },
   "flex-layout.row#shelf2": {
@@ -770,7 +779,7 @@
       },
       "infinite": true,
       "blockClass": "shelf",
-      "showNavigationArrows": "always"
+      "showNavigationArrows": "never"
     }
   },
   "flex-layout.row#shelf3": {
@@ -808,7 +817,7 @@
       "infinite": true,
       "fullWidth": true,
       "blockClass": "shelf",
-      "showNavigationArrows": "desktopOnly"
+      "showNavigationArrows": "never"
     }
   },
   "flex-layout.row#conteudo-instagram": {
@@ -855,7 +864,7 @@
       "blockClass": "video-banner-slider",
       "fullWidth": true,
       "showPaginationDots": "always",
-      "showNavigationArrows": "always",
+      "showNavigationArrows": "never",
       "autoplay": {
         "timeout": 3000
       }

@@ -5,8 +5,11 @@
 }
 
 :root {
-  --fonte-deals-normal: #696969;
-  --fonte-deals-black: #FFFFFF;
+  --fonte-cor-normal: #696969;
+  --fonte-cor-black: #FFFFFF;
+
+  --rosa-installments: #FEBBCE;
+
 
 
   --rosa-da-rosa: #fc51a7;

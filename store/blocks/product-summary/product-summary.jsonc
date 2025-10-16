@@ -53,7 +53,9 @@
   },
   "flex-layout.col#productRating": {
     "props": {
-      "blockClass": "productRating"
+      "blockClass": "productRating",
+      "preventVerticalStretch": true,
+      "colSizing": "auto"
     },
     "children": [
       "product-rating-inline"

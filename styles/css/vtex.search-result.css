@@ -1,6 +1,6 @@
 
 .gallery .stackItem--fav-dinamic-background{
-  display: none;
+  display: block;
 }
 
 .filter__container--title,
