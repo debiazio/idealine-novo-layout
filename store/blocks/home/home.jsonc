@@ -11,14 +11,17 @@
       "responsive-layout.mobile#categorias",
       "responsive-layout.mobile#banners-mobile",
       "responsive-layout.desktop#categorias",
-      "flex-layout.row#big_banners",
-      "flex-layout.row#mini-banners",
       "__fold__",
       "responsive-layout.desktop#carrossel-5l-8l",
+      "responsive-layout.desktop#img-como-usar",
+      "responsive-layout.mobile#img-como-usar",
+      "rich-text#line",
       "rich-text#prateleira-maior-capacidade",
       "flex-layout.row#shelf2",
+      "rich-text#line",
       "rich-text#prateleira-madu",
       "flex-layout.row#shelf3",
+      "rich-text#line",
       "flex-layout.row#conteudo-instagram",
       "flex-layout.row#titulo-blog-home",
       "flex-layout.row#blog-home"
@@ -74,17 +77,18 @@
       }
     }
   },
-
   "responsive-layout.mobile#banners-mobile": {
     "children": [
-      "rich-text#shelf-title",
+      "rich-text#titulo-prateleira-5l",
       "flex-layout.row#shelf"
     ]
   },
   "responsive-layout.desktop#carrossel-5l-8l": {
     "children": [
-      "rich-text#shelf-title",
-      "flex-layout.row#shelf"
+      "rich-text#line",
+      "rich-text#titulo-prateleira-5l",
+      "flex-layout.row#shelf",
+      "rich-text#line"
     ]
   },
   "flex-layout.row#script_rd": {
@@ -108,12 +112,12 @@
       "rich-text#line"
     ]
   },
-  "rich-text#line":{
+  "rich-text#line": {
     "props": {
       "text": "",
       "blockClass": "line"
     }
-},
+  },
   "rich-text#titulo-prateleira-mais-vendidos": {
     "props": {
       "text": "## lançamentos",
@@ -132,9 +136,9 @@
       "maxItems": 20
     }
   },
-  "product-summary.shelf":{
+  "product-summary.shelf": {
     "props": {
-      "priceBehavior":"default"
+      "priceBehavior": "default"
     }
   },
   "slider-layout#prateleira-mais-vendidos": {
@@ -144,7 +148,6 @@
         "tablet": 3,
         "phone": 2
       },
-
       "infinite": true,
       "blockClass": "shelf",
       "showNavigationArrows": "never"
@@ -648,66 +651,106 @@
       ]
     }
   },
-  // SECAO DOS MINI BANNERS
-  "flex-layout.row#big_banners": {
-    "props": {
-      "blockClass": "section-big-banners"
-    },
+  // SESSÃO DESKTOP - IMAGENS COMO USAR
+  "responsive-layout.desktop#img-como-usar": {
     "children": [
-      "image#big-banner-esquerda-image1",
-      "image#big-banner-direita"
+      "rich-text#line",
+      "flex-layout.row#linha-imgs-como-usar"
     ]
   },
-  // LINHA MAIS ALTA DA SECAO DE big BANNERS
-  "image#big-banner-esquerda-image1": {
+  "flex-layout.row#linha-imgs-como-usar": {
     "props": {
-      "blockClass": "imagens-big-banners",
-      "src": "assets/Mini-banner---registro-e-certificacao.webp",
-      "alt": "Líder no mercado de biossegurança"
-    }
-  },
-  "image#big-banner-direita": {
-    "props": {
-      "blockClass": "imagens-big-banners",
-      "src": "assets/Mini-banner---segmentos.webp",
-      "alt": "Parcelamento em até 10x"
-    }
-  },
-  // LINHA MENOR DA SECAO DE MINI BANNERS
-  "flex-layout.row#mini-banners": {
-    "props": {
-      "blockClass": "section-mini-banners"
+      "blockClass": "linha-img-como-usar",
+      "colSizing": "auto"
     },
     "children": [
-      "image#mini-banner-linha2-image1",
-      "image#mini-banner-linha2-image2",
-      "image#mini-banner-linha2-image3"
+      "image#loira",
+      "image#rosa",
+      "image#dvm"
     ]
   },
-  "image#mini-banner-linha2-image1": {
+  // imagens linha como usar
+  "image#loira": {
     "props": {
-      "blockClass": "imagens-menores-mini-banners",
-      "src": "assets/small-banner---opcoes-de-entrega.webp",
-      "alt": "Loja oficial da fábrica"
+      "blockClass": "imagens-como-usar",
+      "alt": "Mulher com autoclave",
+      "src": "assets/linha-como-usar/loira-desktop.webp"
     }
   },
-  "image#mini-banner-linha2-image2": {
+  "image#rosa": {
     "props": {
-      "blockClass": "imagens-menores-mini-banners",
-      "src": "assets/Small-banner---compra-segura.webp",
-      "alt": "Compra segura com nota fiscal original"
+      "blockClass": "imagens-como-usar",
+      "alt": "Match perfeito",
+      "src": "assets/linha-como-usar/match-desktop.webp"
     }
   },
-  "image#mini-banner-linha2-image3": {
+  "image#dvm": {
     "props": {
-      "blockClass": "imagens-menores-mini-banners",
-      "src": "assets/Small-banner---tempo-e-dindin.webp",
-      "alt": "Diversas opções de pagamento"
+      "blockClass": "imagens-como-usar",
+      "alt": "Tecnologia DVM",
+      "src": "assets/linha-como-usar/dvm-desktop.webp"
     }
   },
-  "rich-text#shelf-title": {
+  // SESSÃO DESKTOP - IMAGENS COMO USAR
+  "responsive-layout.mobile#img-como-usar": {
+    "children": [
+      "rich-text#line",
+      "flex-layout.row#linha-imgs-como-usar-mobile"
+    ]
+  },
+  "flex-layout.row#linha-imgs-como-usar-mobile":{
     "props": {
-      "text": "## **AUTOCLAVES DE 5 LITROS**",
+      "blockClass": "linha-imgs-como-usar-mobile",
+      "colSizing": "auto"
+    },
+    "children": [
+      "list-context.image-list#imgs-como-usar-mobile"
+    ]
+  },
+  // list context do componente com as imagens - slides MOBILE
+  "list-context.image-list#imgs-como-usar-mobile":{
+    "children": [
+      "slider-layout#imgs-como-usar-mobile"
+    ],
+    "props": {
+      "height": 620,
+      "images": [
+        {
+          "mobileImage": "assets/linha-como-usar/loira-desktop.webp"
+        },
+        {
+          "mobileImage": "assets/linha-como-usar/match-desktop.webp"
+        },
+        {
+          "mobileImage": "assets/linha-como-usar/dvm-desktop.webp"
+        }
+      ]
+    }
+  },
+  // slider
+  "slider-layout#imgs-como-usar-mobile":{
+    "props": {
+    "title": "Slider Imanges",
+    "blockClass": "slider-imgs-como-usar",
+    "itemsPerPage": {
+      "phone": 2
+    },
+    "arrowSize": 15,
+    "showNavigationArrows": "always",
+    "showPaginationDots": "never",
+    "autoplay": {
+      "timeout": 8000,
+      "stopOnHover": true
+    }
+    }
+  },
+
+
+
+
+  "rich-text#titulo-prateleira-5l": {
+    "props": {
+      "text": "## autoclaves de 5 litros",
       "blockClass": "shelfTitle"
     }
   },

@@ -1,3 +1,12 @@
+.flexRowContent--linha-imgs-como-usar-mobile{
+  padding: 50px 0;
+}
+
+.flexRowContent--linha-img-como-usar{
+  padding: 100px 0;
+  gap: 34px
+}
+
 .flexColChild--productRating {
   display: flex;
   flex-direction: column;

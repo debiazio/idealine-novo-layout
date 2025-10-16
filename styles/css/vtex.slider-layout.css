@@ -1,3 +1,12 @@
+.sliderTrackContainer--slider-imgs-como-usar{
+  margin: 0 20px;
+}
+
+.sliderTrack--slider-imgs-como-usar{
+  gap:20px;
+  padding: 20px 0;
+}
+
 .sliderLayoutContainer--shelf{
   margin-bottom: 60px;
 }
