@@ -1,4 +1,23 @@
-.wrapper--texto-pos-pdp{
+.container--sub-mobile-deals {
+  height: 100px;
+  max-width: 280px;
+}
+
+.paragraph--sub-mobile-deals {
+  font-family: "montserrat-regular";
+  color: var(--fonte-deals-normal);
+  font-size: 16px;
+  text-align: center;
+}
+
+.paragraph--deals {
+  font-family: "montserrat-bold";
+  color: var(--fonte-deals-normal);
+  font-size: 12px;
+  margin: 19px 0;
+}
+
+.wrapper--texto-pos-pdp {
   font-size: small;
   color: #696969;
 }
@@ -140,10 +159,8 @@
 }
 
 .container--deals {
-  color: black;
   text-align: center;
   justify-content: center;
-  padding: 0px 10px;
 }
 
 .container--shelfTitle {
@@ -174,9 +191,6 @@
   font-weight: 200;
 }
 
-.container--deals .paragraph {
-  margin: 0;
-}
 
 .container--link {
   justify-content: center;
@@ -467,7 +481,7 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .paragraph--texto-pos-pdp{
+  .paragraph--texto-pos-pdp {
     margin: 0 20px;
   }
 
@@ -505,6 +519,14 @@
 
   .wrapper--titulo-informacoes {
     font-size: smaller;
+  }
+
+  .paragraph--deals {
+    font-size: 8px;
+  }
+
+  .container--sub-mobile-deals {
+    display: none;
   }
 
 

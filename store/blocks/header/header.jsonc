@@ -16,28 +16,32 @@
       "sticky-layout#cabecalho-desktop"
     ]
   },
-
-
-
   "sticky-layout#cabecalho-desktop": {
     "props": {
       "blockClass": "sticky-header",
       "colSizing": "auto"
     },
     "children": [
-      "flex-layout.row#linha-superior-cabecalho-desktop",
+      "flex-layout.row#container-superior-cabecalho-desktop",
       "flex-layout.row#cabecalho-categorias-desktop"
     ]
   },
-
+  "flex-layout.row#container-superior-cabecalho-desktop": {
+    "props": {
+      "blockClass": "conteiner-linha-superior-cabecalho",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.row#linha-superior-cabecalho-desktop"
+    ]
+  },
   "flex-layout.row#linha-superior-cabecalho-desktop": {
     "props": {
       "blockClass": "main-header",
       "horizontalAlign": "center",
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
+      "preventVerticalStretch": true
     },
     "children": [
       "flex-layout.col#logo-desktop",
@@ -52,7 +56,9 @@
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["logo#desktop"]
+    "children": [
+      "logo#desktop"
+    ]
   },
   "flex-layout.col#spacer": {
     "props": {
@@ -70,7 +76,9 @@
     }
   },
   "autocomplete-result-list.v2": {
-    "blocks": ["product-summary"],
+    "blocks": [
+      "product-summary"
+    ],
     "props": {
       "maxSuggestedProducts": 2,
       "productLayout": "HORIZONTAL",
@@ -87,7 +95,6 @@
       "login"
     ]
   },
-
   "login": {
     "props": {
       "blockClass": "label-login",
@@ -125,7 +132,6 @@
       "maxWidth": "50px"
     }
   },
-
   "logo#desktop": {
     "props": {
       "title": "Logo",
@@ -135,7 +141,6 @@
       "height": "42"
     }
   },
-
   "flex-layout.row#cabecalho-categorias-desktop": {
     "props": {
       "blockClass": "menu-itens"
@@ -143,19 +148,13 @@
     "children": [
       "vtex.menu@2.x:menu#category-menu"
     ]
-
   },
-
-
-
   // mobile config
   "header-layout.mobile": {
     "children": [
       "sticky-layout#1-mobile"
     ]
   },
-
-
   // menu fixo (stick)
   "sticky-layout#1-mobile": {
     "children": [
@@ -167,7 +166,7 @@
     "children": [
       "drawer",
       "logo#mobile",
-       "flex-layout.col#heart-icon",
+      "flex-layout.col#heart-icon",
       // "flex-layout.col#spacer",
       "minicart.v2"
     ],
@@ -190,9 +189,10 @@
     }
   },
   "drawer": {
-    "children": ["menu#drawer"]
+    "children": [
+      "menu#drawer"
+    ]
   },
-
   "menu#drawer": {
     "children": [
       "login",
@@ -202,7 +202,6 @@
       "orientation": "vertical"
     }
   },
-
   "logo#mobile": {
     "props": {
       "title": "Logo",

@@ -1,3 +1,14 @@
+.flexRow--conteiner-linha-superior-cabecalho {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexRowContent--conteiner-linha-superior-cabecalho {
+  max-width: 1600px;
+}
+
 .flexColChild--heart-icon {
   display: flex;
   height: 100% !important;
@@ -330,14 +341,14 @@
 }
 
 .flexRowContent--deals {
-  height: 280px;
+  height: 380px;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
 .flexRow--deals {
-  height: 280px;
+  height: 380px;
   padding: 14px 0;
   padding: 10px;
 }
@@ -1659,6 +1670,14 @@
 
   .flexColChild--heart-icon {
     margin-bottom: 0;
+  }
+
+  .flexRowContent--deals {
+    height: 200px;
+  }
+
+  .flexRow--deals {
+    height: 200px;
   }
 }
 

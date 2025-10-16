@@ -2,8 +2,13 @@
   max-width: 70%;
 } */
 
+.imageElement--img-deals{
+  max-height: 50px;
+}
+
 .container {
   width: 100%;
+  max-width: 1600px;
 }
 
 .imageElement--heart-icon {
@@ -640,6 +645,11 @@
 
 
 @media screen and (max-width: 1024px) {
+  .imageElement--img-deals{
+    max-height: 30px;
+  }
+
+
   .caretIcon {
     overflow: visible !important;
     height: 10px;
