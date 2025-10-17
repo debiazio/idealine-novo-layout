@@ -256,14 +256,6 @@
     //   "vtex.menu@2.x:submenu#categorias-beleza-estetica"
     // ]
   },
-  "vtex.menu@2.x:submenu#categorias-beleza-estetica": {
-    "props": {
-      "width": "auto"
-    },
-    "children": [
-      "vtex.menu@2.x:menu#categorias-beleza-estetica"
-    ]
-  },
   "vtex.menu@2.x:menu#categorias-beleza-estetica": {
     "props": {
       "orientation": "vertical"
@@ -353,14 +345,6 @@
     //   "vtex.menu@2.x:submenu#categorias-odontologia"
     // ]
   },
-  "vtex.menu@2.x:submenu#categorias-odontologia": {
-    "props": {
-      "width": "auto"
-    },
-    "children": [
-      "vtex.menu@2.x:menu#categorias-odontologia"
-    ]
-  },
   "vtex.menu@2.x:menu#categorias-odontologia": {
     "props": {
       "orientation": "vertical"
@@ -401,14 +385,6 @@
     // "blocks": [
     //   "vtex.menu@2.x:submenu#categorias-veterinaria"
     // ]
-  },
-  "vtex.menu@2.x:submenu#categorias-veterinaria": {
-    "props": {
-      "width": "auto"
-    },
-    "children": [
-      "vtex.menu@2.x:menu#categorias-veterinaria"
-    ]
   },
   "vtex.menu@2.x:menu#categorias-veterinaria": {
     "props": {
@@ -451,14 +427,6 @@
     // "blocks": [
     //   "vtex.menu@2.x:submenu#categorias-clinicas-hospitais"
     // ]
-  },
-  "vtex.menu@2.x:submenu#categorias-clinicas-hospitais": {
-    "props": {
-      "width": "auto"
-    },
-    "children": [
-      "vtex.menu@2.x:menu#categorias-clinicas-hospitais"
-    ]
   },
   "vtex.menu@2.x:menu#categorias-clinicas-hospitais": {
     "props": {
@@ -653,15 +621,6 @@
     //   "submenu.accordion#categorias-beleza-estetica"
     // ]
   },
-  "submenu.accordion#categorias-beleza-estetica": {
-    "props": {
-      "width": "100%",
-      "blockClass": "beleza-estetica-mobile"
-    },
-    "children": [
-      "vtex.menu@2.x:menu#categorias-beleza-estetica-mobile"
-    ]
-  },
   "vtex.menu@2.x:menu#categorias-beleza-estetica-mobile": {
     "children": [
       "flex-layout.col#beleza-estetica-mobile"
@@ -693,15 +652,6 @@
     //   "submenu.accordion#categorias-odontologia"
     // ]
   },
-  "submenu.accordion#categorias-odontologia": {
-    "props": {
-      "width": "100%",
-      "blockClass": "odontologia-mobile"
-    },
-    "children": [
-      "vtex.menu@2.x:menu#categorias-odontologia-mobile"
-    ]
-  },
   "vtex.menu@2.x:menu#categorias-odontologia-mobile": {
     "children": [
       "flex-layout.col#odontologia-mobile"
@@ -729,15 +679,6 @@
     // "blocks": [
     //   "submenu.accordion#categorias-veterinaria"
     // ]
-  },
-  "submenu.accordion#categorias-veterinaria": {
-    "props": {
-      "width": "100%",
-      "blockClass": "veterinaria-mobile"
-    },
-    "children": [
-      "vtex.menu@2.x:menu#categorias-veterinaria-mobile"
-    ]
   },
   "vtex.menu@2.x:menu#categorias-veterinaria-mobile": {
     "children": [
@@ -811,15 +752,6 @@
     // "blocks": [
     //   "submenu.accordion#categorias-mobiliario-tecnico"
     // ]
-  },
-  "submenu.accordion#categorias-mobiliario-tecnico": {
-    "props": {
-      "width": "100%",
-      "blockClass": "mobiliario-tecnico-mobile"
-    },
-    "children": [
-      "vtex.menu@2.x:menu##categorias-mobiliario-tecnico-mobile"
-    ]
   },
   "vtex.menu@2.x:menu##categorias-mobiliario-tecnico-mobile": {
     "children": [

@@ -10,7 +10,7 @@
 }
 
 .teaserTitleLink--sessao-blog:hover {
-  color: rgb(243, 41, 159);
+  color: var(--rosa-installments);
 }
 
 .teaserTitle--sessao-blog {
@@ -20,6 +20,6 @@
 
 @media screen and (max-width: 1024px) {
   .latestPostsBlockContainer--sessao-blog {
-    margin: 20px 20px;
+    margin: 0 20px;
   }
 }

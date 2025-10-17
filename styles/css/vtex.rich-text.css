@@ -1,3 +1,20 @@
+.paragraph--titulo-post-blog{
+  font-size: 18px;
+  font-family: "montserrat-bold";
+  color: var(--rosa-installments);
+  margin: 0;
+  text-align: start;
+  padding: 0 20px;
+}
+
+.paragraph--subitiulo-post-blog {
+  font-size: 10px;
+  padding: 0 20px;
+  font-family: "montserrat-regular";
+  color: var(--fonte-cor-normal);
+}
+
+
 .container--line {
   height: 1px;
   background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.4), transparent);
@@ -5,7 +22,6 @@
 
 .headingLevel2--shelfTitle {
   font-family: "montserrat-extrabold";
-  text-transform: capitalize;
   font-size: 65px;
   color: var(--fonte-cor-normal);
 }
@@ -153,19 +169,16 @@
 }
 
 .paragraph--texto-titulo-categoria {
-  font-family: "Rubik";
-  font-size: 48px;
-  font-weight: 700;
-  color: black;
-  margin: -20px;
-  padding: 0;
+  font-family: "montserrat-extrabold";
+  font-size: 65px;
+  color: var(--fonte-cor-normal);
 }
 
 .paragraph--texto-subtitulo-categoria {
-  font-family: "Rubik";
+  font-family: "montserrat-regular";
   font-size: 46px;
   font-weight: 100;
-  color: var(--rosa-da-rosa);
+  color: var(--rosa-installments);
   margin: 0;
   padding: 0;
 }

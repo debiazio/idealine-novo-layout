@@ -1,21 +1,27 @@
-.sliderTrackContainer--slider-imgs-como-usar{
+.slideChildrenContainer--carrossel-mobile-blog {
+  margin: 20px 40px;
+  box-shadow: 6px 6px 12px 8px rgba(0, 0, 0, 0.35);
+  border-radius: 15px;
+}
+
+.sliderTrackContainer--slider-imgs-como-usar {
   margin: 0 20px;
 }
 
-.sliderTrack--slider-imgs-como-usar{
-  gap:20px;
+.sliderTrack--slider-imgs-como-usar {
+  gap: 20px;
   padding: 20px 0;
 }
 
-.sliderLayoutContainer--shelf{
+.sliderLayoutContainer--shelf {
   margin-bottom: 60px;
 }
 
-.sliderTrack--shelf{
+.sliderTrack--shelf {
   gap: 20px;
 }
 
-.sliderTrackContainer--shelf{
+.sliderTrackContainer--shelf {
   padding: 20px 0 68px 0;
 }
 
@@ -102,7 +108,7 @@
     margin-bottom: -5px;
   }
 
-  .sliderTrack--shelf{
+  .sliderTrack--shelf {
     gap: 10px;
     margin-left: 4px
   }

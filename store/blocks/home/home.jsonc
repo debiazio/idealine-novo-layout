@@ -15,16 +15,28 @@
       "responsive-layout.desktop#carrossel-5l-8l",
       "responsive-layout.desktop#img-como-usar",
       "responsive-layout.mobile#img-como-usar",
-      "rich-text#line",
+      "flex-layout.row#linha-line",
       "rich-text#prateleira-maior-capacidade",
       "flex-layout.row#shelf2",
-      "rich-text#line",
+      "flex-layout.row#linha-line",
       "rich-text#prateleira-madu",
       "flex-layout.row#shelf3",
-      "rich-text#line",
-      "flex-layout.row#conteudo-instagram",
+      "flex-layout.row#linha-line",
+      "responsive-layout.desktop#instagram",
+      "responsive-layout.mobile#instagram",
       "flex-layout.row#titulo-blog-home",
-      "flex-layout.row#blog-home"
+      "responsive-layout.mobile#blog",
+      "responsive-layout.desktop#blog"
+    ]
+  },
+  //  ESPAÇADOR
+  "flex-layout.row#linha-line": {
+    "props": {
+      "blockClass": "linha-line",
+      "fullWidth": false
+    },
+    "children": [
+      "rich-text#line"
     ]
   },
   // TESTE
@@ -85,10 +97,10 @@
   },
   "responsive-layout.desktop#carrossel-5l-8l": {
     "children": [
-      "rich-text#line",
+      "flex-layout.row#linha-line",
       "rich-text#titulo-prateleira-5l",
       "flex-layout.row#shelf",
-      "rich-text#line"
+      "flex-layout.row#linha-line"
     ]
   },
   "flex-layout.row#script_rd": {
@@ -106,12 +118,13 @@
       "colSizing": "auto"
     },
     "children": [
-      "rich-text#line",
+      "flex-layout.row#linha-line",
       "rich-text#titulo-prateleira-mais-vendidos",
       "list-context.product-list#prateleira-mais-vendidos",
-      "rich-text#line"
+      "flex-layout.row#linha-line"
     ]
   },
+  // LINHA SEPARADORA COM EFEITO
   "rich-text#line": {
     "props": {
       "text": "",
@@ -120,7 +133,7 @@
   },
   "rich-text#titulo-prateleira-mais-vendidos": {
     "props": {
-      "text": "## lançamentos",
+      "text": "## Lançamentos",
       "blockClass": "shelfTitle"
     }
   },
@@ -153,508 +166,10 @@
       "showNavigationArrows": "never"
     }
   },
-  //SECAO COMPRE POR CATEGORIA -MOBILE
-  "responsive-layout.mobile#categorias": {
-    "children": [
-      "flex-layout.row#compre-categorias-mobile"
-    ]
-  },
-  "flex-layout.row#compre-categorias-mobile": {
-    "props": {
-      "blockClass": "container-compre-por-categoria-mobile",
-      "fullWidth": true
-    },
-    "children": [
-      "flex-layout.row#titulo-categorias-linha1",
-      "flex-layout.row#imagens-categorias-mobile"
-    ]
-  },
-  "flex-layout.row#imagens-categorias-mobile": {
-    "props": {
-      "blockClass": "container-imagens-secao-categorias-mobile"
-    },
-    "children": [
-      "flex-layout.row#linha-1-cat-mobile",
-      "flex-layout.row#linha-2-cat-mobile",
-      "flex-layout.row#titulo-categorias-linha2",
-      "flex-layout.row#linha-3-cat-mobile",
-      "flex-layout.row#linha-4-cat-mobile"
-    ]
-  },
-  "flex-layout.row#linha-1-cat-mobile": {
-    "props": {
-      "blockClass": "linhas-categorias-mobile"
-    },
-    "children": [
-      "flex-layout.col#categoria-nails",
-      "flex-layout.col#categorias-lashes"
-    ]
-  },
-  "flex-layout.row#linha-2-cat-mobile": {
-    "props": {
-      "blockClass": "linhas-categorias-mobile"
-    },
-    "children": [
-      "flex-layout.col#categorias-podologia",
-      "flex-layout.col#categorias-bodyPiercings"
-    ]
-  },
-  "flex-layout.row#linha-3-cat-mobile": {
-    "props": {
-      "blockClass": "linhas-categorias-mobile"
-    },
-    "children": [
-      "flex-layout.col#categorias-odontologia",
-      "flex-layout.col#categorias-veterinaria"
-    ]
-  },
-  "flex-layout.row#linha-4-cat-mobile": {
-    "props": {
-      "blockClass": "linhas-categorias-mobile"
-    },
-    "children": [
-      "flex-layout.col#categorias-laboratorio",
-      "flex-layout.col#categorias-cli-hosp"
-    ]
-  },
-  //SECAO COMPRE POR CATEGORIA - DESKTOP
-  "responsive-layout.desktop#categorias": {
-    "children": [
-      "flex-layout.row#compre-por-categoria"
-    ]
-  },
-  "flex-layout.row#compre-por-categoria": {
-    "props": {
-      "blockClass": "container-compre-por-categoria",
-      "fullWidth": true
-    },
-    "children": [
-      "flex-layout.row#titulo-categorias-linha1",
-      "flex-layout.row#imagens-categorias",
-      "flex-layout.row#titulo-categorias-linha2",
-      "flex-layout.row#imagens-segunda-linha-categorias"
-    ]
-  },
-  //conteiner do titulo das categorias
-  "flex-layout.row#titulo-categorias-linha1": {
-    "props": {
-      "blockClass": "conteiner-titulo-categorias"
-    },
-    "children": [
-      "rich-text#titulo",
-      "rich-text#subtitulo-categorias"
-    ]
-  },
-  //titulo das categorias
-  "rich-text#titulo": {
-    "props": {
-      "text": "COMPRE POR CATEGORIA",
-      "blockClass": "texto-titulo-categoria"
-    }
-  },
-  //subtitulo das categorias
-  "rich-text#subtitulo-categorias": {
-    "props": {
-      "text": "Beleza & Estética",
-      "blockClass": "texto-subtitulo-categoria"
-    }
-  },
-  //imagens das categorias - linha 1 - desktop
-  "flex-layout.row#imagens-categorias": {
-    "props": {
-      "blockClass": "conteiner-imagens-secao-categorias"
-    },
-    "children": [
-      "flex-layout.col#categoria-nails",
-      "flex-layout.col#categorias-lashes",
-      "flex-layout.col#categorias-podologia",
-      "flex-layout.col#categorias-bodyPiercings"
-    ]
-  },
-  "flex-layout.row#titulo-categorias-linha2": {
-    "props": {
-      "blockClass": "conteiner-titulo-categorias"
-    },
-    "children": [
-      "rich-text#titulo"
-    ]
-  },
-  //coluna das imagens
-  "flex-layout.col#categoria-nails": {
-    "props": {
-      "blockClass": "categoria-imagens"
-    },
-    "children": [
-      "link#link-categoria-nails"
-    ]
-  },
-  "link#link-categoria-nails": {
-    "props": {
-      "href": "/beleza-e-estetica/autoclaves-para-manicure"
-    },
-    "children": [
-      "flex-layout.row#categorias-quadro-nails"
-    ]
-  },
-  "flex-layout.row#categorias-quadro-nails": {
-    "props": {
-      "blockClass": "linha-imagem-e-label"
-    },
-    "children": [
-      "image#categorias-nails",
-      "rich-text#label-cat-nails"
-    ]
-  },
-  // imagens de capa categorias
-  "image#categorias-nails": {
-    "props": {
-      "blockClass": "imagem-categorias",
-      "src": "assets/manicure.webp",
-      "alt": "Manicure",
-      "title": "Categoria Imagem de manicure",
-      "link": {
-        "url": "/beleza-e-estetica/autoclaves-para-manicure"
-      }
-    }
-  },
-  //label da categoria
-  "rich-text#label-cat-nails": {
-    "props": {
-      "text": "Nails Designer Manicure",
-      "blockClass": [
-        "label-categorias",
-        "categorias-palavra-grande"
-      ]
-    }
-  },
-  //coluna das imagens
-  "flex-layout.col#categorias-lashes": {
-    "props": {
-      "blockClass": "categoria-imagens"
-    },
-    "children": [
-      "link#link-categoria-lashes"
-    ]
-  },
-  "link#link-categoria-lashes": {
-    "props": {
-      "href": "/beleza-e-estetica/autoclaves-para-lash-designer"
-    },
-    "children": [
-      "flex-layout.row#categorias-quadro-lashes"
-    ]
-  },
-  "flex-layout.row#categorias-quadro-lashes": {
-    "props": {
-      "blockClass": "linha-imagem-e-label"
-    },
-    "children": [
-      "image#categorias-lashes",
-      "rich-text#label-cat-lashes"
-    ]
-  },
-  // imagens de capa categorias
-  "image#categorias-lashes": {
-    "props": {
-      "blockClass": "imagem-categorias",
-      "src": "assets/lasher.webp",
-      "alt": "lash designer",
-      "title": "Categoria Lash Designer",
-      "link": {
-        "url": "#"
-      }
-    }
-  },
-  //label das categorias
-  "rich-text#label-cat-lashes": {
-    "props": {
-      "text": "Lash Designer",
-      "blockClass": "label-categorias"
-    }
-  },
-  //coluna das imagens
-  "flex-layout.col#categorias-podologia": {
-    "props": {
-      "blockClass": "categoria-imagens"
-    },
-    "children": [
-      "link#link-categoria-podologia"
-    ]
-  },
-  "link#link-categoria-podologia": {
-    "props": {
-      "href": "/beleza-e-estetica/autoclaves-para-podologia"
-    },
-    "children": [
-      "flex-layout.row#categorias-quadro-podologia"
-    ]
-  },
-  "flex-layout.row#categorias-quadro-podologia": {
-    "props": {
-      "blockClass": "linha-imagem-e-label"
-    },
-    "children": [
-      "image#categorias-podologia",
-      "rich-text#label-cat-podologia"
-    ]
-  },
-  // imagens de capa categorias
-  "image#categorias-podologia": {
-    "props": {
-      "blockClass": "imagem-categorias",
-      "src": "assets/podologia.webp",
-      "alt": "Podologia",
-      "title": "Categoria Podologia",
-      "link": {
-        "url": "/beleza-e-estetica/autoclaves-para-podologia"
-      }
-    }
-  },
-  //label das categorias
-  "rich-text#label-cat-podologia": {
-    "props": {
-      "text": "Podologia",
-      "blockClass": "label-categorias"
-    }
-  },
-  //coluna das imagens
-  "flex-layout.col#categorias-bodyPiercings": {
-    "props": {
-      "blockClass": "categoria-imagens"
-    },
-    "children": [
-      "link#link-categoria-bodyPiercings"
-    ]
-  },
-  "link#link-categoria-bodyPiercings": {
-    "props": {
-      "href": "/beleza-e-estetica/autoclaves-para-body-piercing"
-    },
-    "children": [
-      "flex-layout.row#categorias-quadro-bodyPiercings"
-    ]
-  },
-  "flex-layout.row#categorias-quadro-bodyPiercings": {
-    "props": {
-      "blockClass": "linha-imagem-e-label"
-    },
-    "children": [
-      "image#categorias-bodyPiercings",
-      "rich-text#label-cat-bodypiercings"
-    ]
-  },
-  // imagens de capa categorias
-  "image#categorias-bodyPiercings": {
-    "props": {
-      "blockClass": "imagem-categorias",
-      "src": "assets/body_piercing.webp",
-      "alt": "BodyPiercing",
-      "title": "Categoria Body Piercer",
-      "link": {
-        "url": "/beleza-e-estetica/autoclaves-para-body-piercing"
-      }
-    }
-  },
-  "rich-text#label-cat-bodypiercings": {
-    "props": {
-      "text": "Body Piercer",
-      "blockClass": "label-categorias"
-    }
-  },
-  //secao linha 2 - categorias - desktop
-  "flex-layout.row#imagens-segunda-linha-categorias": {
-    "props": {
-      "blockClass": "conteiner-imagens-secao-categorias",
-      "fullWidth": true
-    },
-    "children": [
-      "flex-layout.col#categorias-odontologia",
-      "flex-layout.col#categorias-veterinaria",
-      "flex-layout.col#categorias-laboratorio",
-      "flex-layout.col#categorias-cli-hosp"
-    ]
-  },
-  //link para a categoria
-  "flex-layout.col#categorias-odontologia": {
-    "props": {
-      "blockClass": "categoria-imagens"
-    },
-    "children": [
-      "link#link-categoria-odontologia"
-    ]
-  },
-  "link#link-categoria-odontologia": {
-    "props": {
-      "href": "/odontologia/autoclaves-para-odontologia"
-    },
-    "children": [
-      "flex-layout.row#categorias-quadro-odontologia"
-    ]
-  },
-  "flex-layout.row#categorias-quadro-odontologia": {
-    "props": {
-      "blockClass": "linha-imagem-e-label"
-    },
-    "children": [
-      "image#categorias-odontologia",
-      "rich-text#label-cat-odontologia"
-    ]
-  },
-  // imagens de capa categorias
-  "image#categorias-odontologia": {
-    "props": {
-      "blockClass": "imagem-categorias",
-      "src": "assets/odontologia.webp",
-      "alt": "Odontologia",
-      "title": "Categoria Odontologia",
-      "link": {
-        "url": "/odontologia/autoclaves-para-odontologia"
-      }
-    }
-  },
-  //label categoria
-  "rich-text#label-cat-odontologia": {
-    "props": {
-      "text": "Odontologia",
-      "blockClass": "label-categorias"
-    }
-  },
-  //coluna imagens
-  "flex-layout.col#categorias-veterinaria": {
-    "props": {
-      "blockClass": "categoria-imagens"
-    },
-    "children": [
-      "link#link-categoria-veterinaria"
-    ]
-  },
-  "link#link-categoria-veterinaria": {
-    "props": {
-      "href": "/veterinaria/autoclaves-para-veterinaria"
-    },
-    "children": [
-      "flex-layout.row#categorias-quadro-veterinaria"
-    ]
-  },
-  "flex-layout.row#categorias-quadro-veterinaria": {
-    "props": {
-      "blockClass": "linha-imagem-e-label"
-    },
-    "children": [
-      "image#categorias-veterinaria",
-      "rich-text#label-cat-veterinaria"
-    ]
-  },
-  "image#categorias-veterinaria": {
-    "props": {
-      "blockClass": "imagem-categorias",
-      "src": "assets/veterinario.webp",
-      "alt": "Veterinaria",
-      "title": "Categoria Veterinária",
-      "link": {
-        "url": "/veterinaria/autoclaves-para-veterinaria"
-      }
-    }
-  },
-  "rich-text#label-cat-veterinaria": {
-    "props": {
-      "text": "Veterinária",
-      "blockClass": "label-categorias"
-    }
-  },
-  //coluna imagens
-  "flex-layout.col#categorias-laboratorio": {
-    "props": {
-      "blockClass": "categoria-imagens"
-    },
-    "children": [
-      "link#link-categoria-laboratorio"
-    ]
-  },
-  "link#link-categoria-laboratorio": {
-    "props": {
-      "href": "/clinicas-e-hospitais/autoclaves-para-laboratorio"
-    },
-    "children": [
-      "flex-layout.row#categorias-quadro-laboratorio"
-    ]
-  },
-  "flex-layout.row#categorias-quadro-laboratorio": {
-    "props": {
-      "blockClass": "linha-imagem-e-label"
-    },
-    "children": [
-      "image#categorias-laboratorio",
-      "rich-text#label-cat-laboratorio"
-    ]
-  },
-  "image#categorias-laboratorio": {
-    "props": {
-      "blockClass": "imagem-categorias",
-      "src": "assets/laboratorio.webp",
-      "alt": "Laboratorio",
-      "title": "Categoria Laboratório",
-      "link": {
-        "url": "/clinicas-e-hospitais/autoclaves-para-laboratorio"
-      }
-    }
-  },
-  "rich-text#label-cat-laboratorio": {
-    "props": {
-      "text": "Laboratório",
-      "blockClass": "label-categorias"
-    }
-  },
-  // coluna imagens
-  "flex-layout.col#categorias-cli-hosp": {
-    "props": {
-      "blockClass": "categoria-imagens"
-    },
-    "children": [
-      "link#link-categoria-cli-hosp"
-    ]
-  },
-  "link#link-categoria-cli-hosp": {
-    "props": {
-      "href": "/clinicas-e-hospitais/"
-    },
-    "children": [
-      "flex-layout.row#categorias-quadro-cli-hosp"
-    ]
-  },
-  "flex-layout.row#categorias-quadro-cli-hosp": {
-    "props": {
-      "blockClass": "linha-imagem-e-label"
-    },
-    "children": [
-      "image#categorias-cli-hosp",
-      "rich-text#label-cat-cli-hosp"
-    ]
-  },
-  "image#categorias-cli-hosp": {
-    "props": {
-      "blockClass": "imagem-categorias",
-      "src": "assets/cli-hosp.webp",
-      "alt": "Clinicas-hospitais",
-      "title": "Categoria Clínicas e hospitais",
-      "link": {
-        "url": "/clinicas-e-hospitais/"
-      }
-    }
-  },
-  "rich-text#label-cat-cli-hosp": {
-    "props": {
-      "text": "Clínicas e Hospitais",
-      "blockClass": [
-        "label-categorias",
-        "categorias-palavra-grande"
-      ]
-    }
-  },
   // SESSÃO DESKTOP - IMAGENS COMO USAR
   "responsive-layout.desktop#img-como-usar": {
     "children": [
-      "rich-text#line",
+      "flex-layout.row#linha-line",
       "flex-layout.row#linha-imgs-como-usar"
     ]
   },
@@ -694,11 +209,11 @@
   // SESSÃO DESKTOP - IMAGENS COMO USAR
   "responsive-layout.mobile#img-como-usar": {
     "children": [
-      "rich-text#line",
+      "flex-layout.row#linha-line",
       "flex-layout.row#linha-imgs-como-usar-mobile"
     ]
   },
-  "flex-layout.row#linha-imgs-como-usar-mobile":{
+  "flex-layout.row#linha-imgs-como-usar-mobile": {
     "props": {
       "blockClass": "linha-imgs-como-usar-mobile",
       "colSizing": "auto"
@@ -708,7 +223,7 @@
     ]
   },
   // list context do componente com as imagens - slides MOBILE
-  "list-context.image-list#imgs-como-usar-mobile":{
+  "list-context.image-list#imgs-como-usar-mobile": {
     "children": [
       "slider-layout#imgs-como-usar-mobile"
     ],
@@ -728,29 +243,25 @@
     }
   },
   // slider
-  "slider-layout#imgs-como-usar-mobile":{
+  "slider-layout#imgs-como-usar-mobile": {
     "props": {
-    "title": "Slider Imanges",
-    "blockClass": "slider-imgs-como-usar",
-    "itemsPerPage": {
-      "phone": 2
-    },
-    "arrowSize": 15,
-    "showNavigationArrows": "always",
-    "showPaginationDots": "never",
-    "autoplay": {
-      "timeout": 8000,
-      "stopOnHover": true
-    }
+      "title": "Slider Imanges",
+      "blockClass": "slider-imgs-como-usar",
+      "itemsPerPage": {
+        "phone": 2
+      },
+      "arrowSize": 15,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "autoplay": {
+        "timeout": 8000,
+        "stopOnHover": true
+      }
     }
   },
-
-
-
-
   "rich-text#titulo-prateleira-5l": {
     "props": {
-      "text": "## autoclaves de 5 litros",
+      "text": "## Autoclaves de 5 litros",
       "blockClass": "shelfTitle"
     }
   },
@@ -796,7 +307,7 @@
   // linha da prateleira de maior capacidade
   "rich-text#prateleira-maior-capacidade": {
     "props": {
-      "text": "## **AUTOCLAVES HORIZONTAIS**",
+      "text": "## Autoclaves Horizontais",
       "blockClass": "shelfTitle"
     }
   },
@@ -833,7 +344,7 @@
   // linha da prateleira de maior capacidade
   "rich-text#prateleira-madu": {
     "props": {
-      "text": "## **IDEALOVERS BY MAD.U**",
+      "text": "## Idea.Love by MAD.U",
       "blockClass": "shelfTitle"
     }
   },
@@ -872,20 +383,6 @@
       "flex-layout.row#titulo-instagram",
       "flex-layout.row#postagens-instagram"
     ]
-  },
-  "flex-layout.row#titulo-instagram": {
-    "props": {
-      "blockClass": "linha-instagram"
-    },
-    "children": [
-      "rich-text#titulo-instagram"
-    ]
-  },
-  "rich-text#titulo-instagram": {
-    "props": {
-      "text": "## SIGA NOSSO INSTAGRAM ##",
-      "blockClass": "titulo-instagram"
-    }
   },
   // slider instagram
   "flex-layout.row#postagens-instagram": {
@@ -1079,10 +576,21 @@
   },
   "rich-text#blog": {
     "props": {
-      "text": "## BLOG IDEALINE ##",
-      "blockClass": "titulo-idealine-blog"
+      "text": "## Blog Idealine ##",
+      "blockClass": "shelfTitle"
     }
   },
+  "responsive-layout.mobile#blog": {
+    "children": [
+      "flex-layout.row#blog-home-mobile"
+    ]
+  },
+  "responsive-layout.desktop#blog": {
+    "children": [
+      "flex-layout.row#blog-home"
+    ]
+  },
+  // DESKTOP
   "flex-layout.row#blog-home": {
     "props": {
       "blockClass": "linha-blog",
@@ -1101,6 +609,157 @@
       "showCategories": false,
       "absoluteLinks": true,
       "numberOfPosts": 3
+    }
+  },
+  // MOBILE
+  "flex-layout.row#blog-home-mobile": {
+    "props": {
+      "blockClass": "linha-blog-mobile"
+    },
+    "children": [
+      "slider-layout#blog-images-mobile"
+    ]
+  },
+  "slider-layout#blog-images-mobile": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "blockClass": "carrossel-mobile-blog"
+      // "autoplay": {
+      //   "timeout": 8000,
+      //   "stopOnHover": true
+      // }
+    },
+    "children": [
+      "link#blog-post1",
+      "link#blog-post2",
+      "link#blog-post3"
+    ]
+  },
+  "link#blog-post1": {
+    "props": {
+      "blockClass": "link-blog-post",
+      "openNewTab": true,
+      "href": "https://idealineblog.com.br/como-o-estresse-afeta-a-saude-bucal"
+    },
+    "children": [
+      "flex-layout.col#coluna-post-blog-1"
+    ]
+  },
+  "link#blog-post2": {
+    "props": {
+      "blockClass": "link-blog-post",
+      "openNewTab": true,
+      "href": "https://idealineblog.com.br/seguranca-e-higiene-explorando-os-quatro-principais-tipos-de-esterilizacao"
+    },
+    "children": [
+      "flex-layout.col#coluna-post-blog-2"
+    ]
+  },
+  "link#blog-post3": {
+    "props": {
+      "blockClass": "link-blog-post",
+      "openNewTab": true,
+      "href": "https://idealineblog.com.br/qual-a-autoclave-ideal-para-mim"
+    },
+    "children": [
+      "flex-layout.col#coluna-post-blog-3"
+    ]
+  },
+  // COLUNAS DO LAYOUT
+  "flex-layout.col#coluna-post-blog-1": {
+    "props": {
+      "blockClass": "colunas-post-blog"
+    },
+    "children": [
+      "image#img-post-blog1",
+      "rich-text#titulo-post-blog1",
+      "rich-text#subtitulo-post-blog1"
+    ]
+  },
+  "flex-layout.col#coluna-post-blog-2": {
+    "props": {
+      "blockClass": "colunas-post-blog"
+    },
+    "children": [
+      "image#img-post-blog2",
+      "rich-text#titulo-post-blog2",
+      "rich-text#subtitulo-post-blog2"
+    ]
+  },
+  "flex-layout.col#coluna-post-blog-3": {
+    "props": {
+      "blockClass": "colunas-post-blog"
+    },
+    "children": [
+      "image#img-post-blog3",
+      "rich-text#titulo-post-blog3",
+      "rich-text#subtitulo-post-blog3"
+    ]
+  },
+  // imagens blogs
+  "image#img-post-blog1": {
+    "props": {
+      "blockClass": "img-post-blog",
+      "src": "assets/home/blog/Briefing-8-Como-o-estresse-afeta-a-saude-bucal.webp",
+      "alt": "Imagem blog"
+    }
+  },
+  "image#img-post-blog2": {
+    "props": {
+      "blockClass": "img-post-blog",
+      "src": "assets/home/blog/Texto-7-Tipos-de-Esterilizacao.webp",
+      "alt": "Imagem blog"
+    }
+  },
+  "image#img-post-blog3": {
+    "props": {
+      "blockClass": "img-post-blog",
+      "src": "assets/home/blog/Texto-6-Autoclave-Ideal-para-mim.webp",
+      "alt": "Imagem blog"
+    }
+  },
+  // titulo post blogs
+  "rich-text#titulo-post-blog1": {
+    "props": {
+      "blockClass": "titulo-post-blog",
+      "text": "Como o estresse afeta a saúde bucal?"
+    }
+  },
+  "rich-text#titulo-post-blog2": {
+    "props": {
+      "blockClass": "titulo-post-blog",
+      "text": "Segurança e Higiene: Explorando os Quatro Principais tipos de Esterilização"
+    }
+  },
+  "rich-text#titulo-post-blog3": {
+    "props": {
+      "blockClass": "titulo-post-blog",
+      "text": "Qual a Autoclave ideal para mim?"
+    }
+  },
+  // subtitulo -previa -post blogs
+  "rich-text#subtitulo-post-blog1": {
+    "props": {
+      "blockClass": "subitiulo-post-blog",
+      "text": "Qual a relação entre estresse e saúde bucal?   O estresse tem uma forte relação com a saúde bucal, afetando-a de diversas maneiras, tanto diretas quanto indiretas. Quando o corpo está sob estresse, ele libera hormônios como o cortisol, que podem enfraquecer o sistema imunológico e contribuir para problemas bucais.  Para minimizar os impactos do […]"
+    }
+  },
+  "rich-text#subtitulo-post-blog2": {
+    "props": {
+      "blockClass": "subitiulo-post-blog",
+      "text": "Nesse artigo do Blog da Idealine, vamos explorar em profundidade a importância da esterilização, um processo crucial para garantir a segurança e a higiene em diversas indústrias, desde a área médica até a cosmética e a de alimentos. Entender a importância da esterilização é fundamental para assegurar a eliminação eficaz de micro-organismos potencialmente nocivos que […]"
+    }
+  },
+  "rich-text#subtitulo-post-blog3": {
+    "props": {
+      "blockClass": "subitiulo-post-blog",
+      "text": "Neste artigo, vamos abordar uma questão comum e crucial: como escolher a autoclave ideal? A compra de uma autoclave é uma decisão importante, seja para clínicas, salões de beleza, hospitais ou laboratórios, pois envolve a segurança e a eficiência dos processos de esterilização. Vamos explorar em detalhes os diferentes tipos de autoclave disponíveis no mercado, […]"
     }
   }
 }

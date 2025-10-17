@@ -1,8 +1,56 @@
-.flexRowContent--linha-imgs-como-usar-mobile{
+.flexRowContent--conteiner-imgs-instagram-desktop {
+  gap: 35px;
+}
+
+.flexCol--insta-col-1 {
+  margin-top: 103px;
+}
+
+.flexCol--insta-col-3 {
+  margin-top: 133px;
+}
+
+.flexRowContent--linha-img-colunas {
+  box-shadow: 6px 12px 8px rgba(0, 0, 0, 0.35);
+  border-radius: 8px;
+  transition: all 0.5s ease;
+
+}
+
+.flexRowContent--linha-img-colunas:hover {
+  box-shadow: 6px 12px 20px rgba(0, 0, 0, 0.39);
+  transform: scale(1.01);
+}
+
+.flexRow--linha-img-colunas {
+  margin-bottom: 35px;
+}
+
+
+.flexRowContent--linha-img-colunas {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexRowContent--conteiner-instagram-desktop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexRowContent--conteiner-imagens-secao-categorias {
+  margin-bottom: 25px;
+}
+
+.flexRowContent--container-compre-por-categoria {
+  max-width: 1600px;
+}
+
+.flexRowContent--linha-imgs-como-usar-mobile {
   padding: 50px 0;
 }
 
-.flexRowContent--linha-img-como-usar{
+.flexRowContent--linha-img-como-usar {
   padding: 100px 0;
   gap: 34px
 }
@@ -239,8 +287,7 @@
 }
 
 .flexRow--container-compre-por-categoria {
-  /* padding-left: 35%;
-  padding-right: 35%; */
+  margin-bottom: 65px;
   display: flex;
   justify-content: center;
 }
@@ -268,7 +315,6 @@
 .flexRowContent--conteiner-titulo-categorias {
   display: flex;
   flex-direction: column;
-  padding: 66px 0;
 }
 
 .flexRow--conteiner-imagens-secao-categorias {
@@ -1705,7 +1751,29 @@
 
   .flexRowContent--linha-prateleira-duas-colunas .stretchChildrenWidth :global(.vtex-product-price-1-x-installments--summary) {
     font-size: 12px;
+  }
+
+  .flexCol--insta-col-3 {
+    display: none;
+  }
+
+  .flexRowContent--conteiner-imgs-instagram-desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 0 20px;
+  }
+
+  .flexCol--insta-col-1 {
+    margin-top: 53px;
+  }
+
+  .flexRow--linha-img-colunas {
+    margin-bottom: 15px;
+  }
 }
+
+
 
 @media screen and (max-width: 400px) {
   .flexRowContent--row-form-roleta .stretchChildrenWidth {
@@ -1717,5 +1785,4 @@
     justify-content: center;
   }
 
-}
 }
