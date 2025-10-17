@@ -1,10 +1,13 @@
-.paragraph--titulo-post-blog{
+.paragraph--titulo-post-blog {
   font-size: 18px;
   font-family: "montserrat-bold";
   color: var(--rosa-installments);
   margin: 0;
   text-align: start;
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .paragraph--subitiulo-post-blog {

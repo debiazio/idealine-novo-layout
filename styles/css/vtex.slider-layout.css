@@ -1,3 +1,15 @@
+.sliderLayoutContainer--shelf {
+  padding: 0 20px;
+}
+
+.slide--carrossel-mobile-blog {
+  margin-bottom: 50px;
+}
+
+.paginationDotsContainer--carrossel-mobile-blog {
+  margin-bottom: 30px !important;
+}
+
 .slideChildrenContainer--carrossel-mobile-blog {
   margin: 20px 40px;
   box-shadow: 6px 6px 12px 8px rgba(0, 0, 0, 0.35);
@@ -104,6 +116,10 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .sliderLayoutContainer--shelf {
+    padding: 0 10px;
+  }
+
   .sliderTrackContainer--video-banner-slider {
     margin-bottom: -5px;
   }
@@ -111,5 +127,9 @@
   .sliderTrack--shelf {
     gap: 10px;
     margin-left: 4px
+  }
+
+  .sliderTrackContainer--shelf {
+    padding: 5px 0 68px 0;
   }
 }

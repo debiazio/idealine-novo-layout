@@ -1,3 +1,22 @@
+
+
+.teaserImage--sessao-blog{
+  border-radius: 25px 25px 0 0;
+}
+
+.teaserContainer--sessao-blog :global(.vtex-card){
+  border-radius: 25px;
+}
+
+.teaserTitle--sessao-blog {
+  display: flex;
+  flex-direction: row;
+  height: 65px;
+  justify-content: center;
+  padding: 0 20px;
+  margin: 0;
+}
+
 .latestPostsBlockContainer--sessao-blog {
   margin: 20px 120px;
 }
@@ -5,18 +24,24 @@
 
 .teaserTitleLink--sessao-blog {
   text-decoration: none;
-  color: var(--pink);
-  text-align: center;
+  color: var(--rosa-installments);
+  text-align: start;
+  font-family: "inter-bold";
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 .teaserTitleLink--sessao-blog:hover {
   color: var(--rosa-installments);
 }
 
-.teaserTitle--sessao-blog {
-  text-align: center;
+.teaserBody--sessao-blog {
+  padding: 0 20px 20px;
+  height: 210px;
+  color: var(--fonte-cor-normal);
 }
-
 
 @media screen and (max-width: 1024px) {
   .latestPostsBlockContainer--sessao-blog {

@@ -22,7 +22,6 @@
     "children": [
       "flex-layout.row#linha-1-cat-mobile",
       "flex-layout.row#linha-2-cat-mobile",
-      "flex-layout.row#titulo-categorias-linha2",
       "flex-layout.row#linha-3-cat-mobile",
       "flex-layout.row#linha-4-cat-mobile"
     ]
@@ -115,14 +114,7 @@
       "flex-layout.col#categorias-bodyPiercings"
     ]
   },
-  "flex-layout.row#titulo-categorias-linha2": {
-    "props": {
-      "blockClass": "conteiner-titulo-categorias"
-    },
-    "children": [
-      "rich-text#titulo"
-    ]
-  },
+
   //coluna das imagens
   "flex-layout.col#categoria-nails": {
     "props": {

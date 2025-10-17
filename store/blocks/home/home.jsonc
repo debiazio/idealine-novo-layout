@@ -19,7 +19,7 @@
       "rich-text#prateleira-maior-capacidade",
       "flex-layout.row#shelf2",
       "flex-layout.row#linha-line",
-      "rich-text#prateleira-madu",
+      "rich-text#prateleira-madu-nova",
       "flex-layout.row#shelf3",
       "flex-layout.row#linha-line",
       "responsive-layout.desktop#instagram",
@@ -342,7 +342,7 @@
     ]
   },
   // linha da prateleira de maior capacidade
-  "rich-text#prateleira-madu": {
+  "rich-text#prateleira-madu-nova": {
     "props": {
       "text": "## Idea.Love by MAD.U",
       "blockClass": "shelfTitle"
@@ -630,6 +630,7 @@
       "infinite": true,
       "showNavigationArrows": "never",
       "blockClass": "carrossel-mobile-blog"
+      // ,
       // "autoplay": {
       //   "timeout": 8000,
       //   "stopOnHover": true
@@ -734,7 +735,7 @@
   "rich-text#titulo-post-blog2": {
     "props": {
       "blockClass": "titulo-post-blog",
-      "text": "Segurança e Higiene: Explorando os Quatro Principais tipos de Esterilização"
+      "text": "Os quatro Principais tipos de Esterilização"
     }
   },
   "rich-text#titulo-post-blog3": {

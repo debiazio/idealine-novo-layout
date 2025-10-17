@@ -51,7 +51,7 @@
 }
 
 .flexRowContent--linha-img-como-usar {
-  padding: 100px 0;
+  padding: 100px 20px;
   gap: 34px
 }
 
@@ -1770,6 +1770,10 @@
 
   .flexRow--linha-img-colunas {
     margin-bottom: 15px;
+  }
+
+  .flexRowContent--linha-img-como-usar {
+  padding: 100px 0px;
   }
 }
 
