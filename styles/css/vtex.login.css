@@ -3,6 +3,10 @@
   align-items: center;
 }
 
+.contentContainer{
+  background-color: white;
+}
+
 .label {
   display: none;
 }
