@@ -305,6 +305,18 @@
           "arguments": {
             "id": "2951" //kit sweet pink
           }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2902" //marcelo brito - pronta entrega
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2798" //marcelo brito
+          }
         }
       ],
       "matchType": "any",
@@ -606,6 +618,7 @@
       "link.product#bellinha-sweet-pink",
       "link.product#bellinha-sweet-black",
       "link.product#bellinha-glowin",
+      "link.product#bellinha-marcelo-brito",
       "appalterafundo"
     ]
   },
@@ -733,6 +746,28 @@
         "glowin-miniatura"
       ],
       "src": "assets/glowin-miniatura.svg"
+    }
+  },
+  // BOLINHA MARCELO BRITO
+  "link.product#bellinha-marcelo-brito": {
+    "props": {
+      "blockClass": [
+        "label-botao",
+        "link-marcelo-brito-miniatura"
+      ],
+      "href": "/autoclave-idealclave-bellinha-com-tecnologia-dvm-dr-marcelo-brito/p"
+    },
+    "children": [
+      "image#marcelo-miniatura"
+    ]
+  },
+  "image#marcelo-miniatura": {
+    "props": {
+      "blockClass": [
+        "miniaturas",
+        "glowin-miniatura"
+      ],
+      "src": "assets/marcelo-miniatura.png"
     }
   },
   // TEXTO POS PDP
